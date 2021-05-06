@@ -295,8 +295,8 @@
 				<orientation>horizontal</orientation>
 				<control type="button" id="98">
 					<description>Add/Get More... button</description>
-					<texturefocus />
-					<texturenofocus />
+					<texturefocus/>
+					<texturenofocus/>
 					<width>90</width>
 					<height>90</height>
 					<font>IconMedium</font>
@@ -310,8 +310,8 @@
 				</control>
 				<control type="button" id="95">
 					<description>Manual button</description>
-					<texturefocus />
-					<texturenofocus />
+					<texturefocus/>
+					<texturenofocus/>
 					<width>90</width>
 					<height>90</height>
 					<font>IconMedium</font>
@@ -325,8 +325,8 @@
 				</control>
 				<control type="button" id="97">
 					<description>Cancel button</description>
-					<texturefocus />
-					<texturenofocus />
+					<texturefocus/>
+					<texturenofocus/>
 					<width>90</width>
 					<height>90</height>
 					<font>IconMedium</font>
@@ -608,9 +608,11 @@
 		</item>
 		<item>
 			<label>$LOCALIZE[31994]</label>
-			<onclick>Dialog.Close(1129)</onclick>
-			<onclick>Skin.ToggleSetting(centermainmenu)</onclick>
 			<onclick>Skin.SetString(MainMenu.Layout,vertical)</onclick>
+		</item>
+		<item>
+			<label>Enable this for vertical mainmenu  $VAR[centermainmenu1Var]</label>
+			<onclick>Skin.ToggleSetting(centermainmenu1)</onclick>
 		</item>
 	</include>
 	<include name="SelectFanartTimePerImage">

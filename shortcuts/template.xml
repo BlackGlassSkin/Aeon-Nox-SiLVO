@@ -973,7 +973,7 @@
 					</control>
 				</control>
 				<!-- Widget -->
-				<animation effect="slide" end="0,165" time="320" tween="cubic" easing="inout" condition="!Skin.HasSetting(centermainmenu1) + !Skin.HasSetting(centermainmenu)">Conditional</animation>
+				<animation effect="slide" end="0,150" time="320" tween="cubic" easing="inout" condition="!Skin.HasSetting(centermainmenu1) + !Skin.HasSetting(centermainmenu)">Conditional</animation>
 				<control type="group">
 					<top>$SKINSHORTCUTS[top]</top>
 					<control type="panel" id="8011$SKINSHORTCUTS[id]">
@@ -1413,7 +1413,7 @@
 					<control type="group">
 						<visible>Control.HasFocus(8011$SKINSHORTCUTS[id])</visible>
 						<animation effect="slide" end="0,950" condition="!String.IsEqual(Skin.String(MainMenu.Layout),vertical) + Skin.HasSetting(centermainmenu)">Conditional</animation>
-						<animation effect="slide" end="0,977" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">Conditional</animation>
+						<animation effect="slide" end="0,917" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">Conditional</animation>
 						<top>90</top>
 						<left>245</left>
 						<control type="group">
