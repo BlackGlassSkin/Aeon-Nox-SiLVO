@@ -73,9 +73,10 @@
 			<visible>system.getbool(input.enablemouse) + !Window.IsVisible(1128) + !Window.IsVisible(1130) + !Window.IsVisible(1131) + !Window.IsVisible(1132)</visible>
 		</control>
 		<control type="image">
-			<top>-15</top>
-			<width>400</width>
-			<height>130</height>
+			<top>5</top>
+			<width>330</width>
+			<height>100</height>
+			<aspectratio>keep</aspectratio>
 			<texture>aeon-nox-logo.png</texture>
 		</control>
 	</include>

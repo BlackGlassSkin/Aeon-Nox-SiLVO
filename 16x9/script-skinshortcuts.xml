@@ -21,17 +21,7 @@
 						<itemlayout height="81" width="356">
 							<control type="group">
 								<visible>String.IsEmpty(Window(Home).Property(skinshortcuts-management-widget))</visible>
-								<control type="label">
-									<width>360</width>
-									<height>81</height>
-									<font>font15_title</font>
-									<textoffsetx>20</textoffsetx>
-									<textcolor>grey</textcolor>
-									<label>$VAR[ShortcutsDisabledVar]$INFO[ListItem.Label]</label>
-									<visible>!String.IsEqual(Skin.String(MainMenu.Layout),icons)</visible>
-								</control>
 								<control type="group">
-									<visible>String.IsEqual(Skin.String(MainMenu.Layout),icons)</visible>
 									<control type="label">
 										<left>45</left>
 										<width>315</width>
@@ -67,17 +57,7 @@
 								<animation effect="fade" start="100" end="40" time="300" tween="sine" easing="inout" condition="true">Conditional</animation>
 								<visible>!String.IsEmpty(Window(Home).Property(skinshortcuts-management-widget))</visible>
 							</control>
-							<control type="label">
-								<width>360</width>
-								<height>81</height>
-								<font>font15_title</font>
-								<textoffsetx>20</textoffsetx>
-								<label>$VAR[ShortcutsDisabledVar]$INFO[ListItem.Label]</label>
-								<visible>!String.IsEqual(Skin.String(MainMenu.Layout),icons)</visible>
-								<scroll>true</scroll>
-							</control>
 							<control type="group">
-								<visible>String.IsEqual(Skin.String(MainMenu.Layout),icons)</visible>
 								<control type="label">
 									<left>45</left>
 									<width>315</width>
@@ -92,7 +72,7 @@
 									<width>70</width>
 									<height>81</height>
 									<aspectratio>keep</aspectratio>
-									<texture>$INFO[ListItem.Icon]</texture>
+									<texture colordiffuse="$VAR[ThemeLabelColor]">>$INFO[ListItem.Icon]</texture>
 									<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
 								</control>
 							</control>

@@ -151,6 +151,8 @@
 		<value condition="System.HasAddon(script.grab.fanart) + String.IsEqual(Skin.String(Viz.Background),2)">$INFO[Window(Home).Property(script.grab.fanart.Music.FanArt)]</value>
 		<value condition="String.IsEqual(Skin.String(Viz.Background),3) + !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.ArtworkReady))">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</value>
 		<value condition="[String.IsEqual(Skin.String(Viz.Background),5) | String.IsEqual(Skin.String(Viz.Background),6)] + !String.IsEmpty(Skin.String(CustomMusicBackground.path))">$INFO[Skin.String(CustomMusicBackground.path)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.ExtraFanArt))">$INFO[Window(Home).Property(SkinHelper.Player.Art.ExtraFanArt)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.FanArt))">$INFO[Window(Home).Property(SkinHelper.Player.Art.FanArt)]</value>
 		<value condition="!String.IsEmpty(Player.Art(fanart))">$INFO[Player.Art(fanart)]</value>
 		<value condition="System.HasAddon(script.grab.fanart)">$INFO[Window(Home).Property(script.grab.fanart.Music.FanArt)]</value>
 		<value>$INFO[Container(9037).ListItem.Art(fanart)]</value>
@@ -825,6 +827,10 @@
 	</variable>
 	<variable name="PlayerArtworkLogoVar">
 		<value condition="!String.IsEmpty(Player.Art(artist.clearlogo))">$INFO[Player.Art(artist.clearlogo)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.Clearlogo))">$INFO[Window(Home).Property(SkinHelper.Player.Art.Clearlogo)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.ClearLogos))">$INFO[Window(Home).Property(SkinHelper.Player.Art.ClearLogos)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ClearLogos))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.ClearLogos)]</value>
 		<value>$INFO[Player.Art(clearlogo)]</value>
 	</variable>
 	<variable name="ArtworkLogoVar">
@@ -836,6 +842,18 @@
 	<variable name="PlayerArtworkDiscVar">
 		<value condition="!String.IsEmpty(Player.Art(album.discart))">$INFO[Player.Art(album.discart)]</value>
 		<value condition="!String.IsEmpty(Player.Art(discart))">$INFO[Player.Art(discart)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.DiscArt))">$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.DiscArt))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.DiscArt)]</value>
+		<value condition="Integer.IsEqual(ListItem.DiscNumber,1) + !String.IsEmpty(ListItem.Art(album.discart1))">$INFO[ListItem.Art(album.discart1)]</value>
+		<value condition="Integer.IsEqual(ListItem.DiscNumber,2) + !String.IsEmpty(ListItem.Art(album.discart2))">$INFO[ListItem.Art(album.discart2)]</value>
+		<value condition="Integer.IsEqual(ListItem.DiscNumber,3) + !String.IsEmpty(ListItem.Art(album.discart3))">$INFO[ListItem.Art(album.discart3)]</value>
+		<value condition="Integer.IsEqual(ListItem.DiscNumber,4) + !String.IsEmpty(ListItem.Art(album.discart4))">$INFO[ListItem.Art(album.discart4)]</value>
+		<value condition="Integer.IsEqual(ListItem.DiscNumber,6) + !String.IsEmpty(ListItem.Art(album.discart6))">$INFO[ListItem.Art(album.discart6)]</value>
+		<value condition="Integer.IsEqual(ListItem.DiscNumber,7) + !String.IsEmpty(ListItem.Art(album.discart7))">$INFO[ListItem.Art(album.discart7)]</value>
+		<value condition="Integer.IsEqual(ListItem.DiscNumber,8) + !String.IsEmpty(ListItem.Art(album.discart8))">$INFO[ListItem.Art(album.discart8)]</value>
+		<value condition="Integer.IsEqual(ListItem.DiscNumber,9) + !String.IsEmpty(ListItem.Art(album.discart9))">$INFO[ListItem.Art(album.discart9)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.AlbumThumb)) + !Skin.HasSetting(EnableFakeDiscArt)">$INFO[Window(Home).Property(SkinHelper.Player.Art.AlbumThumb)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.Thumb)) + !Skin.HasSetting(EnableFakeDiscArt)">$INFO[Window(Home).Property(SkinHelper.Player.Art.Thumb)]</value>
 		<value condition="Skin.HasSetting(MusicDiscFallback.Vinyl)">special://skin/extras/cdart/vinyl.png</value>
 		<value>special://skin/extras/cdart/default.png</value>
 	</variable>
@@ -1316,6 +1334,16 @@
 		<value condition="VideoPlayer.Content(livetv) + !String.IsEmpty(VideoPlayer.Cover)">$INFO[VideoPlayer.Cover]</value>
 		<value>$INFO[Player.Art(thumb)]</value>
 	</variable>
+	
+	<variable name="RadioPlayerCover2Var">
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.AlbumThumb))">$INFO[Window(Home).Property(SkinHelper.Player.Art.AlbumThumb)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.Thumb))">$INFO[Window(Home).Property(SkinHelper.Player.Art.Thumb)]</value>
+		<value condition="[Pvr.IsPlayingRadio | Player.IsInternetStream] + !String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.Thumb))">$INFO[Window(Home).Property(SkinHelper.Player.Art.Thumb)]</value>
+		<value condition="[Pvr.IsPlayingRadio | Player.IsInternetStream] + !String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.AlbumThumb))">$INFO[Window(Home).Property(SkinHelper.Player.Art.AlbumThumb)]</value>
+		<value condition="!String.IsEmpty(Player.Art(thumb))">.jpg</value>
+		<value>$INFO[Player.Art(thumb)]</value>
+	</variable>
+	
 	<!-- DialogInfos -->
 	<variable name="DialogInfoBackgroundVar">
 		<value condition="Skin.HasSetting(Enable.BlurredVideoInfo)">$INFO[Window(Home).Property(MyProp_blurred)]</value>

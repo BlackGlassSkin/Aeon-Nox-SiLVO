@@ -8,6 +8,11 @@
 	<onload condition="System.HasAddon(script.skinshortcuts) + !Skin.HasSetting(AskedDefaultBackground)">SetProperty(AskDefaultBackground,True,Home)</onload>
 	<onload condition="System.HasAddon(script.skinshortcuts) + !Skin.HasSetting(AskedDefaultBackground) + !Control.IsVisible(9999)">AlarmClock(Ask for Default Background,ActivateWindow(1126),00:02,silent)</onload>
 	<onload condition="System.HasAddon(script.skin.info.service) + String.IsEmpty(Window(home).Property(skininfos_daemon_running))">RunScript(script.skin.info.service)</onload>
+	<onload>Skin.SetBool(SkinHelper.EnableExtendedArt)</onload>
+	<onload>Skin.SetBool(SkinHelper.EnableMusicArt)</onload>
+	<onload>Skin.SetBool(SkinHelper.EnablePVRThumbs)</onload>
+	<onload>Skin.SetBool(SkinHelper.EnableAddonsLookups)</onload>
+	<onload>Skin.SetBool(SkinHelper.EnableWallBackgrounds)</onload>
 	<menucontrol>9051</menucontrol>
 	<controls>
 		<control type="button" id="64">
