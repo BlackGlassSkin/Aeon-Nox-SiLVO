@@ -693,7 +693,7 @@
 			<control type="group">
 				<skinshortcuts>visibility</skinshortcuts>
 				<top>429</top>
-				<animation effect="slide" end="0,90" condition="!Skin.HasSetting(centermainmenu2) + !Skin.HasSetting(centermainmenu)">Conditional</animation>
+				<animation effect="slide" end="0,165" condition="!Skin.HasSetting(centermainmenu2) + !Skin.HasSetting(centermainmenu)">Conditional</animation>
 				<left>$SKINSHORTCUTS[left]</left>
 				<control type="group">
 					<visible>Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).NumItems,0)</visible>

@@ -18,6 +18,7 @@
 			<animation effect="slide" end="425,-260" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + String.IsEqual(Container(9000).ListItem.Property(widgetStyle),Extended List)">Conditional</animation>
 			<visible>!String.IsEmpty(Container(9000).ListItem.Property(widgetType))</visible>
 			<include>skinshortcuts-template-widget1</include>
+			<visible>!Player.HasMedia</visible>
 		</control>
 	</include>
 	<!-- WIDGET 2 -->

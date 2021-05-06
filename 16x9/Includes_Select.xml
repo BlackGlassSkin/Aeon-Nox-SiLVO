@@ -609,6 +609,7 @@
 		<item>
 			<label>$LOCALIZE[31994]</label>
 			<onclick>Dialog.Close(1129)</onclick>
+			<onclick>Skin.ToggleSetting(centermainmenu)</onclick>
 			<onclick>Skin.SetString(MainMenu.Layout,vertical)</onclick>
 		</item>
 	</include>

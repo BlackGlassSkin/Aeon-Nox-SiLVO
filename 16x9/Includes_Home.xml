@@ -317,7 +317,7 @@
 			</control>
 			<control type="multiimage" id="1">
                 <!-- gorny pasek kolor -->
-                <visible>Skin.HasSetting(Enable.EvolutionBar)</visible>
+                <visible>!Skin.HasSetting(Enable.EvolutionBar)</visible>
                 <left>0</left>
                 <top>149.5</top>
                 <width>1980</width>
@@ -331,7 +331,7 @@
             </control>
 			<control type="multiimage" id="1">
                 <!-- dolny pasek kolor -->
-                <visible>Skin.HasSetting(Enable.EvolutionBar)</visible>
+                <visible>!Skin.HasSetting(Enable.EvolutionBar)</visible>
                 <left>0</left>
                 <top>80</top>
                 <width>1980</width>
@@ -893,6 +893,7 @@
 		<!-- Video Info -->
 		<control type="group">
 			<visible>Player.HasVideo + !Window.IsActive(script-globalsearch.xml)</visible>
+			<animation effect="fade" start="100" end="0" time="200" condition="![String.IsEqual(Container(9000).ListItem.Property(widgetStyle.2),Extended List) | String.IsEqual(Container(9000).ListItem.Property(widgetStyle.2),List)] + ControlGroup(90020).HasFocus">Conditional</animation>
 			<include>VisibleFadeAnimation</include>
 			<animation effect="slide" tween="cubic" time="720" start="0,1080" end="0,0" condition="Skin.HasSetting(centermainmenu) + !String.IsEqual(Skin.String(MainMenu.Layout),vertical)">WindowOpen</animation>
 			<animation effect="slide" tween="cubic" time="720" end="0,1080" start="0,0" condition="Skin.HasSetting(centermainmenu) + !String.IsEqual(Skin.String(MainMenu.Layout),vertical)">WindowClose</animation>
@@ -1145,6 +1146,7 @@
 		<!-- Music Info -->
 		<control type="group">
 			<visible>!Window.Next(musicplaylist) + !Window.Next(visualisation)</visible>
+			<animation effect="fade" start="100" end="0" time="200" condition="ControlGroup(90020).HasFocus + ![String.IsEqual(Container(9000).ListItem.Property(widgetStyle.2),Extended List) | String.IsEqual(Container(9000).ListItem.Property(widgetStyle.2),List)]">Conditional</animation>
 			<control type="group">
 				<visible>Player.HasAudio + !Window.IsActive(script-globalsearch.xml)</visible>
 				<include>VisibleFadeAnimation</include>
