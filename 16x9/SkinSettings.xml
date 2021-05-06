@@ -43,12 +43,11 @@
 				<texture colordiffuse="$VAR[ThemeLabelColor]">floor.png</texture>
 			</control>
 			<control type="image">
-				<left>5</left>
-					<top>907</top>
-					<width>250</width>
-					<height>130</height>
+				<left>55</left>
+				<top>900</top>
+				<width>400</width>
+				<height>130</height>
 				<texture>aeon-nox-logo.png</texture>
-				<aspectratio scalediffuse="false" align="left">keep</aspectratio>
 			</control>
 			<include>SystemPanel</include>
 			<control type="group">

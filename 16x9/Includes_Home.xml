@@ -17,7 +17,7 @@
 			<orientation>horizontal</orientation>
 			<itemlayout height="87" width="344">
 				<control type="label">
-					<top>-2</top>
+					<top>2</top>
 					<width>344</width>
 					<height>41</height>
 					<font>font13_title</font>
@@ -33,11 +33,11 @@
 					<control type="image">
 						<top>1</top>
 						<width>344</width>
-						<height>37</height>
+						<height>44</height>
 						<texture colordiffuse="$VAR[HighlightBarColor]">listselect_fo.png</texture>
 					</control>
 					<control type="label">
-						<top>-2</top>
+						<top>2</top>
 						<width>344</width>
 						<height>41</height>
 						<font>font13_title</font>
@@ -50,7 +50,7 @@
 				<control type="group">
 					<visible>!Control.HasFocus(9010)</visible>
 					<control type="label">
-						<top>-2</top>
+						<top>2</top>
 						<width>344</width>
 						<height>41</height>
 						<font>font13_title</font>
@@ -88,34 +88,29 @@
 	</include>
 	<include name="HorizontalMenuSystemBars">
 		<control type="group">
-			<top>410</top>
+			<top>427</top>
 			<control type="group">
-				<animation effect="slide" end="0,476" time="320" tween="cubic" easing="inout" condition="!Skin.HasSetting(centermainmenu)">Conditional</animation>
-				
-				<animation effect="slide" end="0,-938" time="320" tween="cubic" easing="inout" condition="![System.GetBool(lookandfeel.enablerssfeeds) + String.IsEqual(Skin.String(HorizontalRSSPosition),high)] + [System.GetBool(lookandfeel.enablerssfeeds) + !String.IsEqual(Skin.String(HorizontalRSSPosition),high) + Skin.HasSetting(SystemBarOnTop) + !Skin.HasSetting(centermainmenu)] | [!System.GetBool(lookandfeel.enablerssfeeds) + Skin.HasSetting(SystemBarOnTop) + !Skin.HasSetting(centermainmenu)]">Conditional</animation>dol mainmenu bar on top
-				
-				<animation effect="slide" end="0,-462" time="320" tween="cubic" easing="inout" condition="![System.GetBool(lookandfeel.enablerssfeeds) + String.IsEqual(Skin.String(HorizontalRSSPosition),high)] + [System.GetBool(lookandfeel.enablerssfeeds) + !String.IsEqual(Skin.String(HorizontalRSSPosition),high) + Skin.HasSetting(SystemBarOnTop) + Skin.HasSetting(centermainmenu)] | [!System.GetBool(lookandfeel.enablerssfeeds) + Skin.HasSetting(SystemBarOnTop) + Skin.HasSetting(centermainmenu)]">Conditional</animation>
-				<include condition="!Skin.HasSetting(SystemBarOnTop) | Skin.HasSetting(SystemBarOnTop) + [System.GetBool(lookandfeel.enablerssfeeds) + String.IsEqual(Skin.String(HorizontalRSSPosition),high)]">WindowOpenCloseAnimation</include> srodek mainmenu bar on top
-
+				<animation effect="slide" end="0,338" time="320" tween="cubic" easing="inout" condition="!Skin.HasSetting(centermainmenu)">Conditional</animation>
+				<animation effect="slide" end="0,-812" time="320" tween="cubic" easing="inout" condition="![System.GetBool(lookandfeel.enablerssfeeds) + String.IsEqual(Skin.String(HorizontalRSSPosition),high)] + [System.GetBool(lookandfeel.enablerssfeeds) + !String.IsEqual(Skin.String(HorizontalRSSPosition),high) + Skin.HasSetting(SystemBarOnTop) + !Skin.HasSetting(centermainmenu)] | [!System.GetBool(lookandfeel.enablerssfeeds) + Skin.HasSetting(SystemBarOnTop) + !Skin.HasSetting(centermainmenu)]">Conditional</animation>
+				<animation effect="slide" end="0,-474" time="320" tween="cubic" easing="inout" condition="![System.GetBool(lookandfeel.enablerssfeeds) + String.IsEqual(Skin.String(HorizontalRSSPosition),high)] + [System.GetBool(lookandfeel.enablerssfeeds) + !String.IsEqual(Skin.String(HorizontalRSSPosition),high) + Skin.HasSetting(SystemBarOnTop) + Skin.HasSetting(centermainmenu)] | [!System.GetBool(lookandfeel.enablerssfeeds) + Skin.HasSetting(SystemBarOnTop) + Skin.HasSetting(centermainmenu)]">Conditional</animation>
+				<include condition="!Skin.HasSetting(SystemBarOnTop) | Skin.HasSetting(SystemBarOnTop) + [System.GetBool(lookandfeel.enablerssfeeds) + String.IsEqual(Skin.String(HorizontalRSSPosition),high)]">WindowOpenCloseAnimation</include>
 				<animation effect="slide" start="0,-90" end="0,0" time="400" delay="200" condition="[System.GetBool(lookandfeel.enablerssfeeds) + [String.IsEmpty(Skin.String(HorizontalRSSPosition)) | String.IsEqual(Skin.String(HorizontalRSSPosition),low)] + !String.IsEqual(Skin.String(HorizontalRSSPosition),high) + Skin.HasSetting(SystemBarOnTop)] | [!System.GetBool(lookandfeel.enablerssfeeds) + Skin.HasSetting(SystemBarOnTop)]">WindowOpen</animation>
-				<animation effect="slide" end="0,-90" start="0,0" time="300" condition="[System.GetBool(lookandfeel.enablerssfeeds) + [String.IsEmpty(Skin.String(HorizontalRSSPosition)) | String.IsEqual(Skin.String(HorizontalRSSPosition),low)] + !String.IsEqual(Skin.String(HorizontalRSSPosition),high) + Skin.HasSetting(SystemBarOnTop)] | [!System.GetBool(lookandfeel.enablerssfeeds) + Skin.HasSetting(SystemBarOnTop)]">WindowClose</animation> 
+				<animation effect="slide" end="0,-90" start="0,0" time="300" condition="[System.GetBool(lookandfeel.enablerssfeeds) + [String.IsEmpty(Skin.String(HorizontalRSSPosition)) | String.IsEqual(Skin.String(HorizontalRSSPosition),low)] + !String.IsEqual(Skin.String(HorizontalRSSPosition),high) + Skin.HasSetting(SystemBarOnTop)] | [!System.GetBool(lookandfeel.enablerssfeeds) + Skin.HasSetting(SystemBarOnTop)]">WindowClose</animation>
 				<control type="image">
-				    <top>12</top>
 					<width>100%</width>
-					<height>75</height>
+					<height>87</height>
 					<texture colordiffuse="$VAR[ThemeHomeSystemBarsColor]" flipy="true">submenu_bar.png</texture>
 					<visible>[String.IsEmpty(Skin.String(ThemeHomeMenuBarColor)) | String.IsEqual(Skin.String(ThemeHomeMenuBarColor),None)] + [String.IsEmpty(Skin.String(ThemeHomeSystemBarsColor)) | String.IsEqual(Skin.String(ThemeHomeSystemBarsColor),None)]</visible>
 				</control>
 				<control type="image">
-				    <top>12</top>
 					<width>100%</width>
-					<height>75</height>
+					<height>87</height>
 					<texture colordiffuse="$VAR[ThemeHomeSystemBarsColor]" flipy="true">submenu_bar_white.png</texture>
 					<visible>[!String.IsEmpty(Skin.String(ThemeHomeMenuBarColor)) + !String.IsEqual(Skin.String(ThemeHomeMenuBarColor),None)] | [!String.IsEmpty(Skin.String(ThemeHomeSystemBarsColor)) + !String.IsEqual(Skin.String(ThemeHomeSystemBarsColor),None)]</visible>
 				</control>
 				<include condition="System.HasAddon(service.library.data.provider)">PlayListStatsList</include>
 				<control type="label">
-					<top>48</top>
+					<top>46</top>
 					<width>1080</width>
 					<height>40</height>
 					<label>$VAR[LibraryStatsVar]</label>
@@ -126,9 +121,8 @@
 				</control>
 				<control type="grouplist" id="9020">
 					<visible>!String.IsEmpty(Container(9000).ListItem.Property(InfoLine)) | !Skin.HasSetting(CenteredInfoLine)</visible>
-					<animation effect="slide" end="0,17" time="0" tween="cubic" easing="inout" condition="!String.IsEmpty(Container(9000).ListItem.Property(InfoLine)) | !Skin.HasSetting(CenteredInfoLine) | !Skin.HasSetting(SystemBarOnTop)">Conditional</animation>
 					<left>1100</left>
-					<top>32</top>
+					<top>46</top>
 					<width>800</width>
 					<height>41</height>
 					<align>right</align>
@@ -146,9 +140,8 @@
 						<textcolor>$VAR[ThemeHomeLabelColor]</textcolor>
 					</control>
 					<control type="multiimage">
-					    <top>3</top>
-						<width>55</width>
-						<height>35</height>
+						<width>60</width>
+						<height>40</height>
 						<imagepath>$VAR[WeatherIconsPathVar]$INFO[Weather.FanartCode]$VAR[WeatherIconsExtVar]</imagepath>
 						<aspectratio>keep</aspectratio>
 						<timeperimage>70</timeperimage>
@@ -176,7 +169,6 @@
 				</control>
 				<control type="grouplist" id="9020">
 					<visible>String.IsEmpty(Container(9000).ListItem.Property(InfoLine)) + Skin.HasSetting(CenteredInfoLine)</visible>
-					<animation effect="slide" end="0,4" time="0" tween="cubic" easing="inout" condition="String.IsEmpty(Container(9000).ListItem.Property(InfoLine)) + Skin.HasSetting(CenteredInfoLine) + Skin.HasSetting(SystemBarOnTop)">Conditional</animation>
 					<top>46</top>
 					<width>100%</width>
 					<height>41</height>
@@ -195,9 +187,8 @@
 						<textcolor>$VAR[ThemeHomeLabelColor]</textcolor>
 					</control>
 					<control type="multiimage">
-						<top>5</top>
-						<width>55</width>
-						<height>35</height>
+						<width>60</width>
+						<height>40</height>
 						<imagepath>$VAR[WeatherIconsPathVar]$INFO[Weather.FanartCode]$VAR[WeatherIconsExtVar]</imagepath>
 						<aspectratio>keep</aspectratio>
 						<timeperimage>70</timeperimage>
@@ -236,22 +227,20 @@
 	</include>
 	<include name="HorizontalMenu">
 		<control type="group">
-			<top>410</top>
-			<animation effect="slide" end="0,475" time="320" tween="cubic" easing="inout" condition="!Skin.HasSetting(centermainmenu)">Conditional</animation>
+			<top>453</top>
+			<animation effect="slide" end="0,338" time="320" tween="cubic" easing="inout" condition="!Skin.HasSetting(centermainmenu)">Conditional</animation>
 			<include>WindowOpenCloseAnimation</include>
 			<include condition="system.getbool(input.enablemouse)">SubmenuMouseButton</include>
 			<control type="image">
-			    <top>40</top>
 				<width>100%</width>
-				<height>170</height>
+				<height>229</height>
 				<texture>homemenu_back.png</texture>
 				<visible>String.StartsWith(Skin.String(ThemeHomeMenuBarColor),ff) | String.IsEmpty(Skin.String(ThemeHomeMenuBarColor)) | String.IsEqual(Skin.String(ThemeHomeMenuBarColor),None)</visible>
 			</control>
 			<control type="image">
-			    <top>40</top>
 				<left>-5%</left>
 				<width>110%</width>
-				<height>170</height>
+				<height>229</height>
 				<texture colordiffuse="$VAR[ThemeHomeMenuBarColor]">homemenu_back_white.png</texture>
 				<visible>!String.IsEmpty(Skin.String(ThemeHomeMenuBarColor)) + !String.IsEqual(Skin.String(ThemeHomeMenuBarColor),None)</visible>
 			</control>
@@ -280,13 +269,13 @@
 			</control>
 			<control type="image">
 				<width>100%</width>
-				<top>52</top>
+				<top>60</top>
 				<height>3</height>
 				<texture colordiffuse="$VAR[ThemeHomeMenuGlowBarColor]">separator_horizontal.png</texture>
 			</control>
 			<control type="image">
 				<width>100%</width>
-				<top>161</top>
+				<top>159</top>
 				<height>3</height>
 				<texture colordiffuse="$VAR[ThemeHomeMenuGlowBarColor]">separator_horizontal.png</texture>
 			</control>
@@ -294,16 +283,14 @@
 				<top>162</top>
 				<include condition="[String.IsEmpty(Skin.String(HorizontalRSSPosition)) | !String.IsEmpty(Skin.String(HorizontalRSSPosition)) + !Skin.HasSetting(Enable.VisibleSubmenu)] + system.getbool(lookandfeel.enablerssfeeds) | [!system.getbool(lookandfeel.enablerssfeeds) + !Skin.HasSetting(Enable.VisibleSubmenu)]">SubMenuAnimation</include>
 				<control type="image">
-				    <top>-2.2</top>
 					<width>100%</width>
-					<height>84</height>
+					<height>97</height>
 					<texture colordiffuse="$VAR[ThemeHomeSystemBarsColor]">submenu_bar.png</texture>
 					<visible>[String.IsEmpty(Skin.String(ThemeHomeMenuBarColor)) | String.IsEqual(Skin.String(ThemeHomeMenuBarColor),None)] + [String.IsEmpty(Skin.String(ThemeHomeSystemBarsColor)) | String.IsEqual(Skin.String(ThemeHomeSystemBarsColor),None)]</visible>
 				</control>
 				<control type="image">
-				    <top>-2.2</top>
 					<width>100%</width>
-					<height>84</height>
+					<height>97</height>
 					<texture colordiffuse="$VAR[ThemeHomeSystemBarsColor]">submenu_bar_white.png</texture>
 					<visible>[!String.IsEmpty(Skin.String(ThemeHomeMenuBarColor)) + !String.IsEqual(Skin.String(ThemeHomeMenuBarColor),None)] | [!String.IsEmpty(Skin.String(ThemeHomeSystemBarsColor)) + !String.IsEqual(Skin.String(ThemeHomeSystemBarsColor),None)]</visible>
 				</control>
@@ -315,34 +302,6 @@
 					<texture colordiffuse="$VAR[ThemeHomeSystemGlowBarsColor]">separator_horizontal.png</texture>
 				</control>
 			</control>
-			<control type="multiimage" id="1">
-                <!-- gorny pasek kolor -->
-                <visible>Skin.HasSetting(Enable.EvolutionBar)</visible>
-                <left>0</left>
-                <top>149.5</top>
-                <width>1980</width>
-                <height>15</height>
-                <imagepath>special://skin/bob/</imagepath>
-                <timeperimage>5000</timeperimage>
-                <fadetime>300</fadetime>
-                <randomize>true</randomize>
-                <loop>yes</loop>
-                <aspectratio>stretch</aspectratio>
-            </control>
-			<control type="multiimage" id="1">
-                <!-- dolny pasek kolor -->
-                <visible>Skin.HasSetting(Enable.EvolutionBar)</visible>
-                <left>0</left>
-                <top>80</top>
-                <width>1980</width>
-                <height>15</height>
-                <imagepath>special://skin/bob/</imagepath>
-                <timeperimage>5000</timeperimage>
-                <fadetime>600</fadetime>
-                <randomize>true</randomize>
-                <loop>yes</loop>
-                <aspectratio>stretch</aspectratio>
-            </control>
 		</control>
 	</include>
 	<!-- Vertical -->
@@ -560,7 +519,7 @@
 	<!-- Layouts -->
 	<include name="MainMenuListContent">
 		<left>-290</left>
-		<top>75.5</top>
+		<top>62</top>
 		<width>2800</width>
 		<height>100</height>
 		<onleft>9000</onleft>
@@ -1330,19 +1289,19 @@
 		<control type="group">
 			<include>WindowOpenCloseAnimation</include>
 			<animation effect="fade" start="100" end="0" time="200" condition="ControlGroup(9001).HasFocus() + String.IsEmpty(Skin.String(HorizontalRSSPosition))">Conditional</animation>
-			<animation effect="slide" end="0,472" condition="!Skin.HasSetting(centermainmenu) | [Skin.HasSetting(centermainmenu) + String.IsEqual(Skin.String(HorizontalRSSPosition),low)]">Conditional</animation>
+			<animation effect="slide" end="0,340" condition="!Skin.HasSetting(centermainmenu) | [Skin.HasSetting(centermainmenu) + String.IsEqual(Skin.String(HorizontalRSSPosition),low)]">Conditional</animation>
 			<animation effect="slide" end="0,84" condition="String.IsEqual(Skin.String(HorizontalRSSPosition),low)">Conditional</animation>
-			<top>570</top>
+			<top>613</top>
 			<control type="group">
 				<visible>String.IsEmpty(Skin.String(HorizontalRSSPosition))</visible>
 				<width>100%</width>
 				<control type="image">
-					<height>86</height>
+					<height>97</height>
 					<texture colordiffuse="$VAR[ThemeHomeSystemBarsColor]">submenu_bar.png</texture>
 					<visible>[String.IsEmpty(Skin.String(ThemeHomeMenuBarColor)) | String.IsEqual(Skin.String(ThemeHomeMenuBarColor),None)] + [String.IsEmpty(Skin.String(ThemeHomeSystemBarsColor)) | String.IsEqual(Skin.String(ThemeHomeSystemBarsColor),None)]</visible>
 				</control>
 				<control type="image">
-					<height>86</height>
+					<height>96</height>
 					<texture colordiffuse="$VAR[ThemeHomeSystemBarsColor]">submenu_bar_white.png</texture>
 					<visible>[!String.IsEmpty(Skin.String(ThemeHomeMenuBarColor)) + !String.IsEqual(Skin.String(ThemeHomeMenuBarColor),None)] | [!String.IsEmpty(Skin.String(ThemeHomeSystemBarsColor)) + !String.IsEqual(Skin.String(ThemeHomeSystemBarsColor),None)]</visible>
 				</control>
@@ -1698,7 +1657,7 @@
 	</include>
 	<include name="FanartTitle">
 		<control type="button">
-			<top>1040</top>
+			<top>1000</top>
 			<width min="0" max="450">auto</width>
 			<font>font10</font>
 			<textcolor>FFDFDFDF</textcolor>

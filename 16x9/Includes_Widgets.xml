@@ -8,14 +8,13 @@
 			<animation effect="slide" tween="cubic" time="720" start="1920,0" end="0,0" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">WindowOpen</animation>
 			<animation effect="slide" tween="cubic" time="720" end="1920,0" start="0,0" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">WindowClose</animation>
 			<animation effect="slide" end="0,-349" condition="!String.IsEqual(Skin.String(MainMenu.Layout),vertical) + Skin.HasSetting(centermainmenu)">Conditional</animation>
-			<animation effect="slide" end="220,-300" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + !String.Contains(Container(9000).ListItem.Property(widgetStyle),Extended)">Conditional</animation>
-			500<animation effect="slide" end="425,-300" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + String.IsEqual(Container(9000).ListItem.Property(widgetStyle),Extended Compact Panel)">Conditional</animation>
-			<animation effect="slide" end="425,-340" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + String.IsEqual(Container(9000).ListItem.Property(widgetStyle),Extended Panel)">Conditional</animation>
+			<animation effect="slide" end="220,-80" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + !String.Contains(Container(9000).ListItem.Property(widgetStyle),Extended)">Conditional</animation>
+			<animation effect="slide" end="425,-20" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + String.IsEqual(Container(9000).ListItem.Property(widgetStyle),Extended Compact Panel)">Conditional</animation>
+			<animation effect="slide" end="425,-64" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + String.IsEqual(Container(9000).ListItem.Property(widgetStyle),Extended Panel)">Conditional</animation>
 			<animation effect="slide" end="-410,0" time="320" tween="cubic" easing="inout" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + String.Contains(Container(9000).ListItem.Property(widgetStyle),Extended) + !String.Contains(Container(9000).ListItem.Property(widgetStyle),List) + ControlGroup(90010).HasFocus">Conditional</animation>
 			<animation effect="slide" end="-410,0" time="320" tween="cubic" easing="inout" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + String.Contains(Container(9000).ListItem.Property(widgetStyle),Extended) + !String.Contains(Container(9000).ListItem.Property(widgetStyle),List) + String.Contains(Container(9000).ListItem.Property(widgetStyle.2),Extended) + ControlGroup(90020).HasFocus">Conditional</animation>
 			<animation effect="fade" start="100" end="0" condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetHide)) + !ControlGroup(90010).HasFocus">Conditional</animation>
 			<animation effect="fade" start="100" end="0" condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetPanelInfo.2)) + ControlGroup(90020).HasFocus + !String.Contains(Container(9000).ListItem.Property(widgetStyle.2),List)">Conditional</animation>
-			<animation effect="slide" end="425,-260" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + String.IsEqual(Container(9000).ListItem.Property(widgetStyle),Extended List)">Conditional</animation>
 			<visible>!String.IsEmpty(Container(9000).ListItem.Property(widgetType))</visible>
 			<include>skinshortcuts-template-widget1</include>
 		</control>
@@ -32,12 +31,11 @@
 			<animation effect="slide" end="0,601" condition="!String.IsEqual(Skin.String(MainMenu.Layout),vertical) + Skin.HasSetting(centermainmenu)">Conditional</animation>
 			<animation effect="slide" end="220,632" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + !String.Contains(Container(9000).ListItem.Property(widgetStyle.2),Extended)">Conditional</animation>
 			<animation effect="slide" end="425,620" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + String.IsEqual(Container(9000).ListItem.Property(widgetStyle.2),Extended Compact Panel)">Conditional</animation>
-			<animation effect="slide" end="425,660" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + String.IsEqual(Container(9000).ListItem.Property(widgetStyle.2),Extended Panel)">Conditional</animation>
+			<animation effect="slide" end="425,628" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + String.IsEqual(Container(9000).ListItem.Property(widgetStyle.2),Extended Panel)">Conditional</animation>
 			<animation effect="slide" end="-410,0" time="320" tween="cubic" easing="inout" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + String.Contains(Container(9000).ListItem.Property(widgetStyle.2),Extended) + !String.Contains(Container(9000).ListItem.Property(widgetStyle.2),List) + ControlGroup(90020).HasFocus">Conditional</animation>
 			<animation effect="slide" end="-410,0" time="320" tween="cubic" easing="inout" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + String.Contains(Container(9000).ListItem.Property(widgetStyle.2),Extended) + !String.Contains(Container(9000).ListItem.Property(widgetStyle.2),List) + String.Contains(Container(9000).ListItem.Property(widgetStyle),Extended) + ControlGroup(90010).HasFocus">Conditional</animation>
 			<animation effect="fade" start="100" end="0" condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetHide.2)) + !ControlGroup(90020).HasFocus">Conditional</animation>
 			<animation effect="fade" start="100" end="0" condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetPanelInfo)) + ControlGroup(90010).HasFocus + !String.Contains(Container(9000).ListItem.Property(widgetStyle),List)">Conditional</animation>
-			<animation effect="slide" end="10,610" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + String.IsEqual(Container(9000).ListItem.Property(widgetStyle.2),Extended List)">Conditional</animation>
 			<animation effect="fade" start="100" end="0" condition="!String.IsEqual(Skin.String(MainMenu.Layout),vertical) + !Skin.HasSetting(Disable.Videoinfo) + Player.HasVideo + !ControlGroup(90020).HasFocus">Conditional</animation>
 			<animation effect="fade" start="100" end="0" condition="!String.IsEqual(Skin.String(MainMenu.Layout),vertical) + !Skin.HasSetting(Disable.Musicinfo) + Player.HasAudio + !ControlGroup(90020).HasFocus">Conditional</animation>
 			<animation effect="fade" start="100" end="0" condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetLiveTV)) + [PVR.HasNonRecordingTimer | PVR.IsRecording] + !ControlGroup(90020).HasFocus">Conditional</animation>
@@ -86,7 +84,7 @@
 			</control>
 			<control type="label">
 				<height>1</height>
-				<label/>
+				<label />
 			</control>
 			<!-- Info 1 -->
 			<control type="label">
@@ -109,7 +107,7 @@
 			</control>
 			<control type="label">
 				<height>1</height>
-				<label/>
+				<label />
 			</control>
 			<!-- Plot -->
 			<control type="textbox">
@@ -131,7 +129,7 @@
 				<width>200</width>
 				<height>300</height>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<texture background="true" diffuse="thumbs/movieposter_mask.png" fallback="homewidgets/DefaultMovies_poster.png">$VAR[HomeWidgetPosterVar]</texture>
+				<texture background="true" diffuse="thumbs/movieposter_mask.png"  fallback="homewidgets/DefaultMovies_poster.png">$VAR[HomeWidgetPosterVar]</texture>
 			</control>
 			<control type="image">
 				<left>-30</left>
@@ -156,8 +154,8 @@
 			<randomize>false</randomize>
 			<animation effect="zoom" end="95" center="auto" condition="[String.IsEqual(Skin.String(Widget.CaseInfo),Glass) | [ControlGroup(90010).HasFocus + String.IsEqual(Container(9000).ListItem.Property(widgetCase),Glass) + String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel)] | [ControlGroup(90020).HasFocus + String.IsEqual(Container(9000).ListItem.Property(widgetCase.2),Glass) + String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel)]] | [String.IsEqual(Skin.String(Widget.CaseInfo),Clear Case) | [ControlGroup(90010).HasFocus + String.IsEqual(Container(9000).ListItem.Property(widgetCase),Clear Case) + String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel)] | [ControlGroup(90020).HasFocus + String.IsEqual(Container(9000).ListItem.Property(widgetCase.2),Clear Case) + String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel)]]">Conditional</animation>
 			<animation type="Conditional" condition="String.IsEqual(Skin.String(Widget.CaseInfo),Case) | [ControlGroup(90010).HasFocus + String.IsEqual(Container(9000).ListItem.Property(widgetCase),Case) + String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel)] | [ControlGroup(90020).HasFocus + String.IsEqual(Container(9000).ListItem.Property(widgetCase.2),Case) + String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel)]">
-				<effect type="zoom" end="90" center="auto"/>
-				<effect type="slide" end="12"/>
+				<effect type="zoom" end="90" center="auto" />
+				<effect type="slide" end="12" />
 			</animation>
 		</control>
 		<control type="image">
@@ -328,7 +326,7 @@
 		<focusedlayout width="300" height="61">
 			<control type="group">
 				<animation type="Focus" reversible="false">
-					<effect type="zoom" start="95" end="100" time="300" tween="sine" easing="inout" center="auto"/>
+					<effect type="zoom" start="95" end="100" time="300" tween="sine" easing="inout" center="auto" />
 				</animation>
 				<control type="image">
 					<left>$PARAM[leftArt]</left>
@@ -563,7 +561,7 @@
 		<focusedlayout width="$PARAM[containerWidth]" height="$PARAM[containerHeight]">
 			<control type="group">
 				<animation type="Focus" reversible="false">
-					<effect type="zoom" start="95" end="100" time="300" tween="sine" easing="inout" center="auto"/>
+					<effect type="zoom" start="95" end="100" time="300" tween="sine" easing="inout" center="auto" />
 				</animation>
 				<control type="group">
 					<left>$PARAM[leftArt]</left>
@@ -677,7 +675,7 @@
 		<focusedlayout width="$PARAM[containerWidth]" height="$PARAM[containerHeight]" condition="!$PARAM[isWeather]">
 			<control type="group">
 				<animation type="Focus" reversible="false">
-					<effect type="zoom" start="95" end="100" time="300" tween="sine" easing="inout" center="auto"/>
+					<effect type="zoom" start="95" end="100" time="300" tween="sine" easing="inout" center="auto" />
 				</animation>
 				<control type="group">
 					<left>$PARAM[leftArt]</left>
@@ -833,7 +831,7 @@
 		<focusedlayout width="$PARAM[containerWidth]" height="$PARAM[containerHeight]" condition="$PARAM[isWeather]">
 			<control type="group">
 				<animation type="Focus" reversible="false">
-					<effect type="zoom" start="95" end="100" time="300" tween="sine" easing="inout" center="auto"/>
+					<effect type="zoom" start="95" end="100" time="300" tween="sine" easing="inout" center="auto" />
 				</animation>
 				<control type="group">
 					<left>$PARAM[leftArt]</left>
@@ -979,7 +977,7 @@
 		<focusedlayout width="$PARAM[containerWidth]" height="$PARAM[containerHeight]">
 			<control type="group">
 				<animation type="Focus" reversible="false">
-					<effect type="zoom" start="95" end="100" time="300" tween="sine" easing="inout" center="auto"/>
+					<effect type="zoom" start="95" end="100" time="300" tween="sine" easing="inout" center="auto" />
 				</animation>
 				<control type="image">
 					<left>$PARAM[leftArt]</left>
@@ -1115,7 +1113,7 @@
 		<focusedlayout width="$PARAM[containerWidth]" height="$PARAM[containerHeight]">
 			<control type="group">
 				<animation type="Focus" reversible="false">
-					<effect type="zoom" start="95" end="100" time="300" tween="sine" easing="inout" center="auto"/>
+					<effect type="zoom" start="95" end="100" time="300" tween="sine" easing="inout" center="auto" />
 				</animation>
 				<control type="image">
 					<left>$PARAM[leftArt]</left>

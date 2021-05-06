@@ -692,8 +692,7 @@
 		<controls>
 			<control type="group">
 				<skinshortcuts>visibility</skinshortcuts>
-				<top>429</top>
-				<animation effect="slide" end="0,90" condition="!Skin.HasSetting(centermainmenu2) + !Skin.HasSetting(centermainmenu)">Conditional</animation>
+				<top>449</top>
 				<left>$SKINSHORTCUTS[left]</left>
 				<control type="group">
 					<visible>Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).NumItems,0)</visible>
@@ -826,7 +825,7 @@
 						<effect type="fade" start="100" end="0" time="300" tween="sine" easing="inout" />
 					</animation>
 					<animation type="Conditional" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + String.Contains(Container(9000).ListItem.Property(widgetStyle),Extended) + !Control.HasFocus(8011$SKINSHORTCUTS[id]) + $SKINSHORTCUTS[rotatetrue]">
-						<effect type="rotatey" start="0" end="750" center="1280" time="400" tween="sine" easing="inout" />
+						<effect type="rotatey" start="0" end="-180" center="1280" time="400" tween="sine" easing="inout" />
 						<effect type="fade" start="100" end="0" time="300" tween="sine" easing="inout" />
 					</animation>
 					<animation effect="slide" end="-410,0" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + String.Contains(Container(9000).ListItem.Property(widgetStyle),Extended)">Conditional</animation>
@@ -907,12 +906,11 @@
 					<control type="group">
 						<visible>Control.HasFocus(8011$SKINSHORTCUTS[id])</visible>
 						<animation effect="slide" end="0,950" condition="!String.IsEqual(Skin.String(MainMenu.Layout),vertical) + Skin.HasSetting(centermainmenu)">Conditional</animation>
-						<animation effect="slide" end="0,950" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">Conditional</animation>
+						<animation effect="slide" end="0,677" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">Conditional</animation>
 						<top>90</top>
 						<left>245</left>
 						<control type="group">
 							<animation effect="fade" end="0">WindowClose</animation>
-							
 							<control type="image">
 								<top>-40</top>
 								<width>1470</width>
@@ -973,7 +971,6 @@
 					</control>
 				</control>
 				<!-- Widget -->
-				<animation effect="slide" end="0,165" time="320" tween="cubic" easing="inout" condition="!Skin.HasSetting(centermainmenu1) + !Skin.HasSetting(centermainmenu)">Conditional</animation>
 				<control type="group">
 					<top>$SKINSHORTCUTS[top]</top>
 					<control type="panel" id="8011$SKINSHORTCUTS[id]">
@@ -1160,12 +1157,11 @@
 					<control type="group">
 						<visible>Control.HasFocus(8011$SKINSHORTCUTS[id])</visible>
 						<animation effect="slide" end="0,950" condition="!String.IsEqual(Skin.String(MainMenu.Layout),vertical) + Skin.HasSetting(centermainmenu)">Conditional</animation>
-						<animation effect="slide" end="0,970" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">Conditional</animation>
+						<animation effect="slide" end="0,677" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">Conditional</animation>
 						<top>90</top>
 						<left>40</left>
 						<control type="group">
 							<animation effect="fade" end="0">WindowClose</animation>
-							
 							<control type="image">
 								<top>-40</top>
 								<width>1890</width>
@@ -1225,7 +1221,6 @@
 						</include>
 					</control>
 				</control>
-				<animation effect="slide" end="0,150" time="320" tween="cubic" easing="inout" condition="!Skin.HasSetting(centermainmenu1) + !Skin.HasSetting(centermainmenu)">Conditional</animation>
 				<!-- Widget -->
 				<control type="group">
 					<top>$SKINSHORTCUTS[top]</top>
@@ -1413,12 +1408,11 @@
 					<control type="group">
 						<visible>Control.HasFocus(8011$SKINSHORTCUTS[id])</visible>
 						<animation effect="slide" end="0,950" condition="!String.IsEqual(Skin.String(MainMenu.Layout),vertical) + Skin.HasSetting(centermainmenu)">Conditional</animation>
-						<animation effect="slide" end="0,977" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">Conditional</animation>
+						<animation effect="slide" end="0,677" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">Conditional</animation>
 						<top>90</top>
 						<left>245</left>
 						<control type="group">
 							<animation effect="fade" end="0">WindowClose</animation>
-							
 							<control type="image">
 								<top>-40</top>
 								<width>1470</width>
@@ -1479,7 +1473,6 @@
 					</control>
 				</control>
 				<!-- Widget -->
-				<animation effect="slide" end="0,195" time="320" tween="cubic" easing="inout" condition="!Skin.HasSetting(centermainmenu1) + !Skin.HasSetting(centermainmenu)">Conditional</animation>
 				<control type="group">
 					<top>$SKINSHORTCUTS[top]</top>
 					<control type="panel" id="8011$SKINSHORTCUTS[id]">
@@ -1666,7 +1659,7 @@
 					<control type="group">
 						<visible>Control.HasFocus(8011$SKINSHORTCUTS[id])</visible>
 						<animation effect="slide" end="0,950" condition="!String.IsEqual(Skin.String(MainMenu.Layout),vertical) + Skin.HasSetting(centermainmenu)">Conditional</animation>
-						<animation effect="slide" end="0,900" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">Conditional</animation>
+						<animation effect="slide" end="0,677" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">Conditional</animation>
 						<top>90</top>
 						<left>40</left>
 						<control type="group">
@@ -1730,7 +1723,6 @@
 						</include>
 					</control>
 				</control>
-				<animation effect="slide" end="0,195" time="320" tween="cubic" easing="inout" condition="!Skin.HasSetting(centermainmenu1) + !Skin.HasSetting(centermainmenu)">Conditional</animation>
 				<!-- Widget -->
 				<control type="group">
 					<top>$SKINSHORTCUTS[top]</top>
@@ -2599,7 +2591,7 @@
 					<visible>Integer.IsGreater(Container(8021$SKINSHORTCUTS[id]).NumItems,0)</visible>
 					<control type="group">
 						<visible>ControlGroup(90020).HasFocus + !Window.IsVisible(shutdownmenu) + !Window.IsVisible(favourites) + !Window.IsVisible(numericinput) + !Window.IsVisible(busydialog)</visible>
-						<animation effect="slide" end="10,0" time="320" tween="cubic" easing="inout" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + String.Contains(Container(9000).ListItem.Property(widgetStyle.2),Extended) + ControlGroup(90020).HasFocus">Conditional</animation>
+						<animation effect="slide" end="-410,0" time="320" tween="cubic" easing="inout" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + String.Contains(Container(9000).ListItem.Property(widgetStyle.2),Extended) + ControlGroup(90020).HasFocus">Conditional</animation>
 						<!-- Info -->
 						<control type="group">
 							<animation effect="fade" end="0">WindowClose</animation>
@@ -2629,7 +2621,7 @@
 					</control>
 					<control type="group">
 						<left>$SKINSHORTCUTS[panelleft]</left>
-						<animation effect="slide" end="10,0" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + String.Contains(Container(9000).ListItem.Property(widgetStyle.2),Extended)">Conditional</animation>
+						<animation effect="slide" end="-410,0" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + String.Contains(Container(9000).ListItem.Property(widgetStyle.2),Extended)">Conditional</animation>
 						<control type="group">
 							<left>-21</left>
 							<top>-16</top>
@@ -2726,10 +2718,10 @@
 						<effect type="fade" start="100" end="0" time="300" tween="sine" easing="inout" />
 					</animation>
 					<animation type="Conditional" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + String.Contains(Container(9000).ListItem.Property(widgetStyle.2),Extended) + !Control.HasFocus(8021$SKINSHORTCUTS[id]) + $SKINSHORTCUTS[rotatetrue]">
-						<effect type="rotatey" start="0" end="750" center="1280" time="400" tween="sine" easing="inout" />
+						<effect type="rotatey" start="0" end="-180" center="1280" time="400" tween="sine" easing="inout" />
 						<effect type="fade" start="100" end="0" time="300" tween="sine" easing="inout" />
 					</animation>
-					<animation effect="slide" end="10,0" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + String.Contains(Container(9000).ListItem.Property(widgetStyle.2),Extended)">Conditional</animation>
+					<animation effect="slide" end="-410,0" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + String.Contains(Container(9000).ListItem.Property(widgetStyle.2),Extended)">Conditional</animation>
 					<include content="$SKINSHORTCUTS[containercontent]">
 						<param name="id">8021$SKINSHORTCUTS[id]</param>
 						<param name="Texture">$SKINSHORTCUTS[artwork]</param>
@@ -2807,12 +2799,11 @@
 					<control type="group">
 						<visible>Control.HasFocus(8021$SKINSHORTCUTS[id])</visible>
 						<animation effect="slide" end="0,-950" condition="!String.IsEqual(Skin.String(MainMenu.Layout),vertical) + Skin.HasSetting(centermainmenu)">Conditional</animation>
-						<animation effect="slide" end="0,-900" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">Conditional</animation>
+						<animation effect="slide" end="0,-697" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">Conditional</animation>
 						<top>449</top>
 						<left>245</left>
 						<control type="group">
 							<animation effect="fade" end="0">WindowClose</animation>
-							
 							<control type="image">
 								<top>-40</top>
 								<width>1470</width>
@@ -2874,7 +2865,6 @@
 					</control>
 				</control>
 				<!-- Widget -->
-				<animation effect="slide" end="0,-10" time="320" tween="cubic" easing="inout" condition="!Skin.HasSetting(centermainmenu2) + !Skin.HasSetting(centermainmenu)">Conditional</animation>
 				<control type="group">
 					<animation effect="slide" end="0,-20" condition="$SKINSHORTCUTS[widgetsquare]">Conditional</animation>
 					<top>$SKINSHORTCUTS[top]</top>
@@ -3063,12 +3053,11 @@
 					<control type="group">
 						<visible>Control.HasFocus(8021$SKINSHORTCUTS[id])</visible>
 						<animation effect="slide" end="0,-950" condition="!String.IsEqual(Skin.String(MainMenu.Layout),vertical) + Skin.HasSetting(centermainmenu)">Conditional</animation>
-						<animation effect="slide" end="0,-1050" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">Conditional</animation>
+						<animation effect="slide" end="0,-697" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">Conditional</animation>
 						<top>449</top>
 						<left>40</left>
 						<control type="group">
 							<animation effect="fade" end="0">WindowClose</animation>
-							
 							<control type="image">
 								<top>-40</top>
 								<width>1890</width>
@@ -3129,7 +3118,6 @@
 						</include>
 					</control>
 				</control>
-				<animation effect="slide" end="0,-10" time="320" tween="cubic" easing="inout" condition="!Skin.HasSetting(centermainmenu2) + !Skin.HasSetting(centermainmenu)">Conditional</animation>
 				<!-- Widget -->
 				<control type="group">
 					<animation effect="slide" end="0,-20" condition="$SKINSHORTCUTS[widgetsquare]">Conditional</animation>
@@ -3318,12 +3306,11 @@
 					<control type="group">
 						<visible>Control.HasFocus(8021$SKINSHORTCUTS[id])</visible>
 						<animation effect="slide" end="0,-950" condition="!String.IsEqual(Skin.String(MainMenu.Layout),vertical) + Skin.HasSetting(centermainmenu)">Conditional</animation>
-						<animation effect="slide" end="0,-977" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">Conditional</animation>
+						<animation effect="slide" end="0,-697" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">Conditional</animation>
 						<top>449</top>
 						<left>245</left>
 						<control type="group">
 							<animation effect="fade" end="0">WindowClose</animation>
-							
 							<control type="image">
 								<top>-40</top>
 								<width>1470</width>
@@ -3384,7 +3371,6 @@
 					</control>
 				</control>
 				<!-- Widget -->
-				<animation effect="slide" end="0,-10" time="320" tween="cubic" easing="inout" condition="!Skin.HasSetting(centermainmenu2) + !Skin.HasSetting(centermainmenu)">Conditional</animation>
 				<control type="group">
 					<top>$SKINSHORTCUTS[top]</top>
 					<control type="panel" id="8021$SKINSHORTCUTS[id]">
@@ -3572,12 +3558,11 @@
 					<control type="group">
 						<visible>Control.HasFocus(8021$SKINSHORTCUTS[id])</visible>
 						<animation effect="slide" end="0,-950" condition="!String.IsEqual(Skin.String(MainMenu.Layout),vertical) + Skin.HasSetting(centermainmenu)">Conditional</animation>
-						<animation effect="slide" end="0,-900" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">Conditional</animation>
+						<animation effect="slide" end="0,-697" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">Conditional</animation>
 						<top>449</top>
 						<left>40</left>
 						<control type="group">
 							<animation effect="fade" end="0">WindowClose</animation>
-							
 							<control type="image">
 								<top>-40</top>
 								<width>1890</width>
@@ -3638,7 +3623,6 @@
 					</control>
 				</control>
 				<!-- Widget -->
-				<animation effect="slide" end="0,-10" time="320" tween="cubic" easing="inout" condition="!Skin.HasSetting(centermainmenu2) + !Skin.HasSetting(centermainmenu)">Conditional</animation>
 				<control type="group">
 					<top>$SKINSHORTCUTS[top]</top>
 					<control type="panel" id="8021$SKINSHORTCUTS[id]">
@@ -4446,7 +4430,7 @@
 		<controls>
 			<item>
 				<label>$LOCALIZE[31909]</label>
-				<icon/>
+				<icon />
 				<visible>!Weather.IsFetched</visible>
 			</item>
 			<item>
@@ -4528,7 +4512,7 @@
 		<controls>
 			<item>
 				<label>$LOCALIZE[31909]</label>
-				<icon/>
+				<icon />
 				<visible>!Weather.IsFetched</visible>
 			</item>
 			<item>
@@ -4550,7 +4534,7 @@
 		<controls>
 			<item>
 				<label>$LOCALIZE[31909]</label>
-				<icon/>
+				<icon />
 				<visible>!Weather.IsFetched</visible>
 			</item>
 			<item>
