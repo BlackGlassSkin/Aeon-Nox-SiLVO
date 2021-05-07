@@ -82,7 +82,7 @@
 							<include>VisibleFadeAnimation</include>
 						</control>
 						<control type="group">
-							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(3)">Conditional</animation>
+							<animation effect="fade" start="100" end="70" time="30" tween="sine" easing="inout" condition="!Control.HasFocus(3)">Conditional</animation>
 							<control type="image">
 								<width>60</width>
 								<height>60</height>

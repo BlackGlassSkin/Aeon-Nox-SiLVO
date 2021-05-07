@@ -74,8 +74,9 @@
 		</control>
 		<control type="image">
 			<top>5</top>
-			<width>330</width>
-			<height>100</height>
+			<width>250</width>
+			<height>85</height>
+			<left>45</left>
 			<aspectratio>keep</aspectratio>
 			<texture>aeon-nox-logo.png</texture>
 		</control>

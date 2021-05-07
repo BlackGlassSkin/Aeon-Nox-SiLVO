@@ -247,6 +247,13 @@
 						<height>810</height>
 						<onleft>9000</onleft>
 						<visible>Container(9000).HasFocus(1)</visible>
+						<control type="radiobutton" id="1008">
+							<include>SettingsButtonCommonValues</include>
+							<label>Enable Colored Settin's Icon</label>
+							<onclick>Skin.ToggleSetting(Enable.SetColoredSettings)</onclick>
+							<selected>!Skin.HasSetting(Enable.SetColoredSettings)</selected>
+							<visible>System.HasAddon(script.artistslideshow)</visible>
+						</control>
 						<control type="radiobutton" id="1009">
 							<include>SettingsButtonCommonValues</include>
 							<label>$LOCALIZE[31154]</label>
