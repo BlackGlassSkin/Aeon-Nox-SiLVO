@@ -1681,7 +1681,7 @@
 							<control type="group">
 								<include condition="!$SKINSHORTCUTS[widgetsquare]">InfoPosterContent</include>
 								<include content="InfoTextContent" condition="!$SKINSHORTCUTS[widgetsquare]">
-									<param name="left">225</param>
+									<param name="left">235</param>
 									<param name="width">1605</param>
 								</include>
 							</control>
@@ -3079,7 +3079,7 @@
 							<control type="group">
 								<include condition="!$SKINSHORTCUTS[widgetsquare]">InfoPosterContent</include>
 								<include content="InfoTextContent" condition="!$SKINSHORTCUTS[widgetsquare]">
-									<param name="left">225</param>
+									<param name="left">231</param>
 									<param name="width">1605</param>
 								</include>
 							</control>
@@ -3588,7 +3588,7 @@
 							<control type="group">
 								<include condition="!$SKINSHORTCUTS[widgetsquare]">InfoPosterContent</include>
 								<include content="InfoTextContent" condition="!$SKINSHORTCUTS[widgetsquare]">
-									<param name="left">225</param>
+									<param name="left">235</param>
 									<param name="width">1605</param>
 								</include>
 							</control>

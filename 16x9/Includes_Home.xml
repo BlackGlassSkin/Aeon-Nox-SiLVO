@@ -351,7 +351,7 @@
 			<animation effect="slide" end="-480,0" time="240">WindowClose</animation>
 			<animation effect="slide" start="-480,0" end="0,0" delay="300" time="240" condition="!Window.Previous(startup)">WindowOpen</animation>
 			<animation effect="slide" start="-480,0" end="0,0" delay="800" time="480" condition="Window.Previous(startup)">WindowOpen</animation>
-			<animation effect="slide" end="-410,0" time="320" tween="cubic" easing="inout" condition="$EXP[HasVerticalMenuWithExtended]">Conditional</animation>
+			<animation effect="slide" end="-426,0" time="320" tween="cubic" easing="inout" condition="$EXP[HasVerticalMenuWithExtended]">Conditional</animation>
 			<control type="group">
 				<width>455</width>
 				<height>1080</height>
@@ -364,6 +364,13 @@
 					<texture colordiffuse="$VAR[ThemeHomeMenuBarColor]" border="40">mediamenu_back_white.png</texture>
 					<animation effect="fade" start="100" end="80" condition="true">Conditional</animation>
 					<visible>!String.IsEmpty(Skin.String(ThemeHomeMenuBarColor)) + !String.IsEqual(Skin.String(ThemeHomeMenuBarColor),None)</visible>
+				</control>
+				<control type="image">
+				    <left>425</left>
+				    <width>25</width>
+				    <height>1090</height>
+					<texture colordiffuse="CC595959" border="2">custom/home/menu_help.png</texture>
+					<animation effect="fade" start="100" end="80" condition="true">Conditional</animation>
 				</control>
 			</control>
 			<control type="button">

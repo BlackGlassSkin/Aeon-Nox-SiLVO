@@ -63,8 +63,21 @@
 			<left>$PARAM[left]</left>
 			<top>-2</top>
 			<width>$PARAM[width]</width>
-			<height>312</height>
+			<height>320</height>
 			<itemgap>10</itemgap>
+			<!-- Guide Progress -->
+			<control type="group">
+				<control type="progress">
+					<top>170</top>
+					<width>420</width>
+					<height>11</height>
+					<visible>ListItem.HasEpg</visible>
+					<info>ListItem.Progress</info>
+					<texturebg colordiffuse="FFa1a1a1" border="3">new_pvr/texturebg_border_white.png</texturebg>
+					<midtexture colordiffuse="blue" border="3">new_pvr/texturebg_white.png</midtexture>
+					<animation effect="slide" end="-1105,2" condition="String.IsEqual(HomeWidgetInfoPlotVar)">Conditional</animation>
+				</control>
+			</control>
 			<!-- Title -->
 			<control type="label">
 				<width>$PARAM[width]</width>
@@ -115,12 +128,12 @@
 			<!-- Plot -->
 			<control type="textbox">
 				<width>$PARAM[width]</width>
-				<height>149</height>
+				<height>150</height>
 				<font>font14_textbox</font>
 				<align>justify</align>
 				<textcolor>white2</textcolor>
 				<shadowcolor>shadow</shadowcolor>
-				<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+				<autoscroll time="6663" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 				<label>$VAR[HomeWidgetInfoPlotVar]</label>
 			</control>
 		</control>
