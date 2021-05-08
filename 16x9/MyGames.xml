@@ -29,7 +29,7 @@
 			<visible>!Window.IsActive(addoninformation)</visible>
 			<animation effect="slide" tween="cubic" time="72" start="0,806" end="0,0">VisibleChange</animation>
 			<animation effect="slide" tween="cubic" time="72" start="0,806" end="0,0">WindowOpen</animation>
-			<animation effect="slide" tween="cubic" time="72" end="0,806" start="0,0">WindowClose</animation>
+			<animation effect="slide" tween="cubic" time="0" end="0,806" start="0,0">WindowClose</animation>
 			<top>-30</top>
 			<control type="group">
 				<visible>Control.IsVisible(54)</visible>

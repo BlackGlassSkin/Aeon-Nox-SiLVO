@@ -2904,8 +2904,8 @@
 	<!-- Fullscreen Info -->
 	<include name="FullscreenInfo">
 		<control type="group">
-			<animation effect="fade" end="100" time="">WindowOpen</animation>
-			<animation effect="fade" end="0" time="">WindowClose</animation>
+			<animation effect="fade" end="100" time="0">WindowOpen</animation>
+			<animation effect="fade" end="0" time="0">WindowClose</animation>
 			<control type="image">
 				<left>-5%</left>
 				<top>-30</top>
@@ -3003,7 +3003,7 @@
 				<height>400</height>
 				<texture border="40" colordiffuse="E6FFFFFF">dialogs/default/bg.png</texture>
 				<visible>VideoPlayer.HasInfo + [VideoPlayer.Content(movies) | VideoPlayer.Content(episodes) | VideoPlayer.Content(musicvideos)] | [VideoPlayer.HasInfo + Skin.HasSetting(Enable.RecordingInfo) + Pvr.IsPlayingRecording] | VideoPlayer.HasInfo + Skin.HasSetting(Enable.AddonInfo) + !Pvr.IsPlayingRecording</visible>
-				<animation effect="slide" end="0,-90" time="240" tween="quadratic" condition="Window.IsActive(videoosd) + !Skin.HasSetting(VideoOSDOnTop)">Conditional</animation>
+				<animation effect="slide" end="0,-90" time="0" tween="quadratic" condition="Window.IsActive(videoosd) + !Skin.HasSetting(VideoOSDOnTop)">Conditional</animation>
 			</control>
 			<include condition="VideoPlayer.Content(movies) | VideoPlayer.Content(episodes) | VideoPlayer.Content(musicvideos)">LibraryFullscreenInfo</include>
 			<include condition="VideoPlayer.HasInfo + Skin.HasSetting(Enable.AddonInfo) + ![VideoPlayer.Content(LiveTV) | Pvr.IsPlayingRecording | VideoPlayer.Content(movies) | VideoPlayer.Content(episodes) | VideoPlayer.Content(musicvideos)] | [VideoPlayer.HasInfo + Skin.HasSetting(Enable.RecordingInfo) + Pvr.IsPlayingRecording]">OtherFullscreenInfo</include>
