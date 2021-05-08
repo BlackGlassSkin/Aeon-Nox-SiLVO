@@ -274,6 +274,16 @@
 			<linespacing>0</linespacing>
 			<size>58</size>
 		</font>
+		<!-- MainMenu Font -->
+		<!-- dialogpvrinfotitle -->
+		<font>
+			<name>dialogpvrinfotitle</name>
+			<filename>CaviarDreams.ttf</filename>
+			<style>bold</style>
+			<aspect>0.8</aspect>
+			<size>50</size>
+			<linespacing>1.0</linespacing>
+		</font>
 		<font>
 			<name>font_MainMenu</name>
 			<filename>BebasNeue.ttf</filename>
@@ -576,12 +586,22 @@
 			<linespacing>0</linespacing>
 			<size>50</size>
 		</font>
+		<!-- MainMenu Font -->
+		<!-- dialogpvrinfotitle -->
+		<font>
+			<name>dialogpvrinfotitle</name>
+			<filename>UbuntuCondensed-Regular.ttf</filename>
+			<style>bold</style>
+			<aspect>0.8</aspect>
+			<size>50</size>
+			<linespacing>1.0</linespacing>
+		</font>
 		<font>
 			<name>font_MainMenu</name>
 			<filename>arial.ttf</filename>
 			<linespacing>0</linespacing>
 			<style>uppercase</style>
-			<size>70</size>
+			<size>60</size>
 		</font>
 		<font>
 			<name>font_VerticalMainMenu</name>
@@ -849,12 +869,22 @@
 			<linespacing>0</linespacing>
 			<size>58</size>
 		</font>
+		<!-- MainMenu Font -->
+		<!-- dialogpvrinfotitle -->
+		<font>
+			<name>dialogpvrinfotitle</name>
+			<filename>UbuntuCondensed-Regular.ttf</filename>
+			<style>bold</style>
+			<aspect>0.8</aspect>
+			<size>50</size>
+			<linespacing>1.0</linespacing>
+		</font>
 		<font>
 			<name>font_MainMenu</name>
 			<filename>NotoSans-Regular.ttf</filename>
 			<linespacing>0</linespacing>
 			<style>uppercase</style>
-			<size>95</size>
+			<size>58</size>
 		</font>
 		<font>
 			<name>font_VerticalMainMenu</name>
@@ -1128,12 +1158,22 @@
 			<linespacing>0</linespacing>
 			<size>58</size>
 		</font>
+		<!-- MainMenu Font -->
+		<!-- dialogpvrinfotitle -->
+		<font>
+			<name>dialogpvrinfotitle</name>
+			<filename>UbuntuCondensed-Regular.ttf</filename>
+			<style>bold</style>
+			<aspect>0.8</aspect>
+			<size>50</size>
+			<linespacing>1.0</linespacing>
+		</font>
 		<font>
 			<name>font_MainMenu</name>
 			<filename>Raleway-Medium.ttf</filename>
 			<linespacing>0</linespacing>
 			<style>uppercase</style>
-			<size>112</size>
+			<size>76</size>
 		</font>
 		<font>
 			<name>font_VerticalMainMenu</name>
@@ -1442,12 +1482,22 @@
 			<linespacing>0</linespacing>
 			<size>58</size>
 		</font>
+		<!-- MainMenu Font -->
+		<!-- dialogpvrinfotitle -->
+		<font>
+			<name>dialogpvrinfotitle</name>
+			<filename>UbuntuCondensed-Regular.ttf</filename>
+			<style>bold</style>
+			<aspect>0.8</aspect>
+			<size>50</size>
+			<linespacing>1.0</linespacing>
+		</font>
 		<font>
 			<name>font_MainMenu</name>
 			<filename>UbuntuCondensed-Regular.ttf</filename>
 			<linespacing>0</linespacing>
 			<style>uppercase</style>
-			<size>112</size>
+			<size>76</size>
 		</font>
 		<font>
 			<name>font_VerticalMainMenu</name>
@@ -1720,12 +1770,22 @@
 			<linespacing>0</linespacing>
 			<size>58</size>
 		</font>
+		<!-- MainMenu Font -->
+		<!-- dialogpvrinfotitle -->
+		<font>
+			<name>dialogpvrinfotitle</name>
+			<filename>UbuntuCondensed-Regular.ttf</filename>
+			<style>bold</style>
+			<aspect>0.8</aspect>
+			<size>50</size>
+			<linespacing>1.0</linespacing>
+		</font>
 		<font>
 			<name>font_MainMenu</name>
 			<filename>FiraSans-Regular.ttf</filename>
 			<linespacing>0</linespacing>
 			<style>uppercase</style>
-			<size>95</size>
+			<size>75</size>
 		</font>
 		<font>
 			<name>font_VerticalMainMenu</name>
@@ -2034,11 +2094,21 @@
 			<linespacing>0</linespacing>
 			<size>58</size>
 		</font>
+		<!-- MainMenu Font -->
+		<!-- dialogpvrinfotitle -->
+		<font>
+			<name>dialogpvrinfotitle</name>
+			<filename>UbuntuCondensed-Regular.ttf</filename>
+			<style>bold</style>
+			<aspect>0.8</aspect>
+			<size>50</size>
+			<linespacing>1.0</linespacing>
+		</font>
 		<font>
 			<name>font_MainMenu</name>
 			<filename>CaviarDreams.ttf</filename>
 			<style>uppercase</style>
-			<size>108</size>
+			<size>67</size>
 		</font>
 		<font>
 			<name>font_VerticalMainMenu</name>
@@ -2346,11 +2416,21 @@
 			<linespacing>0</linespacing>
 			<size>58</size>
 		</font>
+		<!-- MainMenu Font -->
+		<!-- dialogpvrinfotitle -->
+		<font>
+			<name>dialogpvrinfotitle</name>
+			<filename>UbuntuCondensed-Regular.ttf</filename>
+			<style>bold</style>
+			<aspect>0.8</aspect>
+			<size>50</size>
+			<linespacing>1.0</linespacing>
+		</font>
 		<font>
 			<name>font_MainMenu</name>
 			<filename>play.regular.ttf</filename>
 			<style>uppercase</style>
-			<size>116</size>
+			<size>78</size>
 		</font>
 		<font>
 			<name>font_VerticalMainMenu</name>
