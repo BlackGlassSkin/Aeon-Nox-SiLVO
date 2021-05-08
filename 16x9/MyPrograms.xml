@@ -39,8 +39,8 @@
 			<visible>Control.IsVisible(54) | Control.IsVisible(52) | Control.IsVisible(500) | Control.IsVisible(57) | Control.IsVisible(503)</visible>
 			<visible>!Window.IsActive(addoninformation)</visible>
 			<animation effect="slide" tween="cubic" time="720" start="0,806" end="0,0">VisibleChange</animation>
-			<animation effect="slide" tween="cubic" time="720" start="0,806" end="0,0">WindowOpen</animation>
-			<animation effect="slide" tween="cubic" time="720" end="0,806" start="0,0">WindowClose</animation>
+			<animation effect="slide" tween="cubic" time="0">WindowOpen</animation>
+			<animation effect="slide" tween="cubic" time="0">WindowClose</animation>
 			<animation effect="slide" end="0,20" condition="Control.IsVisible(503)">Conditional</animation>
 			<top>-30</top>
 			<control type="group">

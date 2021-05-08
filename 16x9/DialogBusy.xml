@@ -6,8 +6,8 @@
 			<control type="image">
 				<include>FullscreenDimensions</include>
 				<texture border="1" colordiffuse="D9FFFFFF">black.png</texture>
-				<animation effect="fade" time="300">WindowOpen</animation>
-				<animation effect="fade" time="300">WindowClose</animation>
+				<animation effect="fade" time="0">WindowOpen</animation>
+				<animation effect="fade" time="0">WindowClose</animation>
 			</control>
 			<control type="progress" id="10">
 				<description>progress control</description>

@@ -369,7 +369,7 @@
 					<control type="group">
 						<visible>ListItem.IsCollection + ![Container.OnNext | Container.OnPrevious]</visible>
 						<animation effect="fade" time="140" delay="100">Visible</animation>
-						<animation effect="fade" time="140" delay="600">WindowOpen</animation>
+						<animation effect="fade" time="0">WindowOpen</animation>
 						<left>450</left>
 						<top>997</top>
 						<control type="group">
@@ -1068,7 +1068,7 @@
 					<visible>ListItem.IsCollection</visible>
 					<animation effect="fade" time="140" delay="100">Visible</animation>
 					<animation effect="fade" time="140">Hidden</animation>
-					<animation effect="fade" time="140" delay="600">WindowOpen</animation>
+					<animation effect="fade" time="0">WindowOpen</animation>
 					<control type="group">
 						<top>995</top>
 						<visible>[[Control.IsVisible(52) + Container.Content(movies) + !String.IsEqual(Skin.String(52.Movies.ViewFlags),$LOCALIZE[1223])] | [Control.IsVisible(52) + Container.Content(tvshows) + !String.IsEqual(Skin.String(52.TV.ViewFlags),$LOCALIZE[1223])] | [Control.IsVisible(52) + Container.Content(episodes) + !String.IsEqual(Skin.String(52.Episodes.ViewFlags),$LOCALIZE[1223])] | [Control.IsVisible(53) + [Container.Content(movies) | Container.Content(sets)] + !String.IsEqual(Skin.String(53.Movies.ViewFlags),$LOCALIZE[1223])] | [Control.IsVisible(53) + Container.Content(tvshows) + !String.IsEqual(Skin.String(53.TV.ViewFlags),$LOCALIZE[1223])] | [Control.IsVisible(53) + Container.Content(seasons) + !String.IsEqual(Skin.String(53.Seasons.ViewFlags),$LOCALIZE[1223])] | [Control.IsVisible(59) + [Container.Content(movies) | Container.Content(sets)] + !String.IsEqual(Skin.String(59.Movies.ViewFlags),$LOCALIZE[1223])] | [Control.IsVisible(59) + Container.Content(tvshows) + !String.IsEqual(Skin.String(59.TV.ViewFlags),$LOCALIZE[1223])] | [Control.IsVisible(503) + [Container.Content(movies) | Container.Content(sets)] + !String.IsEqual(Skin.String(503.Movies.ViewFlags),$LOCALIZE[1223])] | [Control.IsVisible(503) + Container.Content(tvshows) + !String.IsEqual(Skin.String(503.TV.ViewFlags),$LOCALIZE[1223])] | [Control.IsVisible(503) + Container.Content(seasons) + !String.IsEqual(Skin.String(503.Seasons.ViewFlags),$LOCALIZE[1223])]]</visible>

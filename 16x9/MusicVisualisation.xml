@@ -88,8 +88,8 @@
 			<visible>!String.IsEqual(Skin.String(Viz.Background),1)</visible>
 			<visible>[Visualisation.Enabled + !Skin.HasSetting(HideVisualizationFanart)] | !Visualisation.Enabled</visible>
 			<include>SettingsFadeAnimation</include>
-			<animation effect="fade" time="600">WindowOpen</animation>
-			<animation effect="fade" time="600">WindowClose</animation>
+			<animation effect="fade" time="0">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
 			<include condition="Skin.HasSetting(Enable.AnimatedBackgrounds)">AnimatedBackgroundAnimation</include>
 			<control type="multiimage" id="90300">
 				<fadetime>2000</fadetime>
@@ -840,9 +840,9 @@
 		</control>
 		<!-- RSS Feed: similar artists-->
 		<control type="group">
-			<animation effect="slide" end="1870,0" time="240">WindowClose</animation>
+			<animation effect="slide" end="1870,0" time="0">WindowClose</animation>
 			<animation effect="slide" start="1870" end="0" time="240">VisibleChange</animation>
-			<animation effect="slide" start="1870,0" end="0,0" delay="800" time="480" condition="Window.Previous(startup)">WindowOpen</animation>
+			<animation effect="slide" start="1870,0" end="0,0" delay="800" time="0">WindowOpen</animation>
 			<visible>System.HasAddon(script.artistslideshow) + [!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.ArtistBiography)) | !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.1.AlbumName)) | !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.1.SimilarName))]</visible>
 			<visible>[Player.ShowInfo + Skin.HasSetting(Enable.VizInfo)] | Skin.HasSetting(Enable.VizPersistent)</visible>
 			<top>993</top>

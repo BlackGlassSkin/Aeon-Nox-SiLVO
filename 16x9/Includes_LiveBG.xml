@@ -56,7 +56,7 @@
 		</control>
 		<control type="group">
 			<visible>String.StartsWith(Container(9000).ListItem.Property(background),s:live) + ![String.EndsWith(Container(9000).ListItem.Property(background),i:songs) | String.EndsWith(Container(9000).ListItem.Property(background),i:albums)] | Control.HasFocus(9010) + String.StartsWith(Container(9010).ListItem.Property(background),s:live) + ![String.EndsWith(Container(9010).ListItem.Property(background),i:songs) | String.EndsWith(Container(9010).ListItem.Property(background),i:albums)]</visible>
-			<animation effect="fade" time="600">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowOpen</animation>
 			<animation effect="fade" time="600">VisibleChange</animation>
 			<control type="group">
 				<description>Case 1</description>
@@ -209,7 +209,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<animation effect="fade" time="600">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowOpen</animation>
 			<animation effect="fade" time="600">VisibleChange</animation>
 			<visible>[String.EndsWith(Container(9000).ListItem.Property(background),i:songs) | String.EndsWith(Container(9000).ListItem.Property(background),i:albums)] | [Control.HasFocus(9010) + [String.EndsWith(Container(9010).ListItem.Property(background),i:songs) | String.EndsWith(Container(9010).ListItem.Property(background),i:albums)]]</visible>
 			<control type="group">
@@ -350,7 +350,7 @@
 	<include name="LiveBackgroundSets">
 		<control type="group">
 			<visible>ListItem.IsCollection</visible>
-			<animation effect="fade" time="600">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowOpen</animation>
 			<animation effect="fade" time="600">Visible</animation>
 			<control type="group">
 				<description>Case 10</description>

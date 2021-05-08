@@ -3,8 +3,8 @@
 	<include name="FullScreenInfoBarLiveTV">
 		<control type="group">
 			<animation effect="slide" end="0,-80" time="240" tween="quadratic" condition="!Skin.HasSetting(VideoOSDOnTop) + Window.IsActive(videoosd)">Conditional</animation>
-			<animation effect="fade" start="0" end="100" time="400" condition="!Player.Paused">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="400" condition="!Player.Paused">WindowClose</animation>
+			<animation effect="fade" start="0" end="100" time="0">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 			<!-- Main background -->
 			<control type="image">
 				<top>778</top>

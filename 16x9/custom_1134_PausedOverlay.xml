@@ -7,8 +7,8 @@
 			<include>FullscreenDimensions</include>
 			<colordiffuse>8CFFFFFF</colordiffuse>
 			<texture border="1">black.png</texture>
-			<animation effect="fade" time="320">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="fade" time="0">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
 		</control>
 		<control type="group">
 			<animation type="WindowOpen" reversible="false">

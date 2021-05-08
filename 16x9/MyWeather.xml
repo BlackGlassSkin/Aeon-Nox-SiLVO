@@ -1768,7 +1768,7 @@
                 </control>
                 <control type="spincontrolex" id="3">
                     <description>change location button</description>
-                    <font/>
+                    <font />
                     <include>ButtonCommonValues</include>
                 </control>
                 <control type="button" id="2001">

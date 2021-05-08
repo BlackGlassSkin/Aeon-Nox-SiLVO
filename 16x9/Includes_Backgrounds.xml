@@ -2,9 +2,9 @@
 <includes>
 	<include name="CommonBackground">
 		<control type="group">
-			<animation effect="fade" time="10" delay="40" condition="Window.Previous(home)">WindowOpen</animation>
-			<animation effect="fade" time="10" condition="!Window.Previous(home)">WindowOpen</animation>
-			<animation effect="fade" time="10">WindowClose</animation>
+			<animation effect="fade" time="0">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
 			<include condition="Window.IsActive(Home)">HomeFanart</include>
 			<include condition="Window.IsActive(Home)">LiveCasesBackground</include>
 			<include condition="!Window.IsActive(Home)">GlobalFanart</include>
@@ -207,7 +207,7 @@
 		<control type="group">
 			<include>FullscreenDimensions</include>
 			<include condition="Skin.HasSetting(Enable.AnimatedBackgrounds)">AnimatedBackgroundAnimation</include>
-			<animation effect="fade" time="20">WindowClose</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
 			<control type="image">
 				<texture background="true" fallback="special://skin/backgrounds/fallback_movies.jpg">$INFO[Skin.String(CustomDefaultBackground.path)]</texture>
 				<aspectratio>scale</aspectratio>
@@ -535,7 +535,7 @@
 			<fadetime>600</fadetime>
 			<animation effect="fade" time="60">Visible</animation>
 			<animation effect="fade" time="60">Hidden</animation>
-			<animation effect="fade" time="20">WindowClose</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
 			<include condition="Skin.HasSetting(Enable.AnimatedBackgrounds)">AnimatedBackgroundAnimation</include>
 		</control>
 	</include>
@@ -546,7 +546,7 @@
 			<fadetime>600</fadetime>
 			<animation effect="fade" time="60">Visible</animation>
 			<animation effect="fade" time="60">Hidden</animation>
-			<animation effect="fade" time="20">WindowClose</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
 			<include condition="Skin.HasSetting(Enable.AnimatedBackgrounds)">AnimatedBackgroundAnimation</include>
 		</control>
 	</include>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include name="WindowOpenCloseAnimation">
-		<animation effect="slide" tween="cubic" time="10" start="0,1080" end="0,0">WindowOpen</animation>
-		<animation effect="slide" tween="cubic" time="0" end="0,1080" start="0,0">WindowClose</animation>
+		<animation effect="slide" tween="cubic" time="0">WindowOpen</animation>
+		<animation effect="slide" tween="cubic" time="0">WindowClose</animation>
 	</include>
 	<include name="DialogOpenCloseAnimation">
 		<animation type="WindowOpen" reversible="false">
@@ -23,8 +23,8 @@
 		<animation effect="fade" time="5">Hidden</animation>
 	</include>
 	<include name="WindowSettingsFadeAnimation">
-		<animation effect="fade" time="25" delay="10">WindowOpen</animation>
-		<animation effect="fade" time="5">WindowClose</animation>
+		<animation effect="fade" time="0">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</include>
 	<include name="ViewAnimation">
 		<animation effect="fade" time="36">Visible</animation>

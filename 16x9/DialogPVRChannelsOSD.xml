@@ -3,8 +3,8 @@
 	<defaultcontrol always="true">11</defaultcontrol>
 	<controls>
 		<control type="group">
-			<animation effect="fade" start="0" end="100" time="300" easing="out">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="300" easing="in">WindowClose</animation>
+			<animation effect="fade" start="0" end="100" time="0">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 			<visible>!Window.IsActive(fullscreeninfo) + !Window.IsActive(visualisation)</visible>
 			<left>60</left>
 			<top>47.5</top>

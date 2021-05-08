@@ -21,15 +21,15 @@
 		<control type="image">
 			<include>FullscreenDimensions</include>
 			<texture border="1" colordiffuse="D9FFFFFF">black.png</texture>
-			<animation effect="fade" time="100">WindowOpen</animation>
-			<animation effect="fade" time="50">WindowClose</animation>
+			<animation effect="fade" time="0">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
 			<visible>!Window.IsVisible(addoninformation)</visible>
 		</control>
 		<control type="group">
 			<animation effect="slide" end="245,-20" condition="Window.IsActive(addoninformation)">Conditional</animation>
 			<include condition="String.IsEmpty(Window(Home).Property(AddonNews))">DialogOpenCloseAnimation</include>
-			<animation effect="fade" time="100" delay="200" condition="!String.IsEmpty(Window(Home).Property(AddonNews))">WindowOpen</animation>
-			<animation effect="fade" time="50" condition="!String.IsEmpty(Window(Home).Property(AddonNews))">WindowClose</animation>
+			<animation effect="fade" time="0">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
 			<left>270</left>
 			<top>88</top>
 			<control type="image">

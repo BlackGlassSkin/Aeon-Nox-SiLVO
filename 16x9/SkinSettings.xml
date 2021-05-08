@@ -10,9 +10,9 @@
 	<onunload condition="String.IsEmpty(Skin.String(FanartTimePerImage))">RunScript(script.grab.fanart,mode=random,refresh=7)</onunload>
 	<controls>
 		<control type="group">
-			<animation effect="fade" time="500" delay="400" condition="Window.Previous(home)">WindowOpen</animation>
-			<animation effect="fade" time="500" condition="!Window.Previous(home)">WindowOpen</animation>
-			<animation effect="fade" time="500">WindowClose</animation>
+			<animation effect="fade" time="0">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
 			<include>GlobalFanart</include>
 			<include>SnowBackground</include>
 			<control type="visualisation">

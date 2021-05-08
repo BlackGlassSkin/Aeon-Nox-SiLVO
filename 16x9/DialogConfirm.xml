@@ -9,8 +9,8 @@
 		<control type="image">
 			<include>FullscreenDimensions</include>
 			<texture colordiffuse="AAFFFFFF">black.png</texture>
-			<animation effect="fade" time="300">WindowOpen</animation>
-			<animation effect="fade" time="300">WindowClose</animation>
+			<animation effect="fade" time="0">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
 		</control>
 		<control type="group">
 			<left>502</left>
