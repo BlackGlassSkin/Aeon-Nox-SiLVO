@@ -273,7 +273,7 @@
 								<font>font14_textbox</font>
 								<textcolor>$VAR[ThemeLabelColor]</textcolor>
 								<shadowcolor>shadow</shadowcolor>
-								<autoscroll time="3500" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+								<autoscroll time="3500" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 								<visible>!Container.Content(artists)</visible>
 								<visible>!ListItem.IsCollection</visible>
 							</control>
@@ -284,7 +284,7 @@
 								<label>$VAR[MusicPlotVar]</label>
 								<shadowcolor>shadow</shadowcolor>
 								<font>font14_textbox</font>
-								<autoscroll time="3500" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+								<autoscroll time="3500" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 								<visible>[Container.Content(artists) | Container.Content(albums)]</visible>
 							</control>
 							<control type="image">

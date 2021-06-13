@@ -299,10 +299,10 @@
 										<shadowcolor>shadow</shadowcolor>
 										<label>$VAR[NextAiredSubLabelVar]</label>
 										<textoffsetx>30</textoffsetx>
-										<animation effect="fade" time="250" delay="300" reversible="false" condition="!Container(52).OnNext + !Container(52).OnPrevious">Conditional</animation>
-										<animation effect="fade" time="250" delay="300" reversible="false" condition="!Container(53).OnNext + !Container(53).OnPrevious">Conditional</animation>
-										<animation effect="fade" time="250" delay="300" reversible="false" condition="!Container(503).OnNext + !Container(503).OnPrevious">Conditional</animation>
-										<animation effect="fade" time="250" delay="300" reversible="false">Visible</animation>
+										<animation effect="fade" time="250" delay="0" reversible="false" condition="!Container(52).OnNext + !Container(52).OnPrevious">Conditional</animation>
+										<animation effect="fade" time="250" delay="0" reversible="false" condition="!Container(53).OnNext + !Container(53).OnPrevious">Conditional</animation>
+										<animation effect="fade" time="250" delay="0" reversible="false" condition="!Container(503).OnNext + !Container(503).OnPrevious">Conditional</animation>
+										<animation effect="fade" time="250" delay="0" reversible="false">Visible</animation>
 										<visible>String.IsEmpty(Window(Home).Property(TMDbHelper.IsUpdating))</visible>
 									</control>
 								</control>
@@ -368,8 +368,8 @@
 					<!-- SETS -->
 					<control type="group">
 						<visible>ListItem.IsCollection + ![Container.OnNext | Container.OnPrevious]</visible>
-						<animation effect="fade" time="140" delay="100">Visible</animation>
-						<animation effect="fade" time="0">WindowOpen</animation>
+						<animation effect="fade" time="140" delay="0">Visible</animation>
+						<animation effect="fade" time="0" delay="0">WindowOpen</animation>
 						<left>450</left>
 						<top>997</top>
 						<control type="group">
@@ -465,7 +465,7 @@
 									<height>88</height>
 									<font>font14_textbox2</font>
 									<label>[B]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Title)][/B]</label>
-									<autoscroll time="2500" delay="2500" repeat="3000">true</autoscroll>
+									<autoscroll time="2500" delay="3333" repeat="3000">true</autoscroll>
 									<visible>!Control.IsVisible(57)</visible>
 								</control>
 							</control>
@@ -490,12 +490,12 @@
 									<font>font13_bold</font>
 									<label>$VAR[NextAiredSubLabelVar]</label>
 									<textoffsetx>30</textoffsetx>
-									<animation effect="fade" time="250" delay="300" reversible="false" condition="!Container(57).OnNext + !Container(57).OnPrevious">Conditional</animation>
-									<animation effect="fade" time="250" delay="300" reversible="false" condition="!Container(58).OnNext + !Container(58).OnPrevious">Conditional</animation>
-									<animation effect="fade" time="250" delay="300" reversible="false" condition="!Container(499).OnNext + !Container(499).OnPrevious">Conditional</animation>
-									<animation effect="fade" time="250" delay="300" reversible="false" condition="!Container(500).OnNext + !Container(500).OnPrevious">Conditional</animation>
-									<animation effect="fade" time="250" delay="300" reversible="false" condition="!Container(601).OnNext + !Container(601).OnPrevious">Conditional</animation>
-									<animation effect="fade" time="250" delay="300" reversible="false">Visible</animation>
+									<animation effect="fade" time="250" delay="0" reversible="false" condition="!Container(57).OnNext + !Container(57).OnPrevious">Conditional</animation>
+									<animation effect="fade" time="250" delay="0" reversible="false" condition="!Container(58).OnNext + !Container(58).OnPrevious">Conditional</animation>
+									<animation effect="fade" time="250" delay="0" reversible="false" condition="!Container(499).OnNext + !Container(499).OnPrevious">Conditional</animation>
+									<animation effect="fade" time="250" delay="0" reversible="false" condition="!Container(500).OnNext + !Container(500).OnPrevious">Conditional</animation>
+									<animation effect="fade" time="250" delay="0" reversible="false" condition="!Container(601).OnNext + !Container(601).OnPrevious">Conditional</animation>
+									<animation effect="fade" time="250" delay="0" reversible="false">Visible</animation>
 									<visible>String.IsEmpty(Window(Home).Property(TMDbHelper.IsUpdating))</visible>
 								</control>
 							</control>
@@ -732,6 +732,7 @@
 								<control type="group">
 									<left>120</left>
 									<width>160</width>
+									<visible>!Control.IsVisible(50)</visible>
 									<control type="image" id="912">
 										<width>160</width>
 										<include>MediaFlagValues</include>
@@ -749,108 +750,111 @@
 										<visible>String.IsEmpty(Control.GetLabel(912))</visible>
 									</control>
 								</control>
-								<control type="image">
-									<left>280</left>
-									<include>MediaFlagValues</include>
-									<texture fallback="flags/default/mpaa/NR.png">$VAR[MediaFlagsPathVar]/mpaa/$VAR[RatingFlagVar]</texture>
-									<visible>!String.StartsWith(Container.FolderPath,plugin://)</visible>
-								</control>
-								<control type="image">
-									<left>440</left>
-									<include>MediaFlagValues</include>
-									<texture>$VAR[MediaFlagsPathVar]/resolution/$INFO[ListItem.VideoResolution].png</texture>
-								</control>
-								<control type="image">
-									<left>555</left>
-									<top>-15</top>
-									<width>35</width>
-									<include>MediaFlagValues</include>
-									<texture>$VAR[MediaFlagsPathVar]/hdr.png</texture>
-									<visible>String.Contains(ListItem.Filename,hdr)</visible>
-									<animation effect="slide" end="10,1" condition="!Skin.HasSetting(coloredflags)">Conditional</animation>
-								</control>
-								<control type="image">
-									<left>600</left>
-									<include>MediaFlagValues</include>
-									<texture>$VAR[MediaFlagsPathVar]/videocodec/$VAR[SourceFlagVar]</texture>
-								</control>
-								<control type="image">
-									<left>760</left>
-									<include>MediaFlagValues</include>
-									<texture>$VAR[MediaFlagsPathVar]/aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
-								</control>
-								<control type="image">
-									<left>920</left>
-									<include>MediaFlagValues</include>
-									<texture>$VAR[MediaFlagsPathVar]/audiocodec/$VAR[AudioCodecFlagVar]</texture>
-								</control>
-								<control type="image">
-									<left>1080</left>
-									<include>MediaFlagValues</include>
-									<texture>$VAR[MediaFlagsPathVar]/audiochannels/$INFO[ListItem.AudioChannels,,.png]</texture>
-								</control>
-								<control type="grouplist">
-									<left>1205</left>
-									<top>10</top>
-									<height>90</height>
-									<width>35</width>
-									<itemgap>-5</itemgap>
-									<visible>String.IsEqual(Skin.String(LanguageFlags),1) | String.IsEqual(Skin.String(LanguageFlags),3)</visible>
+								<control type="group">
+									<animation effect="slide" end="-160" condition="Control.IsVisible(50)">Conditional</animation>
 									<control type="image">
-										<width>30</width>
-										<height>30</height>
-										<aspectratio>keep</aspectratio>
-										<colordiffuse>grey</colordiffuse>
-										<texture>flags/audio.png</texture>
-										<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.1)) | [!String.IsEmpty(ListItem.Property(AudioLanguage.2)) + !String.IsEqual(ListItem.Property(AudioLanguage.1),ListItem.Property(AudioLanguage.2))]</visible>
+										<left>280</left>
+										<include>MediaFlagValues</include>
+										<texture fallback="flags/default/mpaa/NR.png">$VAR[MediaFlagsPathVar]/mpaa/$VAR[RatingFlagVar]</texture>
+										<visible>!String.StartsWith(Container.FolderPath,plugin://)</visible>
 									</control>
 									<control type="image">
-										<width>30</width>
-										<height>30</height>
-										<aspectratio>keep</aspectratio>
-										<colordiffuse>grey</colordiffuse>
-										<texture>$VAR[PathFlagsLanguage]$INFO[ListItem.Property(AudioLanguage.1),,.png]</texture>
-										<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
+										<left>440</left>
+										<include>MediaFlagValues</include>
+										<texture>$VAR[MediaFlagsPathVar]/resolution/$INFO[ListItem.VideoResolution].png</texture>
 									</control>
 									<control type="image">
-										<width>30</width>
-										<height>30</height>
-										<aspectratio>keep</aspectratio>
-										<colordiffuse>grey</colordiffuse>
-										<texture>$VAR[PathFlagsLanguage]$INFO[ListItem.Property(AudioLanguage.2),,.png]</texture>
-										<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.2)) + [!String.IsEqual(ListItem.Property(AudioLanguage.1),ListItem.Property(AudioLanguage.2))]</visible>
-									</control>
-								</control>
-								<control type="grouplist">
-									<left>1235</left>
-									<top>10</top>
-									<height>90</height>
-									<width>35</width>
-									<itemgap>-5</itemgap>
-									<visible>[!String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) | !String.IsEmpty(ListItem.Property(SubtitleLanguage.2))] + [String.IsEqual(Skin.String(LanguageFlags),2) | String.IsEqual(Skin.String(LanguageFlags),3)]</visible>
-									<control type="image">
-										<width>30</width>
-										<height>30</height>
-										<aspectratio>keep</aspectratio>
-										<colordiffuse>grey</colordiffuse>
-										<texture>flags/subtitles.png</texture>
-										<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) | [!String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + !String.IsEqual(ListItem.Property(SubtitleLanguage.1),ListItem.Property(SubtitleLanguage.2))]</visible>
+										<left>555</left>
+										<top>-15</top>
+										<width>35</width>
+										<include>MediaFlagValues</include>
+										<texture>$VAR[MediaFlagsPathVar]/hdr.png</texture>
+										<visible>String.Contains(ListItem.Filename,hdr)</visible>
+										<animation effect="slide" end="10,1" condition="!Skin.HasSetting(coloredflags)">Conditional</animation>
 									</control>
 									<control type="image">
-										<width>30</width>
-										<height>30</height>
-										<aspectratio>keep</aspectratio>
-										<colordiffuse>grey</colordiffuse>
-										<texture>$VAR[PathFlagsLanguage]$INFO[ListItem.Property(SubtitleLanguage.1),,.png]</texture>
-										<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.1))</visible>
+										<left>600</left>
+										<include>MediaFlagValues</include>
+										<texture>$VAR[MediaFlagsPathVar]/videocodec/$VAR[SourceFlagVar]</texture>
 									</control>
 									<control type="image">
-										<width>30</width>
-										<height>30</height>
-										<aspectratio>keep</aspectratio>
-										<colordiffuse>grey</colordiffuse>
-										<texture>$VAR[PathFlagsLanguage]$INFO[ListItem.Property(SubtitleLanguage.2),,.png]</texture>
-										<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + !String.IsEqual(ListItem.Property(SubtitleLanguage.1),ListItem.Property(SubtitleLanguage.2))</visible>
+										<left>760</left>
+										<include>MediaFlagValues</include>
+										<texture>$VAR[MediaFlagsPathVar]/aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
+									</control>
+									<control type="image">
+										<left>920</left>
+										<include>MediaFlagValues</include>
+										<texture>$VAR[MediaFlagsPathVar]/audiocodec/$VAR[AudioCodecFlagVar]</texture>
+									</control>
+									<control type="image">
+										<left>1080</left>
+										<include>MediaFlagValues</include>
+										<texture>$VAR[MediaFlagsPathVar]/audiochannels/$INFO[ListItem.AudioChannels,,.png]</texture>
+									</control>
+									<control type="grouplist">
+										<left>1205</left>
+										<top>10</top>
+										<height>90</height>
+										<width>35</width>
+										<itemgap>-5</itemgap>
+										<visible>String.IsEqual(Skin.String(LanguageFlags),1) | String.IsEqual(Skin.String(LanguageFlags),3)</visible>
+										<control type="image">
+											<width>30</width>
+											<height>30</height>
+											<aspectratio>keep</aspectratio>
+											<colordiffuse>grey</colordiffuse>
+											<texture>flags/audio.png</texture>
+											<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.1)) | [!String.IsEmpty(ListItem.Property(AudioLanguage.2)) + !String.IsEqual(ListItem.Property(AudioLanguage.1),ListItem.Property(AudioLanguage.2))]</visible>
+										</control>
+										<control type="image">
+											<width>30</width>
+											<height>30</height>
+											<aspectratio>keep</aspectratio>
+											<colordiffuse>grey</colordiffuse>
+											<texture>$VAR[PathFlagsLanguage]$INFO[ListItem.Property(AudioLanguage.1),,.png]</texture>
+											<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
+										</control>
+										<control type="image">
+											<width>30</width>
+											<height>30</height>
+											<aspectratio>keep</aspectratio>
+											<colordiffuse>grey</colordiffuse>
+											<texture>$VAR[PathFlagsLanguage]$INFO[ListItem.Property(AudioLanguage.2),,.png]</texture>
+											<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.2)) + [!String.IsEqual(ListItem.Property(AudioLanguage.1),ListItem.Property(AudioLanguage.2))]</visible>
+										</control>
+									</control>
+									<control type="grouplist">
+										<left>1235</left>
+										<top>10</top>
+										<height>90</height>
+										<width>35</width>
+										<itemgap>-5</itemgap>
+										<visible>[!String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) | !String.IsEmpty(ListItem.Property(SubtitleLanguage.2))] + [String.IsEqual(Skin.String(LanguageFlags),2) | String.IsEqual(Skin.String(LanguageFlags),3)]</visible>
+										<control type="image">
+											<width>30</width>
+											<height>30</height>
+											<aspectratio>keep</aspectratio>
+											<colordiffuse>grey</colordiffuse>
+											<texture>flags/subtitles.png</texture>
+											<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) | [!String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + !String.IsEqual(ListItem.Property(SubtitleLanguage.1),ListItem.Property(SubtitleLanguage.2))]</visible>
+										</control>
+										<control type="image">
+											<width>30</width>
+											<height>30</height>
+											<aspectratio>keep</aspectratio>
+											<colordiffuse>grey</colordiffuse>
+											<texture>$VAR[PathFlagsLanguage]$INFO[ListItem.Property(SubtitleLanguage.1),,.png]</texture>
+											<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.1))</visible>
+										</control>
+										<control type="image">
+											<width>30</width>
+											<height>30</height>
+											<aspectratio>keep</aspectratio>
+											<colordiffuse>grey</colordiffuse>
+											<texture>$VAR[PathFlagsLanguage]$INFO[ListItem.Property(SubtitleLanguage.2),,.png]</texture>
+											<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + !String.IsEqual(ListItem.Property(SubtitleLanguage.1),ListItem.Property(SubtitleLanguage.2))</visible>
+										</control>
 									</control>
 								</control>
 							</control>
@@ -1066,9 +1070,9 @@
 				<!-- (Landscape - ShowCase - Logo - Wall) -->
 				<control type="group">
 					<visible>ListItem.IsCollection</visible>
-					<animation effect="fade" time="140" delay="100">Visible</animation>
+					<animation effect="fade" time="140" delay="0">Visible</animation>
 					<animation effect="fade" time="140">Hidden</animation>
-					<animation effect="fade" time="0">WindowOpen</animation>
+					<animation effect="fade" time="0" delay="600">WindowOpen</animation>
 					<control type="group">
 						<top>995</top>
 						<visible>[[Control.IsVisible(52) + Container.Content(movies) + !String.IsEqual(Skin.String(52.Movies.ViewFlags),$LOCALIZE[1223])] | [Control.IsVisible(52) + Container.Content(tvshows) + !String.IsEqual(Skin.String(52.TV.ViewFlags),$LOCALIZE[1223])] | [Control.IsVisible(52) + Container.Content(episodes) + !String.IsEqual(Skin.String(52.Episodes.ViewFlags),$LOCALIZE[1223])] | [Control.IsVisible(53) + [Container.Content(movies) | Container.Content(sets)] + !String.IsEqual(Skin.String(53.Movies.ViewFlags),$LOCALIZE[1223])] | [Control.IsVisible(53) + Container.Content(tvshows) + !String.IsEqual(Skin.String(53.TV.ViewFlags),$LOCALIZE[1223])] | [Control.IsVisible(53) + Container.Content(seasons) + !String.IsEqual(Skin.String(53.Seasons.ViewFlags),$LOCALIZE[1223])] | [Control.IsVisible(59) + [Container.Content(movies) | Container.Content(sets)] + !String.IsEqual(Skin.String(59.Movies.ViewFlags),$LOCALIZE[1223])] | [Control.IsVisible(59) + Container.Content(tvshows) + !String.IsEqual(Skin.String(59.TV.ViewFlags),$LOCALIZE[1223])] | [Control.IsVisible(503) + [Container.Content(movies) | Container.Content(sets)] + !String.IsEqual(Skin.String(503.Movies.ViewFlags),$LOCALIZE[1223])] | [Control.IsVisible(503) + Container.Content(tvshows) + !String.IsEqual(Skin.String(503.TV.ViewFlags),$LOCALIZE[1223])] | [Control.IsVisible(503) + Container.Content(seasons) + !String.IsEqual(Skin.String(503.Seasons.ViewFlags),$LOCALIZE[1223])]]</visible>
@@ -1100,7 +1104,7 @@
 				<!-- (Tripanel - Posters - Shift - BannerWall - Small Icons - Icons - BannerPlex - RightList - MyFlix - BigFan) -->
 				<control type="group">
 					<visible>ListItem.IsCollection</visible>
-					<animation effect="fade" time="140" delay="100">Visible</animation>
+					<animation effect="fade" time="140" delay="0">Visible</animation>
 					<animation effect="slide" end="-952.5,-110" condition="Control.IsVisible(57)">Conditional</animation>
 					<animation effect="slide" end="-1452.5,-17" condition="Control.IsVisible(509)">Conditional</animation>
 					<animation effect="slide" end="-1152.5" condition="Control.IsVisible(591)">Conditional</animation>

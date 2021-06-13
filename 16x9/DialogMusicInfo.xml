@@ -6,7 +6,7 @@
 	<controls>
 		<control type="group">
 			<animation effect="slide" start="-729,0" end="0,0" time="0">WindowOpen</animation>
-			<animation effect="slide" start="-729,0" end="0,0" delay="250" time="0">WindowOpen</animation>
+			<animation effect="slide" start="-729,0" end="0,0" delay="0" time="0">WindowOpen</animation>
 			<animation effect="slide" end="-729,0" time="0">WindowClose</animation>
 			<control type="image">
 				<width>729</width>
@@ -45,7 +45,7 @@
 		</control>
 		<control type="group">
 			<animation effect="slide" start="1242,0" end="0,0" time="0">WindowOpen</animation>
-			<animation effect="slide" start="1242,0" end="0,0" delay="250" time="0">WindowOpen</animation>
+			<animation effect="slide" start="1242,0" end="0,0" delay="0" time="0">WindowOpen</animation>
 			<animation effect="slide" end="1242,0" time="0">WindowClose</animation>
 			<left>729</left>
 			<control type="group">
@@ -870,7 +870,7 @@
 						<height>468</height>
 						<align>justify</align>
 						<label>$VAR[MusicInfoPlotVar]</label>
-						<autoscroll time="3000" delay="6000" repeat="6000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+						<autoscroll time="3000" delay="0" repeat="6000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 						<animation effect="fade" start="100" end="78" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(9003)">Conditional</animation>
 					</control>
 				</control>

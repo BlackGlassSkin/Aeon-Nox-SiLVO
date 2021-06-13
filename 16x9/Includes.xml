@@ -1633,7 +1633,7 @@
 						<height>180</height>
 						<font>font14_textbox2</font>
 						<pagecontrol>62</pagecontrol>
-						<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(62)</autoscroll>
+						<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(62)</autoscroll>
 						<include>ShowCaseInfoPanelButtonsValues</include>
 					</control>
 					<control type="scrollbar" id="62">
@@ -1704,7 +1704,7 @@
 						<height>354</height>
 						<font>font14_textbox</font>
 						<pagecontrol>62</pagecontrol>
-						<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(62)</autoscroll>
+						<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(62)</autoscroll>
 						<include>ShowCaseInfoPanelButtonsValues</include>
 					</control>
 					<control type="scrollbar" id="62">
@@ -1798,7 +1798,7 @@
 						<height>308</height>
 						<font>font14_textbox2</font>
 						<align>justify</align>
-						<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+						<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 						<include>ShowCaseInfoPanelButtonsValues</include>
 						<visible>!Skin.HasSetting(Enable.Shift.Discart) | Skin.HasSetting(Enable.Shift.Small) | [ListItem.IsCollection + String.IsEmpty(ListItem.Art(discart))] | Skin.HasSetting(Enable.ManualInfoPanel) | [Container.Content(tvshows) | Container.Content(seasons)]</visible>
 					</control>
@@ -1810,7 +1810,7 @@
 						<height>218</height>
 						<font>font14_textbox2</font>
 						<align>justify</align>
-						<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+						<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 						<include>ShowCaseInfoPanelButtonsValues</include>
 						<visible>Skin.HasSetting(Enable.Shift.Discart) + !Skin.HasSetting(Enable.Shift.Small) + String.IsEmpty(ListItem.Art(discart)) + !Skin.HasSetting(Enable.ManualInfoPanel) + ![Container.Content(tvshows) | Container.Content(seasons)]</visible>
 					</control>
@@ -1903,7 +1903,7 @@
 						<height>240</height>
 						<font>font14_textbox</font>
 						<pagecontrol />
-						<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+						<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 						<include>ShowCaseInfoPanelButtonsValues</include>
 					</control>
 					<control type="image">
@@ -1975,7 +1975,7 @@
 							<height>130</height>
 							<font>font14_textbox2</font>
 							<pagecontrol />
-							<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+							<autoscroll time="3000" delay="0" repeat="5000">true</autoscroll>
 							<include>NewInfoPanelButtonsValues</include>
 						</control>
 						<control type="image">
@@ -2033,7 +2033,7 @@
 							<height>345</height>
 							<font>font14_textbox2</font>
 							<pagecontrol />
-							<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+							<autoscroll time="3000" delay="0" repeat="5000">true</autoscroll>
 							<include>NewInfoPanelButtonsValues</include>
 						</control>
 						<control type="image">
@@ -2065,8 +2065,8 @@
 				<top>254</top>
 				<left>300</left>
 				<animation type="Visible" reversible="false">
-					<effect type="zoom" start="80" end="100" center="960,540" delay="160" tween="back" time="240" />
-					<effect type="fade" delay="160" end="100" time="240" />
+					<effect type="zoom" start="80" end="100" center="960,540" delay="0" tween="back" time="240" />
+					<effect type="fade" delay="0" end="100" time="240" />
 				</animation>
 				<visible>[String.IsEqual(Skin.String(InfoPopup.Delay),2) + System.IdleTime(2) | String.IsEqual(Skin.String(InfoPopup.Delay),3) + System.IdleTime(3) | String.IsEqual(Skin.String(InfoPopup.Delay),4) + System.IdleTime(4) | String.IsEqual(Skin.String(InfoPopup.Delay),5) + System.IdleTime(5)] + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(sets)]</visible>
 				<control type="image">
@@ -2212,7 +2212,7 @@
 					<font>font14_textbox2</font>
 					<textcolor>grey</textcolor>
 					<label>$VAR[VideoPlotVar]</label>
-					<autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+					<autoscroll delay="0" time="4000" repeat="8000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 					<visible>!ListItem.IsCollection + !Container.Content(tvshows)</visible>
 				</control>
 				<control type="textbox">
@@ -2223,7 +2223,7 @@
 					<font>font14_textbox2</font>
 					<textcolor>grey</textcolor>
 					<label>$VAR[VideoPlotVar]</label>
-					<autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+					<autoscroll delay="0" time="4000" repeat="8000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 					<visible>ListItem.IsCollection</visible>
 				</control>
 				<control type="textbox">
@@ -2234,7 +2234,7 @@
 					<font>font14_textbox2</font>
 					<textcolor>grey</textcolor>
 					<label>$VAR[VideoPlotVar]</label>
-					<autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+					<autoscroll delay="0" time="4000" repeat="8000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 					<visible>Container.Content(tvshows)</visible>
 				</control>
 				<control type="grouplist">
@@ -2798,7 +2798,7 @@
 			<texturesliderbarfocus colordiffuse="$VAR[ThemeLabelColor]">colors/white.png</texturesliderbarfocus>
 			<showonepage>false</showonepage>
 			<orientation>horizontal</orientation>
-			<animation effect="fade" start="100" end="0" time="500" delay="500" condition="[!Control.HasFocus(95260) + !Container.Scrolling]">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="500" delay="0" condition="[!Control.HasFocus(95260) + !Container.Scrolling]">Conditional</animation>
 			<visible>Control.IsVisible(52)</visible>
 		</control>
 		<control type="scrollbar" id="95360">
@@ -2815,7 +2815,7 @@
 			<texturesliderbarfocus colordiffuse="$VAR[ThemeLabelColor]">colors/white.png</texturesliderbarfocus>
 			<showonepage>false</showonepage>
 			<orientation>horizontal</orientation>
-			<animation effect="fade" start="100" end="0" time="500" delay="500" condition="[!Control.HasFocus(95360) + !Container.Scrolling]">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="500" delay="0" condition="[!Control.HasFocus(95360) + !Container.Scrolling]">Conditional</animation>
 			<visible>Control.IsVisible(53)</visible>
 		</control>
 		<control type="scrollbar" id="95461">
@@ -2832,7 +2832,7 @@
 			<texturesliderbarfocus colordiffuse="$VAR[ThemeLabelColor]">colors/white.png</texturesliderbarfocus>
 			<showonepage>false</showonepage>
 			<orientation>horizontal</orientation>
-			<animation effect="fade" start="100" end="0" time="500" delay="500" condition="[!Control.HasFocus(95461) + !Container.Scrolling]">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="500" delay="0" condition="[!Control.HasFocus(95461) + !Container.Scrolling]">Conditional</animation>
 			<visible>Control.IsVisible(54)</visible>
 		</control>
 		<control type="scrollbar" id="95660">
@@ -2848,7 +2848,7 @@
 			<texturesliderbarfocus colordiffuse="$VAR[ThemeLabelColor]">colors/white.png</texturesliderbarfocus>
 			<showonepage>false</showonepage>
 			<orientation>horizontal</orientation>
-			<animation effect="fade" start="100" end="0" time="500" delay="500" condition="[!Control.HasFocus(95660) + !Container.Scrolling]">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="500" delay="0" condition="[!Control.HasFocus(95660) + !Container.Scrolling]">Conditional</animation>
 			<visible>Control.IsVisible(56)</visible>
 		</control>
 		<control type="scrollbar" id="95760">
@@ -2864,7 +2864,7 @@
 			<texturesliderbarfocus colordiffuse="$VAR[ThemeLabelColor]">colors/white.png</texturesliderbarfocus>
 			<showonepage>false</showonepage>
 			<orientation>horizontal</orientation>
-			<animation effect="fade" start="100" end="0" time="500" delay="500" condition="[!Control.HasFocus(95760) + !Container.Scrolling]">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="500" delay="0" condition="[!Control.HasFocus(95760) + !Container.Scrolling]">Conditional</animation>
 			<visible>Control.IsVisible(57)</visible>
 		</control>
 		<control type="scrollbar" id="95960">
@@ -2880,7 +2880,7 @@
 			<texturesliderbarfocus colordiffuse="$VAR[ThemeLabelColor]">colors/white.png</texturesliderbarfocus>
 			<showonepage>false</showonepage>
 			<orientation>horizontal</orientation>
-			<animation effect="fade" start="100" end="0" time="500" delay="500" condition="[!Control.HasFocus(95960) + !Container.Scrolling]">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="500" delay="0" condition="[!Control.HasFocus(95960) + !Container.Scrolling]">Conditional</animation>
 			<visible>Control.IsVisible(59)</visible>
 		</control>
 		<control type="scrollbar" id="50960">
@@ -2897,7 +2897,7 @@
 			<texturesliderbarfocus colordiffuse="$VAR[ThemeLabelColor]">colors/white.png</texturesliderbarfocus>
 			<showonepage>false</showonepage>
 			<orientation>horizontal</orientation>
-			<animation effect="fade" start="100" end="0" time="500" delay="500" condition="[!Control.HasFocus(50960) + !Container.Scrolling]">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="500" delay="0" condition="[!Control.HasFocus(50960) + !Container.Scrolling]">Conditional</animation>
 			<visible>Control.IsVisible(509)</visible>
 		</control>
 	</include>
@@ -2943,7 +2943,7 @@
 						<font>font10</font>
 						<textcolor>grey2</textcolor>
 						<wrapmultiline>true</wrapmultiline>
-						<animation effect="fade" time="239.76" delay="100">Visible</animation>
+						<animation effect="fade" time="239.76" delay="0">Visible</animation>
 						<visible>String.IsEmpty(Control.GetLabel(142099))</visible>
 					</control>
 				</control>
@@ -3335,7 +3335,7 @@
 							<textcolor>grey</textcolor>
 							<pagecontrol>61</pagecontrol>
 							<align>justify</align>
-							<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+							<autoscroll time="3000" delay="0" repeat="5000">true</autoscroll>
 							<visible>!String.IsEmpty(Window(fullscreeninfo).Property(ShowPlot)) | !String.IsEmpty(Window(fullscreeninfo).Property(ShowCast))</visible>
 						</control>
 					</control>
@@ -3441,7 +3441,7 @@
 						<textcolor>grey</textcolor>
 						<pagecontrol>61</pagecontrol>
 						<align>justify</align>
-						<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+						<autoscroll time="3000" delay="0" repeat="5000">true</autoscroll>
 						<visible>!String.IsEmpty(Window(fullscreeninfo).Property(ShowPlot))</visible>
 					</control>
 				</control>
@@ -3558,21 +3558,21 @@
 						<width>1805</width>
 						<height>174</height>
 						<label>$INFO[VideoPlayer.PlotOutline]</label>
-						<autoscroll delay="6000" time="3000" repeat="6000">true</autoscroll>
+						<autoscroll delay="0" time="3000" repeat="6000">true</autoscroll>
 						<visible>!String.IsEmpty(Window(fullscreeninfo).Property(LiveTVFullPlot)) + !String.IsEmpty(VideoPlayer.PlotOutline)</visible>
 					</control>
 					<control type="textbox">
 						<width>1805</width>
 						<height>774</height>
 						<label>$INFO[VideoPlayer.Plot]</label>
-						<autoscroll delay="6000" time="3000" repeat="6000">true</autoscroll>
+						<autoscroll delay="0" time="3000" repeat="6000">true</autoscroll>
 						<visible>String.IsEmpty(Window(fullscreeninfo).Property(LiveTVFullPlot))</visible>
 					</control>
 					<control type="textbox">
 						<width>1805</width>
 						<height>50</height>
 						<label>$INFO[VideoPlayer.Plot]</label>
-						<autoscroll delay="6000" time="3000" repeat="6000">true</autoscroll>
+						<autoscroll delay="0" time="3000" repeat="6000">true</autoscroll>
 						<visible>String.IsEmpty(VideoPlayer.PlotOutline) + !String.IsEmpty(Window(fullscreeninfo).Property(LiveTVFullPlot))</visible>
 					</control>
 				</control>
@@ -3582,21 +3582,21 @@
 						<width>1805</width>
 						<height>174</height>
 						<label>$INFO[VideoPlayer.NextPlotOutline]</label>
-						<autoscroll delay="6000" time="3000" repeat="6000">true</autoscroll>
+						<autoscroll delay="0" time="3000" repeat="6000">true</autoscroll>
 						<visible>!String.IsEmpty(Window(fullscreeninfo).Property(LiveTVFullPlot)) + !String.IsEmpty(VideoPlayer.PlotOutline)</visible>
 					</control>
 					<control type="textbox">
 						<width>1805</width>
 						<height>774</height>
 						<label>$INFO[VideoPlayer.NextPlot]</label>
-						<autoscroll delay="6000" time="3000" repeat="6000">true</autoscroll>
+						<autoscroll delay="0" time="3000" repeat="6000">true</autoscroll>
 						<visible>String.IsEmpty(Window(fullscreeninfo).Property(LiveTVFullPlot))</visible>
 					</control>
 					<control type="textbox">
 						<width>1805</width>
 						<height>50</height>
 						<label>$INFO[VideoPlayer.NextPlot]</label>
-						<autoscroll delay="6000" time="3000" repeat="6000">true</autoscroll>
+						<autoscroll delay="0" time="3000" repeat="6000">true</autoscroll>
 						<visible>String.IsEmpty(VideoPlayer.PlotOutline) + !String.IsEmpty(Window(fullscreeninfo).Property(LiveTVFullPlot))</visible>
 					</control>
 				</control>

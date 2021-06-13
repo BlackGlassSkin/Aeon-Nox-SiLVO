@@ -256,7 +256,7 @@
 					<height>234</height>
 					<pagecontrol>61</pagecontrol>
 					<include>DefaultButtonsValues</include>
-					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(61)</autoscroll>
+					<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(61)</autoscroll>
 				</control>
 				<control type="scrollbar" id="61">
 					<left>824</left>
@@ -476,7 +476,7 @@
 				<texturesliderbackground />
 				<texturesliderbar colordiffuse="80FFFFFF" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
 				<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
-				<animation effect="fade" start="100" end="0" time="500" delay="500" condition="!Control.HasFocus(62) + !Container.Scrolling">Conditional</animation>
+				<animation effect="fade" start="100" end="0" time="500" delay="0" condition="!Control.HasFocus(62) + !Container.Scrolling">Conditional</animation>
 			</control>
 			<!-- Bottom info-panel -->
 			<control type="group">
@@ -565,7 +565,7 @@
 						<height>180</height>
 						<font>font14_textbox2</font>
 						<pagecontrol>63</pagecontrol>
-						<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(63)</autoscroll>
+						<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(63)</autoscroll>
 					</control>
 					<control type="scrollbar" id="63">
 						<left>1328</left>
@@ -856,7 +856,7 @@
 							<font>font14_textbox</font>
 							<shadowcolor>black</shadowcolor>
 							<pagecontrol>65</pagecontrol>
-							<autoscroll time="4000" delay="5000" repeat="5000">true</autoscroll>
+							<autoscroll time="4000" delay="0" repeat="5000">true</autoscroll>
 						</control>
 					</control>
 					<control type="scrollbar" id="65">
@@ -1059,7 +1059,7 @@
 					<height>318</height>
 					<align>justify</align>
 					<font>font13</font>
-					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+					<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 					<label>$INFO[Container(50).ListItem.Plot]</label>
 				</control>
 			</control>
@@ -1365,7 +1365,7 @@
 						<align>justify</align>
 						<font>font13</font>
 						<label>$INFO[Container.ListItem.Plot]</label>
-						<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+						<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 					</control>
 				</control>
 			</control>

@@ -60,7 +60,8 @@
 				<height>290</height>
 				<label />
 				<textcolor>grey2</textcolor>
-				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+				<align>center</align>
+				<autoscroll time="3000" delay="0" repeat="5000">true</autoscroll>
 			</control>
 			<control type="grouplist" id="9000">
 				<left>20</left>

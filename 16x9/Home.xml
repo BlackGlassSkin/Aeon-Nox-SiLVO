@@ -177,7 +177,7 @@
 					<width>100%</width>
 					<height>100</height>
 					<left>200</left>
-					<font>dialogpvrinfotitle</font>
+					<font>IconTiny</font>
 					<textcolor>blue</textcolor>
 					<shadowcolor>white</shadowcolor>
 					<label>$LOCALIZE[31526]</label>
@@ -196,7 +196,7 @@
 					<width>100%</width>
 					<height>100</height>
 					<left>1400</left>
-					<font>dialogpvrinfotitle</font>
+					<font>IconTiny</font>
 					<textcolor>blue</textcolor>
 					<shadowcolor>white</shadowcolor>
 					<label>$LOCALIZE[31527] !</label>

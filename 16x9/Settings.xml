@@ -15,7 +15,7 @@
 				<onup>9000</onup>
 				<ondown>9000</ondown>
 				<pagecontrol>61</pagecontrol>
-				<visible>Skin.HasSetting(Enable.SetColoredSettings)</visible>
+				<visible>!Skin.HasSetting(Enable.SetColoredSettings)</visible>
 				<itemlayout width="300" height="280" condition="Integer.IsLessOrEqual(Container(9000).NumItems,10)">
 					<control type="image">
 						<left>2</left>
@@ -214,9 +214,9 @@
 						<icon>views/settings/default/systeminfo.png</icon>
 					</item>
 					<item>
-						<label>File Manager</label>
+						<label>FileManager</label>
 						<property name="description">31318</property>
-						<onclick>ActivateWindow(10003)</onclick>
+						<onclick>ActivateWindow(filemanager)</onclick>
 						<icon>views/settings/default/filemanager.png</icon>
 					</item>
 					<item>
@@ -273,7 +273,7 @@
 				<onup>9000</onup>
 				<ondown>9000</ondown>
 				<pagecontrol>61</pagecontrol>
-				<visible>!Skin.HasSetting(Enable.SetColoredSettings)</visible>
+				<visible>Skin.HasSetting(Enable.SetColoredSettings)</visible>
 				<itemlayout width="300" height="270" condition="Integer.IsLessOrEqual(Container(9000).NumItems,10)">
 					<control type="image">
 						<left>2</left>
@@ -531,7 +531,7 @@
 				<height>175</height>
 				<textcolor>grey2</textcolor>
 				<align>right</align>
-				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+				<autoscroll time="3000" delay="0" repeat="5000">true</autoscroll>
 				<label>$INFO[Container(9000).ListItem.Property(description)]</label>
 			</control>
 		</control>

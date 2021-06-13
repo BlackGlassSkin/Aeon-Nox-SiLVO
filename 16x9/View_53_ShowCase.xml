@@ -33,7 +33,7 @@
 		<itemlayout height="525" width="294" condition="Skin.HasSetting(noshowcaseflow)">
 			<control type="group">
 				<top>30</top>
-				<animation effect="fade" time="0" delay="800">Visible</animation>
+				<animation effect="fade" time="0" delay="0">Visible</animation>
 				<control type="image">
 					<texture background="true">$VAR[CaseBackPathVar]$VAR[GlobalCaseVar]</texture>
 					<include>MovieShowcaseNoCase</include>
@@ -69,7 +69,7 @@
 		<focusedlayout height="525" width="294" condition="Skin.HasSetting(noshowcaseflow)">
 			<control type="group">
 				<top>30</top>
-				<animation effect="fade" time="0" delay="800">Visible</animation>
+				<animation effect="fade" time="0" delay="0">Visible</animation>
 				<animation effect="zoom" start="75" end="100" center="147,345" time="300" reversible="false" tween="cubic">Focus</animation>
 				<control type="group">
 					<visible>Control.IsVisible(7000)</visible>
@@ -124,8 +124,8 @@
 				<label>$LOCALIZE[31966]</label>
 				<include>HiddenObject</include>
 				<include condition="!String.IsEmpty(Skin.String(Showcase.Delay))">ShowCaseDelayAnimation</include>
-				<animation effect="fade" end="100" time="120" delay="1600">WindowOpen</animation>
-				<animation effect="fade" end="100" time="120" delay="1600">Visible</animation>
+				<animation effect="fade" end="100" time="0">WindowOpen</animation>
+				<animation effect="fade" end="100" time="120" delay="0">Visible</animation>
 				<visible>Skin.HasSetting(showcasemod) + !ListItem.IsCollection + Container.Content(movies)</visible>
 			</control>
 			<control type="label" id="4445">
@@ -133,8 +133,8 @@
 				<label>$LOCALIZE[31965]</label>
 				<include>HiddenObject</include>
 				<include condition="!String.IsEmpty(Skin.String(Showcase.Delay))">ShowCaseDelayAnimation</include>
-				<animation effect="fade" end="100" time="120" delay="1600">WindowOpen</animation>
-				<animation effect="fade" end="100" time="120" delay="1600">Visible</animation>
+				<animation effect="fade" end="100" time="0">WindowOpen</animation>
+				<animation effect="fade" end="100" time="120" delay="0">Visible</animation>
 				<visible>Skin.HasSetting(boxsetmod) + ListItem.IsCollection</visible>
 			</control>
 			<control type="label" id="4446">
@@ -142,8 +142,8 @@
 				<label>$LOCALIZE[31966]</label>
 				<include>HiddenObject</include>
 				<include condition="!String.IsEmpty(Skin.String(Showcase.Delay))">ShowCaseDelayAnimation</include>
-				<animation effect="fade" end="100" time="120" delay="1600">WindowOpen</animation>
-				<animation effect="fade" end="100" time="120" delay="1600">Visible</animation>
+				<animation effect="fade" end="100" time="0">WindowOpen</animation>
+				<animation effect="fade" end="100" time="120" delay="0">Visible</animation>
 				<visible>Skin.HasSetting(showcasemod) + ListItem.IsCollection + !Skin.HasSetting(boxsetmod) + [Container.Content(movies) | Container.Content(sets)]</visible>
 			</control>
 		</control>
@@ -1261,8 +1261,8 @@
 				<aspectratio>keep</aspectratio>
 				<texture background="true">$INFO[Container(4500).ListItemAbsolute(1).Art(discart)]</texture>
 				<animation type="Conditional" condition="[!String.IsEmpty(Control.GetLabel(4446)) + Control.IsVisible(4446)]" reversible="false">
-					<effect type="slide" start="1100,0" end="0,0" delay="500" time="2600" tween="cubic" easing="inout" />
-					<effect type="rotate" start="0" center="auto" end="720" delay="500" time="2600" tween="cubic" easing="inout" />
+					<effect type="slide" start="1100,0" end="0,0" delay="0" time="2600" tween="cubic" easing="inout" />
+					<effect type="rotate" start="0" center="auto" end="720" delay="0" time="2600" tween="cubic" easing="inout" />
 				</animation>
 				<visible>!String.IsEmpty(Container(4500).ListItemAbsolute(1).Art(discart))</visible>
 			</control>
@@ -1270,8 +1270,8 @@
 				<aspectratio>keep</aspectratio>
 				<texture background="true">$INFO[Container(4500).ListItemAbsolute(2).Art(discart)]</texture>
 				<animation type="Conditional" condition="[!String.IsEmpty(Control.GetLabel(4446)) + Control.IsVisible(4446)]" reversible="false">
-					<effect type="slide" start="1100,0" end="0,0" delay="1000" time="2600" tween="cubic" easing="inout" />
-					<effect type="rotate" start="0" center="auto" end="720" delay="1000" time="2600" tween="cubic" easing="inout" />
+					<effect type="slide" start="1100,0" end="0,0" delay="0" time="2600" tween="cubic" easing="inout" />
+					<effect type="rotate" start="0" center="auto" end="720" delay="0" time="2600" tween="cubic" easing="inout" />
 				</animation>
 				<visible>!String.IsEmpty(Container(4500).ListItemAbsolute(2).Art(discart))</visible>
 			</control>
@@ -1279,8 +1279,8 @@
 				<aspectratio>keep</aspectratio>
 				<texture background="true">$INFO[Container(4500).ListItemAbsolute(3).Art(discart)]</texture>
 				<animation type="Conditional" condition="[!String.IsEmpty(Control.GetLabel(4446)) + Control.IsVisible(4446)]" reversible="false">
-					<effect type="slide" start="1100,0" end="0,0" delay="1500" time="2600" tween="cubic" easing="inout" />
-					<effect type="rotate" start="0" center="auto" end="720" delay="1500" time="2600" tween="cubic" easing="inout" />
+					<effect type="slide" start="1100,0" end="0,0" delay="0" time="2600" tween="cubic" easing="inout" />
+					<effect type="rotate" start="0" center="auto" end="720" delay="0" time="2600" tween="cubic" easing="inout" />
 				</animation>
 				<visible>!String.IsEmpty(Container(4500).ListItemAbsolute(3).Art(discart))</visible>
 			</control>
@@ -1288,8 +1288,8 @@
 				<aspectratio>keep</aspectratio>
 				<texture background="true">$INFO[Container(4500).ListItemAbsolute(4).Art(discart)]</texture>
 				<animation type="Conditional" condition="[!String.IsEmpty(Control.GetLabel(4446)) + Control.IsVisible(4446)]" reversible="false">
-					<effect type="slide" start="1100,0" end="0,0" delay="2000" time="2600" tween="cubic" easing="inout" />
-					<effect type="rotate" start="0" center="auto" end="720" delay="2000" time="2600" tween="cubic" easing="inout" />
+					<effect type="slide" start="1100,0" end="0,0" delay="0" time="2600" tween="cubic" easing="inout" />
+					<effect type="rotate" start="0" center="auto" end="720" delay="0" time="2600" tween="cubic" easing="inout" />
 				</animation>
 				<visible>!String.IsEmpty(Container(4500).ListItemAbsolute(4).Art(discart))</visible>
 			</control>
@@ -1297,8 +1297,8 @@
 				<aspectratio>keep</aspectratio>
 				<texture background="true">$INFO[Container(4500).ListItemAbsolute(5).Art(discart)]</texture>
 				<animation type="Conditional" condition="[!String.IsEmpty(Control.GetLabel(4446)) + Control.IsVisible(4446)]" reversible="false">
-					<effect type="slide" start="1100,0" end="0,0" delay="2500" time="2600" tween="cubic" easing="inout" />
-					<effect type="rotate" start="0" center="auto" end="720" delay="2500" time="2600" tween="cubic" easing="inout" />
+					<effect type="slide" start="1100,0" end="0,0" delay="0" time="2600" tween="cubic" easing="inout" />
+					<effect type="rotate" start="0" center="auto" end="720" delay="0" time="2600" tween="cubic" easing="inout" />
 				</animation>
 				<visible>!String.IsEmpty(Container(4500).ListItemAbsolute(5).Art(discart))</visible>
 			</control>
@@ -1306,8 +1306,8 @@
 				<aspectratio>keep</aspectratio>
 				<texture background="true">$INFO[Container(4500).ListItemAbsolute(6).Art(discart)]</texture>
 				<animation type="Conditional" condition="[!String.IsEmpty(Control.GetLabel(4446)) + Control.IsVisible(4446)]" reversible="false">
-					<effect type="slide" start="1100,0" end="0,0" delay="3000" time="2600" tween="cubic" easing="inout" />
-					<effect type="rotate" start="0" center="auto" end="720" delay="3000" time="2600" tween="cubic" easing="inout" />
+					<effect type="slide" start="1100,0" end="0,0" delay="0" time="2600" tween="cubic" easing="inout" />
+					<effect type="rotate" start="0" center="auto" end="720" delay="0" time="2600" tween="cubic" easing="inout" />
 				</animation>
 				<visible>!String.IsEmpty(Container(4500).ListItemAbsolute(6).Art(discart))</visible>
 			</control>
@@ -1315,8 +1315,8 @@
 				<aspectratio>keep</aspectratio>
 				<texture background="true">$INFO[Container(4500).ListItemAbsolute(7).Art(discart)]</texture>
 				<animation type="Conditional" condition="[!String.IsEmpty(Control.GetLabel(4446)) + Control.IsVisible(4446)]" reversible="false">
-					<effect type="slide" start="1100,0" end="0,0" delay="3500" time="2600" tween="cubic" easing="inout" />
-					<effect type="rotate" start="0" center="auto" end="720" delay="3500" time="2600" tween="cubic" easing="inout" />
+					<effect type="slide" start="1100,0" end="0,0" delay="0" time="2600" tween="cubic" easing="inout" />
+					<effect type="rotate" start="0" center="auto" end="720" delay="0" time="2600" tween="cubic" easing="inout" />
 				</animation>
 				<visible>!String.IsEmpty(Container(4500).ListItemAbsolute(7).Art(discart))</visible>
 			</control>
@@ -1455,9 +1455,9 @@
 			<control type="group">
 				<animation type="Conditional" reversible="false" condition="[!String.IsEmpty(Control.GetLabel(4445)) + Control.IsVisible(4445)]">
 					<effect type="rotatey" center="19" end="90" time="440" tween="cubic" easing="in" />
-					<effect type="rotatey" center="19" start="90" end="90" time="0" delay="440" />
-					<effect type="fade" start="0" end="100" time="0" delay="400" />
-					<effect type="rotatey" center="19" start="-90" end="-40" time="440" delay="440" tween="cubic" />
+					<effect type="rotatey" center="19" start="90" end="90" time="0" delay="0" />
+					<effect type="fade" start="0" end="100" time="0" delay="0" />
+					<effect type="rotatey" center="19" start="-90" end="-40" time="440" delay="0" tween="cubic" />
 				</animation>
 				<control type="image">
 					<texture background="true">$VAR[CaseTypePathVar]set.png</texture>
@@ -1580,9 +1580,9 @@
 			<control type="group">
 				<animation type="Conditional" reversible="false" condition="[!String.IsEmpty(Control.GetLabel(4445)) + Control.IsVisible(4445)]">
 					<effect type="rotatey" center="278" end="-90" time="1040" tween="cubic" easing="in" />
-					<effect type="rotatey" center="278" start="-90" end="-90" time="0" delay="1040" />
-					<effect type="fade" start="0" end="100" time="0" delay="1000" />
-					<effect type="rotatey" center="278" start="90" end="38" time="440" delay="1040" tween="cubic" />
+					<effect type="rotatey" center="278" start="-90" end="-90" time="0" delay="0" />
+					<effect type="fade" start="0" end="100" time="0" delay="0" />
+					<effect type="rotatey" center="278" start="90" end="38" time="440" delay="0" tween="cubic" />
 				</animation>
 				<control type="image">
 					<left>18</left>
@@ -1717,8 +1717,8 @@
 					</control>
 					<control type="group">
 						<animation type="Conditional" reversible="false" condition="[!String.IsEmpty(Control.GetLabel(4445)) + Control.IsVisible(4445)]">
-							<effect type="fade" start="0" end="100" time="0" delay="1100" />
-							<effect type="rotatey" center="130" start="48" end="180" time="50" delay="1000" tween="cubic" />
+							<effect type="fade" start="0" end="100" time="0" delay="0" />
+							<effect type="rotatey" center="130" start="48" end="180" time="50" delay="0" tween="cubic" />
 						</animation>
 						<top>5</top>
 						<left>-8</left>
@@ -1776,9 +1776,9 @@
 			<control type="group">
 				<animation type="Conditional" reversible="false" condition="[!String.IsEmpty(Control.GetLabel(4445)) + Control.IsVisible(4445)]">
 					<effect type="rotatey" center="300" end="-90" time="1040" tween="cubic" easing="in" />
-					<effect type="rotatey" center="300" start="-90" end="-90" time="0" delay="1040" />
-					<effect type="fade" start="100" end="0" time="0" delay="1000" />
-					<effect type="rotatey" center="300" start="90" end="0" time="440" delay="1040" tween="cubic" />
+					<effect type="rotatey" center="300" start="-90" end="-90" time="0" delay="0" />
+					<effect type="fade" start="100" end="0" time="0" delay="0" />
+					<effect type="rotatey" center="300" start="90" end="0" time="440" delay="0" tween="cubic" />
 				</animation>
 				<control type="image">
 					<left>18</left>
@@ -1792,9 +1792,9 @@
 			<control type="group">
 				<animation type="Conditional" reversible="false" condition="[!String.IsEmpty(Control.GetLabel(4445)) + Control.IsVisible(4445)]">
 					<effect type="rotatey" center="0" end="90" time="440" tween="cubic" easing="in" />
-					<effect type="rotatey" center="0" start="90" end="90" time="0" delay="440" />
-					<effect type="fade" start="100" end="0" time="0" delay="400" />
-					<effect type="rotatey" center="0" start="-90" end="0" time="440" delay="440" tween="cubic" />
+					<effect type="rotatey" center="0" start="90" end="90" time="0" delay="0" />
+					<effect type="fade" start="100" end="0" time="0" delay="0" />
+					<effect type="rotatey" center="0" start="-90" end="0" time="440" delay="0" tween="cubic" />
 				</animation>
 				<control type="image">
 					<include>MovieShowcaseThumb</include>

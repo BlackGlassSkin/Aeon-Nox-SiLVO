@@ -187,17 +187,11 @@
 				</focusedlayout>
 			</control>
 		</control>
-		<control type="image">
-			<top>970</top>
-			<width>100%</width>
-			<height>140</height>
-			<texture border="1">gradient_floor.png</texture>
-		</control>
 		<include>Topbar</include>
 		<control type="group">
 			<visible>!Skin.HasSetting(Disable.TopBar) + !Window.IsActive(volumebar)</visible>
 			<include>VisibleFadeAnimation</include>
-			<animation effect="slide" start="0,-90" end="0,0" delay="800" time="0">WindowOpen</animation>
+			<animation effect="slide" start="0,-90" end="0,0" delay="0" time="0">WindowOpen</animation>
 			<animation effect="slide" end="0,-90" start="0,0" time="0">WindowClose</animation>
 			<control type="grouplist">
 				<width>100%</width>

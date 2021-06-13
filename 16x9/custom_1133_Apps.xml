@@ -214,7 +214,7 @@
 					<onup>51</onup>
 					<ondown>51</ondown>
 					<onclick condition="Container(50).HasFocus(8)">$INFO[ListItem.FileNameAndPath]</onclick>
-					<animation effect="fade" start="100" end="0" time="300" condition="Container(51).IsUpdating">Conditional</animation>
+					<animation effect="fade" start="100" end="0" time="0" condition="Container(51).IsUpdating">Conditional</animation>
 					<viewtype label="535">list</viewtype>
 					<pagecontrol>61</pagecontrol>
 					<scrolltime tween="quadratic" easing="out">200</scrolltime>

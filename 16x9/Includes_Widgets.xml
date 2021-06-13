@@ -133,7 +133,7 @@
 				<align>justify</align>
 				<textcolor>white2</textcolor>
 				<shadowcolor>shadow</shadowcolor>
-				<autoscroll time="6663" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+				<autoscroll time="6663" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 				<label>$VAR[HomeWidgetInfoPlotVar]</label>
 			</control>
 		</control>

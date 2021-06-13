@@ -612,7 +612,8 @@
 		</item>
 		<item>
 			<label>Enable this for vertical mainmenu  $VAR[centermainmenu1Var]</label>
-			<onclick>Skin.ToggleSetting(centermainmenu1)</onclick>
+			<onclick>Skin.ToggleSetting(Enable.CenterMainMenu1)</onclick>
+			<selected>Skin.HasSetting(Enable.CenterMainMenu1)</selected>
 		</item>
 	</include>
 	<include name="SelectFanartTimePerImage">

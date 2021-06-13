@@ -226,7 +226,7 @@
 						<textcolor>white</textcolor>
 						<font>font14_textbox</font>
 						<pagecontrol>50664</pagecontrol>
-						<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(50664)</autoscroll>
+						<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(50664)</autoscroll>
 					</control>
 					<control type="scrollbar" id="50664">
 						<left>592</left>
@@ -379,7 +379,7 @@
 						<font>font14_textbox</font>
 						<pagecontrol>62</pagecontrol>
 						<include>DefaultButtonsValues</include>
-						<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(62)</autoscroll>
+						<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(62)</autoscroll>
 						<visible>!String.IsEmpty(ListItem.Comment)</visible>
 					</control>
 				</control>
@@ -394,7 +394,7 @@
 						<font>font14_textbox</font>
 						<pagecontrol>50663</pagecontrol>
 						<include>DefaultButtonsValues</include>
-						<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(50663)</autoscroll>
+						<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(50663)</autoscroll>
 					</control>
 					<control type="scrollbar" id="50663">
 						<left>587</left>

@@ -16,7 +16,7 @@
 				<width>110%</width>
 				<height>122</height>
 				<align>center</align>
-				<texture flipy="true" border="40">dialogs/default/bg.png</texture>
+				<texture flipy="true" border="10">dialogs/default/bg.png</texture>
 			</control>
 			<control type="image" id="400">
 				<left>20</left>

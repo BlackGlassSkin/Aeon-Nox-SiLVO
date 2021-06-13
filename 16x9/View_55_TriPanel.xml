@@ -116,7 +116,7 @@
 					<font>font14_textbox</font>
 					<pagecontrol>95561</pagecontrol>
 					<include>DefaultButtonsValues</include>
-					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(95561)</autoscroll>
+					<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(95561)</autoscroll>
 				</control>
 				<control type="scrollbar" id="95561">
 					<left>450</left>
@@ -753,7 +753,7 @@
 						<width>418</width>
 						<height>300</height>
 						<font>font14_textbox</font>
-						<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+						<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 						<include>DefaultButtonsValues</include>
 					</control>
 				</control>
@@ -995,7 +995,7 @@
 					<font>font14_textbox</font>
 					<pagecontrol>95562</pagecontrol>
 					<include>DefaultButtonsValues</include>
-					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(95562)</autoscroll>
+					<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(95562)</autoscroll>
 				</control>
 				<control type="scrollbar" id="95562">
 					<left>450</left>

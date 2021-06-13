@@ -114,6 +114,7 @@
 				<texture border="5">dialogs/default/inner.png</texture>
 			</control>
 			<control type="grouplist" id="9001">
+			    <left>3</left>
 				<width>310</width>
 				<height>480</height>
 				<onleft>5</onleft>
@@ -121,7 +122,7 @@
 				<onup>20</onup>
 				<ondown>9001</ondown>
 				<control type="image" id="2000">
-					<width>310</width>
+					<width>305</width>
 					<height>300</height>
 					<aspectratio>scale</aspectratio>
 					<texture background="true">$INFO[System.AddonIcon(Window.Property(Addon.ID))]</texture>

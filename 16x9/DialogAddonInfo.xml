@@ -7,8 +7,8 @@
 		</control>
 		<control type="group">
 		<animation type="WindowOpen">
-			<effect type="zoom" start="150" end="100" center="auto" time="720" tween="cubic" easing="out" />
-			<effect type="fade" end="100" time="360" />
+			<effect type="zoom" start="150" end="100" center="auto" time="0" tween="cubic" easing="out" />
+			<effect type="fade" end="100" time="0" />
 		</animation>
 			<top>60</top>
 			<control type="group">
@@ -196,7 +196,7 @@
 						<textcolor>grey2</textcolor>
 						<align>justify</align>
 						<label>[COLOR $VAR[ThemeLabelColor]]$LOCALIZE[21821]: [/COLOR][CR]$INFO[ListItem.AddonDescription]</label>
-						<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+						<autoscroll time="3000" delay="0" repeat="5000">true</autoscroll>
 					</control>
 				</control>
 				<!-- <control type="panel" id="50">
@@ -250,7 +250,7 @@
 					<textcolor>grey2</textcolor>
 					<label>$INFO[ListItem.AddonDisclaimer]</label>
 					<visible>!String.IsEmpty(ListItem.AddonDisclaimer)</visible>
-					<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+					<autoscroll time="3000" delay="0" repeat="5000">true</autoscroll>
 				</control>
 			</control>
 			<control type="group">

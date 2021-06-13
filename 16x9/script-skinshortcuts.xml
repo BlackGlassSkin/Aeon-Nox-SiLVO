@@ -598,7 +598,7 @@
 				<width>1063</width>
 				<include>SettingsTextboxValues</include>
 				<label>$VAR[SkinShortcutsDescriptionVar]</label>
-				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+				<autoscroll time="3000" delay="0" repeat="5000">true</autoscroll>
 				<animation effect="slide" end="-278" condition="ControlGroup(90000).HasFocus">Conditional</animation>
 			</control>
 		</control>

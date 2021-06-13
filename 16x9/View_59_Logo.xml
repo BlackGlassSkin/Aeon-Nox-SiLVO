@@ -131,7 +131,7 @@
 				</control>
 				<control type="group">
 					<visible>ListItem.IsCollection + !Skin.HasSetting(noextendedinfomovies)</visible>
-					<animation effect="fade" time="140" delay="100" condition="!Skin.HasSetting(noextendedinfomovies)">Visible</animation>
+					<animation effect="fade" time="140" delay="0" condition="!Skin.HasSetting(noextendedinfomovies)">Visible</animation>
 					<left>495</left>
 					<top>845</top>
 					<control type="grouplist">
@@ -169,7 +169,7 @@
 							<height>88</height>
 							<font>font14_textbox2</font>
 							<label>[B]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Title)][/B]</label>
-							<autoscroll time="2500" delay="2500" repeat="3000">true</autoscroll>
+							<autoscroll time="2500" delay="0" repeat="3000">true</autoscroll>
 						</control>
 					</control>
 				</control>
@@ -182,7 +182,7 @@
 						<width>1220</width>
 						<align>center</align>
 						<label>$VAR[NextAiredSubLabelVar]</label>
-						<animation effect="fade" time="250" delay="300" reversible="false" condition="!Container(59).OnNext + !Container(59).OnPrevious">Conditional</animation>
+						<animation effect="fade" time="250" delay="0" reversible="false" condition="!Container(59).OnNext + !Container(59).OnPrevious">Conditional</animation>
 					</control>
 					<control type="label">
 						<left>400</left>

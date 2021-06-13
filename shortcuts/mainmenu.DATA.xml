@@ -5,7 +5,7 @@
 		<label>1</label>
 		<label2 />
 		<icon>special://skin/extras/icons/DefaultPicture.png</icon>
-		<thumb />
+		<thumb>http://dl.dropboxusercontent.com/s/srphsza36i1b44j/pictures.jpg</thumb>
 		<action>ActivateWindow(Pictures,return)</action>
 	</shortcut>
 	<shortcut>

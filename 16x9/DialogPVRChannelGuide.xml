@@ -122,7 +122,7 @@
 						<textcolor>grey</textcolor>
 						<align>justify</align>
 						<label>$INFO[ListItem.PlotOutline]</label>
-						<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+						<autoscroll time="3000" delay="0" repeat="5000">true</autoscroll>
 						<visible>!String.IsEmpty(ListItem.PlotOutline) + !String.IsEqual(ListItem.PlotOutline,N/A)</visible>
 					</control>
 					<control type="textbox">
@@ -134,7 +134,7 @@
 						<textcolor>grey</textcolor>
 						<align>justify</align>
 						<label>$INFO[ListItem.Plot]</label>
-						<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+						<autoscroll time="3000" delay="0" repeat="5000">true</autoscroll>
 						<visible>String.IsEmpty(ListItem.PlotOutline) | String.IsEqual(ListItem.PlotOutline,N/A)</visible>
 					</control>
 					<control type="image">

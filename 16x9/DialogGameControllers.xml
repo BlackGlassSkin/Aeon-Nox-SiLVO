@@ -157,7 +157,7 @@
 			<height>150</height>
 			<font>font14_textbox</font>
 			<textcolor>grey</textcolor>
-			<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+			<autoscroll time="3000" delay="0" repeat="5000">true</autoscroll>
 		</control>
 		<control type="button" id="10">
 			<description>Default controller types button</description>

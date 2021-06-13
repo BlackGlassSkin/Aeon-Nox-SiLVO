@@ -139,7 +139,7 @@
 							<textcolor>white2</textcolor>
 							<shadowcolor>shadow</shadowcolor>
 							<visible>!Skin.HasSetting(alternatelayoutepisode)</visible>
-							<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+							<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 						</control>
 						<control type="textbox">
 							<label>$VAR[VideoPlotVar]</label>
@@ -150,7 +150,7 @@
 							<textcolor>white2</textcolor>
 							<shadowcolor>shadow</shadowcolor>
 							<visible>Skin.HasSetting(alternatelayoutepisode)</visible>
-							<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+							<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 						</control>
 					</control>
 					<control type="image">
@@ -178,7 +178,7 @@
 				<texturesliderbar colordiffuse="80FFFFFF" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
 				<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
 				<showonepage>false</showonepage>
-				<animation effect="fade" start="100" end="0" time="500" delay="500" condition="!Control.HasFocus(50260) + !Container.Scrolling">Conditional</animation>
+				<animation effect="fade" start="100" end="0" time="500" delay="0" condition="!Control.HasFocus(50260) + !Container.Scrolling">Conditional</animation>
 			</control>
 		</control>
 	</include>

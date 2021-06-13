@@ -48,7 +48,7 @@
 				<height>372</height>
 				<imagepath background="true">$VAR[FocusedPosterThumbVar]</imagepath>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<animation effect="fade" delay="240" time="240" reversible="false">Hidden</animation>
+				<animation effect="fade" delay="0" time="240" reversible="false">Hidden</animation>
 			</control>
 			<control type="image">
 				<top>675</top>
@@ -59,7 +59,7 @@
 				<fadetime>200</fadetime>
 				<bordertexture border="20">thumbs/thumb_shadow.png</bordertexture>
 				<bordersize>20</bordersize>
-				<animation effect="fade" delay="240" time="240" reversible="false">Hidden</animation>
+				<animation effect="fade" delay="0" time="240" reversible="false">Hidden</animation>
 			</control>
 			<control type="image">
 				<left>243</left>
@@ -152,7 +152,7 @@
 				</control>
 				<control type="group">
 					<visible>ListItem.IsCollection + ![Container.OnNext | Container.OnPrevious]</visible>
-					<animation effect="fade" time="140" delay="100">Visible</animation>
+					<animation effect="fade" time="140" delay="0">Visible</animation>
 					<control type="label">
 						<left>300</left>
 						<top>960</top>
@@ -185,7 +185,7 @@
 				<font>font14_textbox</font>
 				<textcolor>$VAR[ThemeLabelColor]</textcolor>
 				<aligny>top</aligny>
-				<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+				<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 				<include>DefaultButtonsValues</include>
 				<label>$INFO[ListItem.Tagline,, - ][COLOR grey]$VAR[VideoPlotVar][/COLOR]</label>
 				<visible>Skin.HasSetting(EnableBigFanPlot)</visible>

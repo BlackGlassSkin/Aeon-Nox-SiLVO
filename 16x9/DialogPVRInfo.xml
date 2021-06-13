@@ -285,7 +285,7 @@
 						<height>174</height>
 						<pagecontrol />
 						<label>$INFO[ListItem.Plot]</label>
-						<autoscroll time="3000" delay="6000" repeat="6000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(900171)</autoscroll>
+						<autoscroll time="3000" delay="0" repeat="6000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(900171)</autoscroll>
 						<animation effect="fade" start="0" end="100" time="500" tween="sine" easing="inout">VisibleChange</animation>
 						<animation effect="fade" start="100" end="78" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(900171)">Conditional</animation>
 					</control>

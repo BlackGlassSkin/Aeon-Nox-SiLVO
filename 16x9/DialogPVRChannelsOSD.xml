@@ -229,7 +229,7 @@
 						<font>font14_textbox</font>
 						<textcolor>grey</textcolor>
 						<label>$INFO[Container(11).ListItem.Plot]</label>
-						<autoscroll delay="7000" time="3000" repeat="8000">true</autoscroll>
+						<autoscroll delay="0" time="3000" repeat="8000">true</autoscroll>
 					</control>
 					<!-- Genre label -->
 					<control type="label">

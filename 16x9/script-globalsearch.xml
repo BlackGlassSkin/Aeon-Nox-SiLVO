@@ -546,7 +546,7 @@
 						<font>font14_textbox</font>
 						<align>justify</align>
 						<label>$VAR[VideoPlotVar]</label>
-						<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+						<autoscroll time="3000" delay="0" repeat="5000">true</autoscroll>
 					</control>
 				</control>
 				<control type="group">
@@ -667,7 +667,7 @@
 				<texturesliderbackground />
 				<texturesliderbar border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
 				<texturesliderbarfocus border="1" colordiffuse="$VAR[ThemeLabelColor]">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
-				<animation effect="fade" start="100" end="0" time="500" delay="500" condition="!Control.HasFocus(61) + !Container.Scrolling">Conditional</animation>
+				<animation effect="fade" start="100" end="0" time="500" delay="0" condition="!Control.HasFocus(61) + !Container.Scrolling">Conditional</animation>
 			</control>
 		</control>
 		<control type="group">
@@ -716,7 +716,7 @@
 				<effect type="fade" end="100" time="100" />
 			</animation>
 			<animation type="Hidden" reversible="false">
-				<effect type="fade" start="100" end="0" time="100" delay="100" />
+				<effect type="fade" start="100" end="0" time="100" delay="0" />
 				<effect type="zoom" start="100" end="130" center="960,540" time="250" tween="cubic" easing="in" />
 			</animation>
 			<left>912</left>

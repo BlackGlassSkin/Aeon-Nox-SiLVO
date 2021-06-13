@@ -57,7 +57,7 @@
 				<height>282</height>
 				<label>$VAR[CustomConfirmTextboxVar]</label>
 				<textcolor>grey2</textcolor>
-				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+				<autoscroll time="3000" delay="0" repeat="5000">true</autoscroll>
 			</control>
 			<control type="grouplist" id="90100">
 				<left>30</left>

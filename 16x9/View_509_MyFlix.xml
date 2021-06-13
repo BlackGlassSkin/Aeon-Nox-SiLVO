@@ -9,8 +9,8 @@
 				<label>$LOCALIZE[31966]</label>
 				<include>HiddenObject</include>
 				<include condition="!String.IsEmpty(Skin.String(MyFlix.Delay))">MyFlixDelayAnimation</include>
-				<animation effect="fade" end="100" time="120" delay="1600">WindowOpen</animation>
-				<animation effect="fade" end="100" time="120" delay="1600">Visible</animation>
+				<animation effect="fade" end="100" time="0">WindowOpen</animation>
+				<animation effect="fade" end="100" time="120" delay="0">Visible</animation>
 				<visible>Skin.HasSetting(Enable.MyFlix.OpenCase) + !ListItem.IsCollection + Container.Content(movies)</visible>
 			</control>
 			<control type="label" id="4448">
@@ -18,8 +18,8 @@
 				<label>$LOCALIZE[31966]</label>
 				<include>HiddenObject</include>
 				<include condition="!String.IsEmpty(Skin.String(MyFlix.Delay))">MyFlixDelayAnimation</include>
-				<animation effect="fade" end="100" time="120" delay="1600">WindowOpen</animation>
-				<animation effect="fade" end="100" time="120" delay="1600">Visible</animation>
+				<animation effect="fade" end="100" time="0">WindowOpen</animation>
+				<animation effect="fade" end="100" time="120" delay="0">Visible</animation>
 				<visible>Skin.HasSetting(Enable.MyFlix.OpenCase) + ListItem.IsCollection</visible>
 			</control>
 			<control type="group">
@@ -136,12 +136,12 @@
 							<textcolor>grey</textcolor>
 							<shadowcolor>shadow</shadowcolor>
 							<label>[COLOR $VAR[ThemeLabelColor]]$INFO[ListItem.Tagline,,[CR]][/COLOR]$VAR[VideoPlotVar]</label>
-							<autoscroll delay="3000" time="3000" repeat="4000">true</autoscroll>
+							<autoscroll delay="0" time="3000" repeat="4000">true</autoscroll>
 						</control>
 					</control>
 					<control type="group">
 						<visible>ListItem.IsCollection + ![Container.OnNext | Container.OnPrevious]</visible>
-						<animation effect="fade" time="140" delay="100">Visible</animation>
+						<animation effect="fade" time="140" delay="0">Visible</animation>
 						<control type="grouplist">
 							<control type="label">
 								<width>800</width>
@@ -179,7 +179,7 @@
 							<textcolor>grey</textcolor>
 							<shadowcolor>shadow</shadowcolor>
 							<label>$VAR[VideoPlotVar]</label>
-							<autoscroll delay="3000" time="3000" repeat="4000">true</autoscroll>
+							<autoscroll delay="0" time="3000" repeat="4000">true</autoscroll>
 						</control>
 					</control>
 					<control type="grouplist">
@@ -312,7 +312,7 @@
 						<textcolor>grey</textcolor>
 						<shadowcolor>shadow</shadowcolor>
 						<label>$VAR[VideoPlotVar]</label>
-						<autoscroll delay="3000" time="2500" repeat="4000">true</autoscroll>
+						<autoscroll delay="0" time="2500" repeat="4000">true</autoscroll>
 						<animation effect="slide" start="0" end="0,45" condition="Container.Content(tvshows)">Conditional</animation>
 						<animation effect="slide" start="0" end="0,155" condition="Container.Content(episodes)">Conditional</animation>
 						<visible>Container.Content(tvshows) | Container.Content(episodes)</visible>
@@ -619,8 +619,8 @@
 				<aspectratio>keep</aspectratio>
 				<texture background="true">$INFO[Container(4500).ListItemAbsolute(1).Art(discart)]</texture>
 				<animation type="Conditional" condition="[!String.IsEmpty(Control.GetLabel(4448)) + Control.IsVisible(4448)]" reversible="false">
-					<effect type="slide" start="1900,0" end="0,0" delay="500" time="3000" tween="cubic" easing="inout" />
-					<effect type="rotate" start="0" center="auto" end="1080" delay="500" time="3000" tween="cubic" easing="inout" />
+					<effect type="slide" start="1900,0" end="0,0" delay="0" time="3000" tween="cubic" easing="inout" />
+					<effect type="rotate" start="0" center="auto" end="1080" delay="0" time="3000" tween="cubic" easing="inout" />
 				</animation>
 				<visible>!String.IsEmpty(Container(4500).ListItemAbsolute(1).Art(discart))</visible>
 			</control>
@@ -628,8 +628,8 @@
 				<aspectratio>keep</aspectratio>
 				<texture background="true">$INFO[Container(4500).ListItemAbsolute(2).Art(discart)]</texture>
 				<animation type="Conditional" condition="[!String.IsEmpty(Control.GetLabel(4448)) + Control.IsVisible(4448)]" reversible="false">
-					<effect type="slide" start="1900,0" end="0,0" delay="1000" time="3000" tween="cubic" easing="inout" />
-					<effect type="rotate" start="0" center="auto" end="1080" delay="1000" time="3000" tween="cubic" easing="inout" />
+					<effect type="slide" start="1900,0" end="0,0" delay="0" time="3000" tween="cubic" easing="inout" />
+					<effect type="rotate" start="0" center="auto" end="1080" delay="0" time="3000" tween="cubic" easing="inout" />
 				</animation>
 				<visible>!String.IsEmpty(Container(4500).ListItemAbsolute(2).Art(discart))</visible>
 			</control>
@@ -637,8 +637,8 @@
 				<aspectratio>keep</aspectratio>
 				<texture background="true">$INFO[Container(4500).ListItemAbsolute(3).Art(discart)]</texture>
 				<animation type="Conditional" condition="[!String.IsEmpty(Control.GetLabel(4448)) + Control.IsVisible(4448)]" reversible="false">
-					<effect type="slide" start="1900,0" end="0,0" delay="1500" time="3000" tween="cubic" easing="inout" />
-					<effect type="rotate" start="0" center="auto" end="1080" delay="1500" time="3000" tween="cubic" easing="inout" />
+					<effect type="slide" start="1900,0" end="0,0" delay="0" time="3000" tween="cubic" easing="inout" />
+					<effect type="rotate" start="0" center="auto" end="1080" delay="0" time="3000" tween="cubic" easing="inout" />
 				</animation>
 				<visible>!String.IsEmpty(Container(4500).ListItemAbsolute(3).Art(discart))</visible>
 			</control>
@@ -646,8 +646,8 @@
 				<aspectratio>keep</aspectratio>
 				<texture background="true">$INFO[Container(4500).ListItemAbsolute(4).Art(discart)]</texture>
 				<animation type="Conditional" condition="[!String.IsEmpty(Control.GetLabel(4448)) + Control.IsVisible(4448)]" reversible="false">
-					<effect type="slide" start="1900,0" end="0,0" delay="2000" time="3000" tween="cubic" easing="inout" />
-					<effect type="rotate" start="0" center="auto" end="1080" delay="2000" time="3000" tween="cubic" easing="inout" />
+					<effect type="slide" start="1900,0" end="0,0" delay="0" time="3000" tween="cubic" easing="inout" />
+					<effect type="rotate" start="0" center="auto" end="1080" delay="0" time="3000" tween="cubic" easing="inout" />
 				</animation>
 				<visible>!String.IsEmpty(Container(4500).ListItemAbsolute(4).Art(discart))</visible>
 			</control>
@@ -655,8 +655,8 @@
 				<aspectratio>keep</aspectratio>
 				<texture background="true">$INFO[Container(4500).ListItemAbsolute(5).Art(discart)]</texture>
 				<animation type="Conditional" condition="[!String.IsEmpty(Control.GetLabel(4448)) + Control.IsVisible(4448)]" reversible="false">
-					<effect type="slide" start="1900,0" end="0,0" delay="2500" time="3000" tween="cubic" easing="inout" />
-					<effect type="rotate" start="0" center="auto" end="1080" delay="2500" time="3000" tween="cubic" easing="inout" />
+					<effect type="slide" start="1900,0" end="0,0" delay="0" time="3000" tween="cubic" easing="inout" />
+					<effect type="rotate" start="0" center="auto" end="1080" delay="0" time="3000" tween="cubic" easing="inout" />
 				</animation>
 				<visible>!String.IsEmpty(Container(4500).ListItemAbsolute(5).Art(discart))</visible>
 			</control>
@@ -664,8 +664,8 @@
 				<aspectratio>keep</aspectratio>
 				<texture background="true">$INFO[Container(4500).ListItemAbsolute(6).Art(discart)]</texture>
 				<animation type="Conditional" condition="[!String.IsEmpty(Control.GetLabel(4448)) + Control.IsVisible(4448)]" reversible="false">
-					<effect type="slide" start="1900,0" end="0,0" delay="3000" time="3000" tween="cubic" easing="inout" />
-					<effect type="rotate" start="0" center="auto" end="1080" delay="3000" time="3000" tween="cubic" easing="inout" />
+					<effect type="slide" start="1900,0" end="0,0" delay="0" time="3000" tween="cubic" easing="inout" />
+					<effect type="rotate" start="0" center="auto" end="1080" delay="0" time="3000" tween="cubic" easing="inout" />
 				</animation>
 				<visible>!String.IsEmpty(Container(4500).ListItemAbsolute(6).Art(discart))</visible>
 			</control>
@@ -673,8 +673,8 @@
 				<aspectratio>keep</aspectratio>
 				<texture background="true">$INFO[Container(4500).ListItemAbsolute(7).Art(discart)]</texture>
 				<animation type="Conditional" condition="[!String.IsEmpty(Control.GetLabel(4448)) + Control.IsVisible(4448)]" reversible="false">
-					<effect type="slide" start="1900,0" end="0,0" delay="3500" time="3000" tween="cubic" easing="inout" />
-					<effect type="rotate" start="0" center="auto" end="1080" delay="3500" time="3000" tween="cubic" easing="inout" />
+					<effect type="slide" start="1900,0" end="0,0" delay="0" time="3000" tween="cubic" easing="inout" />
+					<effect type="rotate" start="0" center="auto" end="1080" delay="0" time="3000" tween="cubic" easing="inout" />
 				</animation>
 				<visible>!String.IsEmpty(Container(4500).ListItemAbsolute(7).Art(discart))</visible>
 			</control>

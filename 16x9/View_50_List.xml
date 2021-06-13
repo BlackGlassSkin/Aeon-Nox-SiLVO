@@ -15,7 +15,7 @@
 					<top>148</top>
 					<width>1204</width>
 					<height>904</height>
-					<texture border="40" colordiffuse="CC000000">listpanel_back.png</texture>
+					<texture border="40">listpanel_back.png</texture> colordiffuse="CC000000"
 				</control>
 				<control type="panel" id="50">
 					<top>180</top>
@@ -985,7 +985,7 @@
 					<top>148</top>
 					<width>570</width>
 					<height>904</height>
-					<texture colordiffuse="E6FFFFFF" border="40">listpanel_back.png</texture>
+					<texture border="40">listpanel_back.png</texture>colordiffuse="E6FFFFFF" 
 				</control>
 				<control type="image">
 					<top>148</top>
@@ -1057,7 +1057,7 @@
 					<left>47</left>
 					<width>476</width>
 					<height>460</height>
-					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(95061)</autoscroll>
+					<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(95061)</autoscroll>
 					<include>DefaultButtonsValues</include>
 					<pagecontrol>95061</pagecontrol>
 					<visible>Container.Content(episodes) | Container.Content(videos)</visible>
@@ -1227,7 +1227,7 @@
 					<top>148</top>
 					<width>1204</width>
 					<height>904</height>
-					<texture colordiffuse="E6FFFFFF" border="40">listpanel_back.png</texture>
+					<texture border="40">listpanel_back.png</texture>colordiffuse="E6FFFFFF" 
 				</control>
 				<control type="panel" id="50">
 					<top>180</top>
@@ -1657,7 +1657,7 @@
 					<top>148</top>
 					<width>570</width>
 					<height>904</height>
-					<texture colordiffuse="E6FFFFFF" border="40">listpanel_back.png</texture>
+					<texture border="40">listpanel_back.png</texture>colordiffuse="E6FFFFFF" 
 				</control>
 				<control type="scrollbar" id="95063">
 					<left>540</left>
@@ -2485,7 +2485,7 @@
 					<top>148</top>
 					<width>570</width>
 					<height>904</height>
-					<texture colordiffuse="E6FFFFFF" border="40">listpanel_back.png</texture>
+					<texture border="40">listpanel_back.png</texture>colordiffuse="E6FFFFFF" 
 				</control>
 				<control type="image">
 					<top>148</top>
@@ -2557,7 +2557,7 @@
 					<left>47</left>
 					<width>476</width>
 					<height>460</height>
-					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(95061)</autoscroll>
+					<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(95061)</autoscroll>
 					<include>DefaultButtonsValues</include>
 					<pagecontrol>95061</pagecontrol>
 					<visible>Container.Content(episodes) | Container.Content(videos)</visible>

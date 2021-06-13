@@ -40,7 +40,7 @@
 				</animation>
 				<animation type="Hidden" reversible="false">
 					<effect type="zoom" start="100" end="75" center="960,540" easing="in" tween="back" time="300" />
-					<effect type="fade" start="100" end="0" delay="200" time="100" />
+					<effect type="fade" start="100" end="0" delay="0" time="100" />
 				</animation>
 			</control>
 			<control type="mover" id="10">

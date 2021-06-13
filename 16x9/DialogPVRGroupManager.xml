@@ -10,24 +10,31 @@
 	<controls>
 		<control type="image">
 			<width>1902</width>
-			<height>830</height>
-			<texture border="40">dialogs/default/bg.png</texture>
+			<height>820</height>
+			<texture colordiffuse="red" border="40">dialogs/default/bg.png</texture>
 		</control>
 		<control type="image">
-			<left>20</left>
+			<left>6</left>
 			<top>87</top>
-			<width>1862</width>
-			<height>1</height>
-			<texture colordiffuse="grey4">separator_horizontal.png</texture>
+			<width>1891</width>
+			<height>2</height>
+			<texture colordiffuse="FF737373">separator_horizontal.png</texture>
+		</control>
+		<control type="image">
+			<left>331</left>
+			<top>167</top>
+			<width>1550</width>
+			<height>2</height>
+			<texture colordiffuse="FF737373">separator_horizontal.png</texture>
 		</control>
 		<control type="group">
 			<left>20</left>
 			<top>88</top>
 			<control type="image">
 				<left>311</left>
-				<width>1</width>
+				<width>1.4</width>
 				<height>720</height>
-				<texture colordiffuse="grey4">separator_vertical.png</texture>
+				<texture colordiffuse="grey">separator_vertical.png</texture>
 			</control>
 			<control type="grouplist" id="9000">
 				<onleft>72</onleft>
@@ -87,16 +94,16 @@
 				<control type="image">
 					<left>526</left>
 					<top>88</top>
-					<width>1</width>
+					<width>1.4</width>
 					<height>720</height>
-					<texture colordiffuse="grey4">separator_vertical.png</texture>
+					<texture colordiffuse="grey">separator_vertical.png</texture>
 				</control>
 				<control type="image">
 					<left>534</left>
 					<top>88</top>
-					<width>1</width>
+					<width>1.4</width>
 					<height>720</height>
-					<texture colordiffuse="grey4">separator_vertical.png</texture>
+					<texture colordiffuse="grey">separator_vertical.png</texture>
 				</control>
 				<control type="label">
 					<description>name label</description>
@@ -137,6 +144,14 @@
 							<texture>$INFO[Container(13).ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
+						<control type="image">
+							<top>158</top>
+							<left>0</left>
+							<width>700</width>
+							<height>2</height>
+							<texture colordiffuse="FF737373">separator_horizontal.png</texture>
+							<colordiffuse>grey3</colordiffuse>
+						</control>
 					</itemlayout>
 					<focusedlayout height="80">
 						<control type="image">
@@ -162,6 +177,14 @@
 							<texture>$INFO[Container(13).ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
+						<control type="image">
+							<top>158</top>
+							<left>0</left>
+							<width>700</width>
+							<height>2</height>
+							<texture colordiffuse="FF737373">separator_horizontal.png</texture>
+							<colordiffuse>grey3</colordiffuse>
+						</control>
 					</focusedlayout>
 				</control>
 				<control type="scrollbar" id="73">
@@ -169,9 +192,9 @@
 					<top>88</top>
 					<width>8</width>
 					<height>720</height>
-					<texturesliderbackground />
-					<texturesliderbar border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-					<texturesliderbarfocus border="1" colordiffuse="$VAR[ThemeLabelColor]">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+					<texturesliderbackground/>
+					<texturesliderbar border="1" colordiffuse="grey">scrollbar/texturesliderbar2.png</texturesliderbar>
+					<texturesliderbarfocus border="1" colordiffuse="grey">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
 					<onleft>13</onleft>
 					<onright>11</onright>
 					<ondown>73</ondown>
@@ -184,16 +207,16 @@
 				<control type="image">
 					<left>1049</left>
 					<top>88</top>
-					<width>1</width>
+					<width>1.4</width>
 					<height>720</height>
-					<texture colordiffuse="grey4">separator_vertical.png</texture>
+					<texture colordiffuse="grey">separator_vertical.png</texture>
 				</control>
 				<control type="image">
 					<left>1057</left>
 					<top>88</top>
-					<width>1</width>
+					<width>1.4</width>
 					<height>720</height>
-					<texture colordiffuse="grey4">separator_vertical.png</texture>
+					<texture colordiffuse="grey">separator_vertical.png</texture>
 				</control>
 				<control type="label">
 					<description>name label</description>
@@ -234,6 +257,14 @@
 							<texture>$INFO[ListItem.ActualIcon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
+						<control type="image">
+							<top>158</top>
+							<left>0</left>
+							<width>700</width>
+							<height>2</height>
+							<texture colordiffuse="FF737373">separator_horizontal.png</texture>
+							<colordiffuse>grey3</colordiffuse>
+						</control>
 					</itemlayout>
 					<focusedlayout height="80">
 						<control type="image">
@@ -259,6 +290,14 @@
 							<texture>$INFO[ListItem.ActualIcon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
+						<control type="image">
+							<top>158</top>
+							<left>0</left>
+							<width>700</width>
+							<height>2</height>
+							<texture colordiffuse="FF737373">separator_horizontal.png</texture>
+							<colordiffuse>grey3</colordiffuse>
+						</control>
 					</focusedlayout>
 				</control>
 				<control type="scrollbar" id="71">
@@ -266,9 +305,9 @@
 					<top>88</top>
 					<width>8</width>
 					<height>720</height>
-					<texturesliderbackground />
-					<texturesliderbar border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-					<texturesliderbarfocus border="1" colordiffuse="$VAR[ThemeLabelColor]">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+					<texturesliderbackground/>
+					<texturesliderbar border="1" colordiffuse="grey">scrollbar/texturesliderbar2.png</texturesliderbar>
+					<texturesliderbarfocus border="1" colordiffuse="grey">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
 					<onleft>11</onleft>
 					<onright>12</onright>
 					<ondown>71</ondown>
@@ -282,16 +321,16 @@
 				<control type="image">
 					<left>1554</left>
 					<top>88</top>
-					<width>1</width>
+					<width>1.4</width>
 					<height>720</height>
-					<texture colordiffuse="grey4">separator_vertical.png</texture>
+					<texture colordiffuse="grey">separator_vertical.png</texture>
 				</control>
 				<control type="image">
 					<left>1562</left>
 					<top>88</top>
-					<width>1</width>
+					<width>1.4</width>
 					<height>720</height>
-					<texture colordiffuse="grey4">separator_vertical.png</texture>
+					<texture colordiffuse="grey">separator_vertical.png</texture>
 				</control>
 				<control type="label">
 					<description>name label</description>
@@ -332,6 +371,14 @@
 							<texture>$INFO[ListItem.ActualIcon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
+						<control type="image">
+							<top>158</top>
+							<left>0</left>
+							<width>700</width>
+							<height>2</height>
+							<texture colordiffuse="FF737373">separator_horizontal.png</texture>
+							<colordiffuse>grey3</colordiffuse>
+						</control>
 					</itemlayout>
 					<focusedlayout height="80">
 						<control type="image">
@@ -357,6 +404,14 @@
 							<texture>$INFO[ListItem.ActualIcon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
+						<control type="image">
+							<top>158</top>
+							<left>0</left>
+							<width>700</width>
+							<height>2</height>
+							<texture colordiffuse="FF737373">separator_horizontal.png</texture>
+							<colordiffuse>grey3</colordiffuse>
+						</control>
 					</focusedlayout>
 				</control>
 				<control type="scrollbar" id="72">
@@ -364,9 +419,9 @@
 					<top>88</top>
 					<width>8</width>
 					<height>720</height>
-					<texturesliderbackground />
-					<texturesliderbar border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-					<texturesliderbarfocus border="1" colordiffuse="$VAR[ThemeLabelColor]">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+					<texturesliderbackground/>
+					<texturesliderbar border="1" colordiffuse="grey">scrollbar/texturesliderbar2.png</texturesliderbar>
+					<texturesliderbarfocus border="1" colordiffuse="grey">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
 					<onleft>12</onleft>
 					<onright>26</onright>
 					<ondown>72</ondown>

@@ -48,8 +48,8 @@
 		</control> -->
 		<!-- Poster Side -->
 		<control type="group">
-			<animation effect="slide" start="-730,0" end="0,0" delay="200" time="0">WindowOpen</animation>
-			<animation effect="slide" end="-730,0" delay="100" time="0">WindowClose</animation>
+			<animation effect="slide" start="-730,0" end="0,0" delay="0" time="0">WindowOpen</animation>
+			<animation effect="slide" end="-730,0" delay="0" time="0">WindowClose</animation>
 			<animation effect="slide" end="-730,0" time="500" tween="quadratic" condition="Window.IsVisible(script-embuary-person.xml) | Window.IsVisible(script-embuary-video.xml)">Conditional</animation>
 			<width>720</width>
 			<height>100%</height>
@@ -71,8 +71,8 @@
 		</control>
 		<!-- Details Side -->
 		<control type="group">
-			<animation effect="slide" start="1210,0" end="0,0" delay="200" time="0">WindowOpen</animation>
-			<animation effect="slide" end="1210,0" delay="100" time="0">WindowClose</animation>
+			<animation effect="slide" start="1210,0" end="0,0" delay="0" time="0">WindowOpen</animation>
+			<animation effect="slide" end="1210,0" delay="0" time="0">WindowClose</animation>
 			<animation effect="slide" end="1210,0" time="500" tween="quadratic" condition="Window.IsVisible(script-embuary-person.xml) | Window.IsVisible(script-embuary-video.xml)">Conditional</animation>
 			<left>720</left>
 			<control type="group">
@@ -749,7 +749,7 @@
 							<align>justify</align>
 							<font>font18_textbox</font>
 							<label>$INFO[Window(movieinformation).Property(MoreInfoContent)]</label>
-							<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+							<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 						</control>
 					</control>
 					<control type="group">
@@ -992,7 +992,7 @@
 								<height>345</height>
 								<align>justify</align>
 								<label>$VAR[VideoInfoPlotVar]</label>
-								<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(90003)</autoscroll>
+								<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(90003)</autoscroll>
 								<animation effect="fade" start="0" end="100" time="500" tween="sine" easing="inout">VisibleChange</animation>
 								<animation effect="fade" start="100" end="78" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(90003)">Conditional</animation>
 								<visible>[String.IsEqual(ListItem.DBTYPE,movie) + Skin.HasSetting(discartoninfo) + !String.IsEmpty(ListItem.Art(discart))] | [String.IsEqual(ListItem.DBTYPE,tvshow) + Skin.HasSetting(CharacterOnInfo) + !String.IsEmpty(ListItem.Art(clearart))] | [String.IsEqual(ListItem.DBTYPE,episode) + Skin.HasSetting(CharacterOnInfo) + !String.IsEmpty(ListItem.Art(tvshow.clearart))]</visible>
@@ -1002,7 +1002,7 @@
 								<height>345</height>
 								<label>$VAR[VideoInfoPlotVar]</label>
 								<align>justify</align>
-								<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(90003)</autoscroll>
+								<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(90003)</autoscroll>
 								<animation effect="fade" start="100" end="78" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(90003)">Conditional</animation>
 								<visible>[String.IsEqual(ListItem.DBTYPE,movie) + !Skin.HasSetting(discartoninfo) | String.IsEqual(ListItem.DBTYPE,movie) + String.IsEmpty(ListItem.Art(discart))] | [String.IsEqual(ListItem.DBTYPE,tvshow) + !Skin.HasSetting(CharacterOnInfo) | String.IsEqual(ListItem.DBTYPE,tvshow) + String.IsEmpty(ListItem.Art(clearart))] | [String.IsEqual(ListItem.DBTYPE,episode) + !Skin.HasSetting(CharacterOnInfo) | String.IsEqual(ListItem.DBTYPE,episode) + String.IsEmpty(ListItem.Art(tvshow.clearart))] | String.IsEqual(ListItem.DBTYPE,musicvideo)</visible>
 							</control>
@@ -1012,7 +1012,7 @@
 								<height>460</height>
 								<label>$VAR[VideoInfoPlotVar]</label>
 								<align>justify</align>
-								<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(90003)</autoscroll>
+								<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(90003)</autoscroll>
 								<animation effect="fade" start="100" end="78" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(90003)">Conditional</animation>
 								<visible>String.IsEqual(ListItem.DBTYPE,set)</visible>
 							</control>

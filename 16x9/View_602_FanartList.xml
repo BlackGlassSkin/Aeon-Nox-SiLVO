@@ -24,7 +24,7 @@
 					<font>font14_textbox</font>
 					<pagecontrol>60261</pagecontrol>
 					<include>DefaultButtonsValues</include>
-					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(60261)</autoscroll>
+					<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(60261)</autoscroll>
 					<visible>!ListItem.IsCollection</visible>
 				</control>
 				<control type="scrollbar" id="60261">
@@ -50,7 +50,7 @@
 					<font>font14_textbox</font>
 					<pagecontrol>60262</pagecontrol>
 					<include>DefaultButtonsValues</include>
-					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(60261)</autoscroll>
+					<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(60261)</autoscroll>
 					<visible>ListItem.IsCollection</visible>
 				</control>
 				<control type="scrollbar" id="60262">

@@ -47,7 +47,7 @@
 		</control>
 		<include condition="!Skin.HasSetting(Disable.VideoLyrics)">VideoLyrics</include>
 		<control type="group">
-			<animation effect="slide" end="0,0" start="0,-540" delay="100" time="0">WindowOpen</animation>
+			<animation effect="slide" end="0,0" start="0,-540" delay="0" time="0">WindowOpen</animation>
 		</control>
 	</controls>
 </window>

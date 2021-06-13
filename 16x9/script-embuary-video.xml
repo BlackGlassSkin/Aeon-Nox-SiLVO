@@ -8,7 +8,7 @@
 		<!-- Poster Side -->
 		<control type="group">
 			<animation effect="slide" start="-730,0" end="0,0" time="0">WindowOpen</animation>
-			<animation effect="slide" start="-730,0" end="0,0" delay="250" time="0">WindowOpen</animation>
+			<animation effect="slide" start="-730,0" end="0,0" delay="0" time="0">WindowOpen</animation>
 			<animation effect="slide" end="-730,0" time="0">WindowClose</animation>
 			<width>720</width>
 			<height>100%</height>
@@ -24,7 +24,7 @@
 		<!-- Details Side -->
 		<control type="group">
 			<animation effect="slide" start="1210,0" end="0,0" time="0">WindowOpen</animation>
-			<animation effect="slide" start="1210,0" end="0,0" delay="250" time="0">WindowOpen</animation>
+			<animation effect="slide" start="1210,0" end="0,0" delay="0" time="0">WindowOpen</animation>
 			<animation effect="slide" end="1210,0" time="0">WindowClose</animation>
 			<left>720</left>
 			<control type="group">
@@ -399,7 +399,7 @@
 							<align>justify</align>
 							<font>font18_textbox</font>
 							<label>$INFO[Window(Home).Property(MoreInfoContent)]</label>
-							<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+							<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 						</control>
 					</control>
 					<!-- Separator -->
@@ -530,7 +530,7 @@
 							<height>345</height>
 							<label>$INFO[Container(10051).ListItem.Plot]</label>
 							<align>justify</align>
-							<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(90003)</autoscroll>
+							<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(90003)</autoscroll>
 							<animation effect="fade" start="100" end="78" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(90002)">Conditional</animation>
 						</control>
 					</control>

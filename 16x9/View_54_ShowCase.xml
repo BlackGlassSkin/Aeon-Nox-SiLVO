@@ -6,8 +6,8 @@
 			<include>HiddenObject</include>
 			<visible>![Container.OnNext | Container.OnPrevious]</visible>
 			<include condition="!String.IsEmpty(Skin.String(Showcase.Delay))">ShowCaseDelayAnimation</include>
-			<animation effect="fade" end="100" time="120" delay="1600">WindowOpen</animation>
-			<animation effect="fade" end="100" time="120" delay="1600">Visible</animation>
+			<animation effect="fade" end="100" time="0">WindowOpen</animation>
+			<animation effect="fade" end="100" time="120" delay="0">Visible</animation>
 			<visible>Control.IsVisible(54) + Skin.HasSetting(Enable.ShowCaseSquare.ArtistCDArt) + Container.Content(artists) + [!String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.1.Art(discart))) | !String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.2.Art(discart))) | !String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.3.Art(discart))) | !String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.4.Art(discart))) | !String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.5.Art(discart))) | !String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.6.Art(discart))) | !String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.7.Art(discart))) | !String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.8.Art(discart)))]</visible>
 		</control>
 		<control type="label" id="4444">
@@ -15,16 +15,16 @@
 			<include>HiddenObject</include>
 			<visible>![Container.OnNext | Container.OnPrevious]</visible>
 			<include condition="!String.IsEmpty(Skin.String(Showcase.Delay))">ShowCaseDelayAnimation</include>
-			<animation effect="fade" end="100" time="120" delay="1600">WindowOpen</animation>
-			<animation effect="fade" end="100" time="120" delay="1600">Visible</animation>
+			<animation effect="fade" end="100" time="0">WindowOpen</animation>
+			<animation effect="fade" end="100" time="120" delay="0">Visible</animation>
 			<visible>Control.IsVisible(54) + Skin.HasSetting(Enable.ShowCaseSquare.CDArt) + Container.Content(albums) + [!String.IsEmpty(ListItem(0).Art(album.discart)) | !String.IsEmpty(ListItem(0).Art(discart))]</visible>
 		</control>
 		<control type="label" id="4445">
 			<label>$LOCALIZE[31966]</label>
 			<include>HiddenObject</include>
 			<include condition="!String.IsEmpty(Skin.String(Showcase.Delay))">ShowCaseDelayAnimation</include>
-			<animation effect="fade" end="100" time="120" delay="1600">WindowOpen</animation>
-			<animation effect="fade" end="100" time="120" delay="1600">Visible</animation>
+			<animation effect="fade" end="100" time="0">WindowOpen</animation>
+			<animation effect="fade" end="100" time="120" delay="0">Visible</animation>
 			<visible>Control.IsVisible(54) + Skin.HasSetting(Enable.ShowCaseSquare.CDArt) + Container.Content(albums) + [!String.IsEmpty(ListItem(0).Art(album.discart)) | !String.IsEmpty(ListItem(0).Art(discart))]</visible>
 		</control>
 		<control type="label" id="4446">
@@ -32,16 +32,16 @@
 			<include>HiddenObject</include>
 			<visible>![Container.OnNext | Container.OnPrevious]</visible>
 			<include condition="!String.IsEmpty(Skin.String(Showcase.Delay))">ShowCaseDelayAnimation</include>
-			<animation effect="fade" end="100" time="120" delay="1600">WindowOpen</animation>
-			<animation effect="fade" end="100" time="120" delay="1600">Visible</animation>
+			<animation effect="fade" end="100" time="0">WindowOpen</animation>
+			<animation effect="fade" end="100" time="120" delay="0">Visible</animation>
 			<visible>Control.IsVisible(54) + Skin.HasSetting(Enable.ShowCaseSquare.CDArt) + Container.Content(songs)</visible>
 		</control>
 		<control type="label" id="4447">
 			<label>$LOCALIZE[31966]</label>
 			<include>HiddenObject</include>
 			<include condition="!String.IsEmpty(Skin.String(Showcase.Delay))">ShowCaseDelayAnimation</include>
-			<animation effect="fade" end="100" time="120" delay="1600">WindowOpen</animation>
-			<animation effect="fade" end="100" time="120" delay="1600">Visible</animation>
+			<animation effect="fade" end="100" time="0">WindowOpen</animation>
+			<animation effect="fade" end="100" time="120" delay="0">Visible</animation>
 			<visible>Control.IsVisible(54) + Skin.HasSetting(Enable.ShowCaseSquare.CDArt) + Container.Content(songs) + [!String.IsEmpty(ListItem(0).Art(album.discart)) | !String.IsEmpty(ListItem(0).Art(discart))]</visible>
 		</control>
 		<control type="group">
@@ -515,15 +515,15 @@
 			<control type="group">
 				<animation type="Conditional" reversible="false" condition="[!String.IsEmpty(Control.GetLabel(4443)) + Control.IsVisible(4443)] + !ListItem.IsParentFolder">
 					<effect type="rotatey" center="19" start="0" end="70" time="1000" tween="quadratic" easing="out" />
-					<effect type="rotatey" delay="3500" center="19" start="0" end="-70" time="1000" tween="quadratic" easing="out" />
+					<effect type="rotatey" delay="0" center="19" start="0" end="-70" time="1000" tween="quadratic" easing="out" />
 				</animation>
 				<animation type="Conditional" reversible="false" condition="[!String.IsEmpty(Control.GetLabel(4445)) + Control.IsVisible(4445)] + !ListItem.IsParentFolder">
 					<effect type="rotatey" center="19" start="0" end="70" time="1000" tween="quadratic" easing="out" />
-					<effect type="rotatey" delay="3500" center="19" start="0" end="-70" time="1000" tween="quadratic" easing="out" />
+					<effect type="rotatey" delay="0" center="19" start="0" end="-70" time="1000" tween="quadratic" easing="out" />
 				</animation>
 				<animation type="Conditional" reversible="false" condition="[!String.IsEmpty(Control.GetLabel(4446)) + Control.IsVisible(4446)] + !ListItem.IsParentFolder">
 					<effect type="rotatey" center="19" start="0" end="70" time="1000" tween="quadratic" easing="out" />
-					<effect type="rotatey" delay="3500" center="19" start="0" end="-70" time="1000" tween="quadratic" easing="out" />
+					<effect type="rotatey" delay="0" center="19" start="0" end="-70" time="1000" tween="quadratic" easing="out" />
 				</animation>
 				<control type="image">
 					<texture background="true" diffuse="thumbs/boxes/cdcover_mask_aa.png" fallback="DefaultAudio.png">$VAR[MusicShowcaseItem0Var]</texture>
@@ -768,8 +768,8 @@
 			<animation effect="slide" start="0,0" end="0,20" time="100" tween="cubic" condition="Container.Content(albums) + Control.IsVisible(54)">Conditional</animation>
 			<animation effect="slide" start="0,-1080" end="0,0" time="840" tween="cubic">Visible</animation>
 			<animation effect="slide" start="0,0" end="0,-1080" time="720" tween="cubic">Hidden</animation>
-			<animation effect="slide" start="0,-1200" end="0,0" time="720" tween="cubic">WindowOpen</animation>
-			<animation effect="slide" end="0,-1200" start="0,0" time="720" tween="cubic">WindowClose</animation>
+			<animation effect="slide" start="0,-1200" end="0,0" time="0">WindowOpen</animation>
+			<animation effect="slide" end="0,-1200" start="0,0" time="0">WindowClose</animation>
 			<animation effect="slide" start="0,0" end="0,20" time="720" tween="cubic" condition="Control.IsVisible(52)">Conditional</animation>
 			<top>50</top>
 			<control type="image">
@@ -851,7 +851,7 @@
 					<height>180</height>
 					<font>font14_textbox2</font>
 					<pagecontrol>95462</pagecontrol>
-					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(62)</autoscroll>
+					<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(62)</autoscroll>
 					<include>ShowCaseInfoPanelButtonsValues</include>
 					<textcolor>$VAR[ThemeLabelColor]</textcolor>
 					<visible>Container.Content(albums)</visible>
@@ -863,7 +863,7 @@
 					<width>940</width>
 					<height>350</height>
 					<font>font14_textbox</font>
-					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(62)</autoscroll>
+					<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(62)</autoscroll>
 					<pagecontrol>95462</pagecontrol>
 					<include>ShowCaseInfoPanelButtonsValues</include>
 					<textcolor>$VAR[ThemeLabelColor]</textcolor>
@@ -954,7 +954,7 @@
 					<height>354</height>
 					<font>font14_textbox</font>
 					<pagecontrol>95462</pagecontrol>
-					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(62)</autoscroll>
+					<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(62)</autoscroll>
 					<include>ShowCaseInfoPanelButtonsValues</include>
 				</control>
 				<control type="scrollbar" id="95462">
@@ -1001,9 +1001,9 @@
 			<aspectratio>keep</aspectratio>
 			<texture background="true">$INFO[Window(Home).Property(SkinInfo.Artist.Album.2.Art(discart))]</texture>
 			<animation type="Conditional" condition="[!String.IsEmpty(Control.GetLabel(4443)) + Control.IsVisible(4443)]" reversible="false">
-				<effect type="slide" start="1140,0" end="0,0" delay="500" time="2600" tween="cubic" easing="inout" condition="!Control.IsVisible(57)" />
-				<effect type="slide" start="1200,0" end="0,0" delay="500" time="2600" tween="cubic" easing="inout" condition="Control.IsVisible(57)" />
-				<effect type="rotate" start="0" center="auto" end="720" delay="500" time="2600" tween="cubic" easing="inout" />
+				<effect type="slide" start="1140,0" end="0,0" delay="0" time="2600" tween="cubic" easing="inout" condition="!Control.IsVisible(57)" />
+				<effect type="slide" start="1200,0" end="0,0" delay="0" time="2600" tween="cubic" easing="inout" condition="Control.IsVisible(57)" />
+				<effect type="rotate" start="0" center="auto" end="720" delay="0" time="2600" tween="cubic" easing="inout" />
 			</animation>
 			<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.2.Art(discart)))</visible>
 		</control>
@@ -1011,9 +1011,9 @@
 			<aspectratio>keep</aspectratio>
 			<texture background="true">$INFO[Window(Home).Property(SkinInfo.Artist.Album.3.Art(discart))]</texture>
 			<animation type="Conditional" condition="[!String.IsEmpty(Control.GetLabel(4443)) + Control.IsVisible(4443)]" reversible="false">
-				<effect type="slide" start="1140,0" end="0,0" delay="1000" time="2600" tween="cubic" easing="inout" condition="!Control.IsVisible(57)" />
-				<effect type="slide" start="1200,0" end="0,0" delay="1000" time="2600" tween="cubic" easing="inout" condition="Control.IsVisible(57)" />
-				<effect type="rotate" start="0" center="auto" end="720" delay="1000" time="2600" tween="cubic" easing="inout" />
+				<effect type="slide" start="1140,0" end="0,0" delay="0" time="2600" tween="cubic" easing="inout" condition="!Control.IsVisible(57)" />
+				<effect type="slide" start="1200,0" end="0,0" delay="0" time="2600" tween="cubic" easing="inout" condition="Control.IsVisible(57)" />
+				<effect type="rotate" start="0" center="auto" end="720" delay="0" time="2600" tween="cubic" easing="inout" />
 			</animation>
 			<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.3.Art(discart)))</visible>
 		</control>
@@ -1021,9 +1021,9 @@
 			<aspectratio>keep</aspectratio>
 			<texture background="true">$INFO[Window(Home).Property(SkinInfo.Artist.Album.4.Art(discart))]</texture>
 			<animation type="Conditional" condition="[!String.IsEmpty(Control.GetLabel(4443)) + Control.IsVisible(4443)]" reversible="false">
-				<effect type="slide" start="1140,0" end="0,0" delay="1500" time="2600" tween="cubic" easing="inout" condition="!Control.IsVisible(57)" />
-				<effect type="slide" start="1200,0" end="0,0" delay="1500" time="2600" tween="cubic" easing="inout" condition="Control.IsVisible(57)" />
-				<effect type="rotate" start="0" center="auto" end="720" delay="1500" time="2600" tween="cubic" easing="inout" />
+				<effect type="slide" start="1140,0" end="0,0" delay="0" time="2600" tween="cubic" easing="inout" condition="!Control.IsVisible(57)" />
+				<effect type="slide" start="1200,0" end="0,0" delay="0" time="2600" tween="cubic" easing="inout" condition="Control.IsVisible(57)" />
+				<effect type="rotate" start="0" center="auto" end="720" delay="0" time="2600" tween="cubic" easing="inout" />
 			</animation>
 			<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.4.Art(discart)))</visible>
 		</control>
@@ -1031,9 +1031,9 @@
 			<aspectratio>keep</aspectratio>
 			<texture background="true">$INFO[Window(Home).Property(SkinInfo.Artist.Album.5.Art(discart))]</texture>
 			<animation type="Conditional" condition="[!String.IsEmpty(Control.GetLabel(4443)) + Control.IsVisible(4443)]" reversible="false">
-				<effect type="slide" start="1140,0" end="0,0" delay="2000" time="2600" tween="cubic" easing="inout" condition="!Control.IsVisible(57)" />
-				<effect type="slide" start="1200,0" end="0,0" delay="2000" time="2600" tween="cubic" easing="inout" condition="Control.IsVisible(57)" />
-				<effect type="rotate" start="0" center="auto" end="720" delay="2000" time="2600" tween="cubic" easing="inout" />
+				<effect type="slide" start="1140,0" end="0,0" delay="0" time="2600" tween="cubic" easing="inout" condition="!Control.IsVisible(57)" />
+				<effect type="slide" start="1200,0" end="0,0" delay="0" time="2600" tween="cubic" easing="inout" condition="Control.IsVisible(57)" />
+				<effect type="rotate" start="0" center="auto" end="720" delay="0" time="2600" tween="cubic" easing="inout" />
 			</animation>
 			<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.5.Art(discart)))</visible>
 		</control>
@@ -1041,9 +1041,9 @@
 			<aspectratio>keep</aspectratio>
 			<texture background="true">$INFO[Window(Home).Property(SkinInfo.Artist.Album.6.Art(discart))]</texture>
 			<animation type="Conditional" condition="[!String.IsEmpty(Control.GetLabel(4443)) + Control.IsVisible(4443)]" reversible="false">
-				<effect type="slide" start="1140,0" end="0,0" delay="2500" time="2600" tween="cubic" easing="inout" condition="!Control.IsVisible(57)" />
-				<effect type="slide" start="1200,0" end="0,0" delay="2500" time="2600" tween="cubic" easing="inout" condition="Control.IsVisible(57)" />
-				<effect type="rotate" start="0" center="auto" end="720" delay="2500" time="2600" tween="cubic" easing="inout" />
+				<effect type="slide" start="1140,0" end="0,0" delay="0" time="2600" tween="cubic" easing="inout" condition="!Control.IsVisible(57)" />
+				<effect type="slide" start="1200,0" end="0,0" delay="0" time="2600" tween="cubic" easing="inout" condition="Control.IsVisible(57)" />
+				<effect type="rotate" start="0" center="auto" end="720" delay="0" time="2600" tween="cubic" easing="inout" />
 			</animation>
 			<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.6.Art(discart)))</visible>
 		</control>
@@ -1051,9 +1051,9 @@
 			<aspectratio>keep</aspectratio>
 			<texture background="true">$INFO[Window(Home).Property(SkinInfo.Artist.Album.7.Art(discart))]</texture>
 			<animation type="Conditional" condition="[!String.IsEmpty(Control.GetLabel(4443)) + Control.IsVisible(4443)]" reversible="false">
-				<effect type="slide" start="1140,0" end="0,0" delay="3000" time="2600" tween="cubic" easing="inout" condition="!Control.IsVisible(57)" />
-				<effect type="slide" start="1200,0" end="0,0" delay="3000" time="2600" tween="cubic" easing="inout" condition="Control.IsVisible(57)" />
-				<effect type="rotate" start="0" center="auto" end="720" delay="3000" time="2600" tween="cubic" easing="inout" />
+				<effect type="slide" start="1140,0" end="0,0" delay="0" time="2600" tween="cubic" easing="inout" condition="!Control.IsVisible(57)" />
+				<effect type="slide" start="1200,0" end="0,0" delay="0" time="2600" tween="cubic" easing="inout" condition="Control.IsVisible(57)" />
+				<effect type="rotate" start="0" center="auto" end="720" delay="0" time="2600" tween="cubic" easing="inout" />
 			</animation>
 			<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.7.Art(discart)))</visible>
 		</control>
@@ -1061,9 +1061,9 @@
 			<aspectratio>keep</aspectratio>
 			<texture background="true">$INFO[Window(Home).Property(SkinInfo.Artist.Album.8.Art(discart))]</texture>
 			<animation type="Conditional" condition="[!String.IsEmpty(Control.GetLabel(4443)) + Control.IsVisible(4443)]" reversible="false">
-				<effect type="slide" start="1140,0" end="0,0" delay="3500" time="2600" tween="cubic" easing="inout" condition="!Control.IsVisible(57)" />
-				<effect type="slide" start="1200,0" end="0,0" delay="3500" time="2600" tween="cubic" easing="inout" condition="Control.IsVisible(57)" />
-				<effect type="rotate" start="0" center="auto" end="720" delay="3500" time="2600" tween="cubic" easing="inout" />
+				<effect type="slide" start="1140,0" end="0,0" delay="0" time="2600" tween="cubic" easing="inout" condition="!Control.IsVisible(57)" />
+				<effect type="slide" start="1200,0" end="0,0" delay="0" time="2600" tween="cubic" easing="inout" condition="Control.IsVisible(57)" />
+				<effect type="rotate" start="0" center="auto" end="720" delay="0" time="2600" tween="cubic" easing="inout" />
 			</animation>
 			<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.8.Art(discart)))</visible>
 		</control>

@@ -404,7 +404,7 @@
 				<visible>!ListItem.IsParentFolder</visible>
 				<visible>[Container.Content(movies) | Container.Content(tvshows)]</visible>
 				<visible>Skin.HasSetting(503.InfoPanel) + Control.HasFocus(503) + System.IdleTime(1)</visible>
-				<animation effect="fade" time="100" delay="200">Visible</animation>
+				<animation effect="fade" time="100" delay="0">Visible</animation>
 				<animation effect="slide" end="0,460" time="300" tween="cubic" easing="inout" condition="Container(503).Row(1)">Conditional</animation>
 				<animation effect="slide" end="320,0" time="300" tween="cubic" easing="inout" condition="Container(503).Column(3)">Conditional</animation>
 				<animation effect="slide" end="320,0" time="300" tween="cubic" easing="inout" condition="Container(503).Column(5) | Container(503).Column(3) | Container(503).Column(2)">Conditional</animation>
@@ -468,7 +468,7 @@
 					<font>font15</font>
 					<textcolor>grey</textcolor>
 					<label>$VAR[503.InfoPanelTextboxVar]</label>
-					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(63)</autoscroll>
+					<autoscroll time="3000" delay="0" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(63)</autoscroll>
 				</control>
 				<control type="label">
 					<left>50</left>
@@ -492,8 +492,8 @@
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(503) + !Window.IsActive(addoninformation)</visible>
-			<animation effect="fade" time="300">WindowOpen</animation>
-			<animation effect="fade" time="300">WindowClose</animation>
+			<animation effect="fade" time="0">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
 			<control type="image">
 				<width>100%</width>
 				<height>120</height>
